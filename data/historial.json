@@ -1,24 +1,28 @@
 {
  "2026-11-07": {
-  "n": "Past. Tic Tac naranja",
-  "d": "16 g",
-  "p": 1072,
+  "n": "Bizcochuelo Exquisita de chocolate",
+  "d": "540 g",
+  "p": 4905,
   "k": "box",
-  "c": "#8a5aa0",
-  "a": "#fff",
+  "c": "#8B5A2B",
+  "a": "#F2C230",
   "r": "almacen",
-  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.643 sucursales de CABA y GBA · 07/11/2026",
-  "ean": "0000078600027"
+  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.739 sucursales de CABA y GBA · 07/11/2026",
+  "ean": "7790070432971",
+  "u": [
+   0.54,
+   "kilo"
+  ]
  },
  "2026-11-08": {
-  "n": "Manteca paulina La Paulina",
-  "d": "200 g",
-  "p": 4829,
-  "k": "brick",
-  "c": "#F5E08A",
-  "a": "#3A7BD5",
-  "r": "lacteos",
-  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.604 sucursales de CABA y GBA · 07/11/2026",
-  "ean": "7790398100088"
+  "n": "Chocolate Arcor con leche",
+  "d": "25 g",
+  "p": 1762,
+  "k": "bar",
+  "c": "#6B3A1E",
+  "a": "#fff",
+  "r": "golosinas",
+  "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.854 sucursales de CABA y GBA · 07/11/2026",
+  "ean": "7790580607210"
  }
 }

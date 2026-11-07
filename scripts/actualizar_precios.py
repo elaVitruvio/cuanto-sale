@@ -132,6 +132,14 @@ def procesar(path):
     return precios, info
 
 
+def disparidad(med):
+    """Cociente entre la cadena más cara y la más barata, sin contar los extremos si hay 5 o más."""
+    m = sorted(med)
+    if len(m) >= 5:
+        m = m[1:-1]
+    return m[-1] / max(m[0], 1) if m else 1
+
+
 def percentil(xs, q):
     xs = sorted(xs)
     return xs[min(len(xs) - 1, max(0, int(round(q * (len(xs) - 1)))))]
@@ -418,7 +426,7 @@ def curar(cands, fecha):
         if c["p10"] and c["p90"] / max(c["p10"], 1) > 2.2:  # precios demasiado dispersos: dato poco fiable
             continue
         med = c["medianas"]
-        if len(med) >= 3 and med[-1] / max(med[0], 1) > 2.5:
+        if disparidad(med) > 2.2:
             continue
         r = rubro(desc)
         if n_rubro[r] >= cupos.get(r, 99):
@@ -432,6 +440,8 @@ def curar(cands, fecha):
             continue
         if k == "pet" and r in ("bebidas", "alcohol") and uni == "ml" and cant <= 473 and "agua" not in nombre.lower():
             k = "can"
+        if k == "tetra" and uni == "ml" and cant <= 250:
+            k = "minitetra"
         ln = linea(nombre, marca)
         gem = (fabricante(c["ean"]), int(c["precio"]))
         if ln in lineas or (nombre, tam) in vistos or gem in gemelos:
@@ -464,6 +474,41 @@ def curar(cands, fecha):
             break
     elegidos.sort(key=lambda x: x["ean"])
     return elegidos
+
+
+def desde_curados(cands, fecha):
+    """Arma la lista con los productos curados a mano (curados.py) y el precio del día de SEPA."""
+    sys.path.insert(0, AQUI)
+    from curados import CURADOS
+    por_ean = {c["ean"]: c for c in cands}
+    fecha_txt = datetime.date.fromisoformat(fecha).strftime("%d/%m/%Y") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", fecha or "") else fecha
+    out = []
+    for fila in CURADOS:
+        ean, nombre, k, col, acc, r = fila[:6]
+        extra = fila[6] if len(fila) > 6 else {}
+        c = por_ean.get(ean)
+        if not c:
+            print("  (sin datos hoy)", nombre)
+            continue
+        med = c["medianas"]
+        if (c["p10"] and c["p90"] / max(c["p10"], 1) > 2.2) or disparidad(med) > 2.2:
+            print("  (precios muy dispares hoy)", nombre, med)
+            continue
+        tam, cant, uni = tamano(c["desc"], c["cant"], c["unidad"], k)
+        item = {
+            "n": nombre, "d": extra.get("t", tam), "p": int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
+            "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
+                  f"{c['sucursales']:,} sucursales de CABA y GBA · {fecha_txt}").replace(",", "."),
+            "ean": ean,
+        }
+        u = unitario(cant, uni)
+        if u:
+            item["u"] = u
+        if extra.get("libre"):
+            item["diario"] = False
+        out.append(item)
+    out.sort(key=lambda x: x["ean"])
+    return out
 
 
 def agendar(productos):
@@ -514,7 +559,11 @@ def main():
         with open(CAND, "w", encoding="utf-8") as f:
             json.dump(C, f, ensure_ascii=False, separators=(",", ":"))
         print(f"{len(C['candidatos'])} candidatos → {CAND}")
-    productos = curar(C["candidatos"], C["fecha"])
+    productos = desde_curados(C["candidatos"], C["fecha"])
+    if len(productos) < 30:
+        print(f"Solo {len(productos)} curados disponibles; completo con la selección automática")
+        ya = {p["ean"] for p in productos}
+        productos += [p for p in curar(C["candidatos"], C["fecha"]) if p["ean"] not in ya][: 80 - len(productos)]
     if len(productos) < 20:
         sys.exit(f"Muy pocos productos ({len(productos)}); no actualizo el archivo")
     agenda = agendar(productos)

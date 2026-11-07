@@ -3,106 +3,159 @@
  "fuente": "Precios Claros – Base SEPA, Secretaría de Comercio (datos.produccion.gob.ar), CC BY 4.0",
  "agenda": {
   "2026-11-07": {
-   "n": "Past. Tic Tac naranja",
-   "d": "16 g",
-   "p": 1072,
+   "n": "Bizcochuelo Exquisita de chocolate",
+   "d": "540 g",
+   "p": 4905,
    "k": "box",
-   "c": "#8a5aa0",
-   "a": "#fff",
+   "c": "#8B5A2B",
+   "a": "#F2C230",
    "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.643 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "0000078600027"
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.739 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790070432971",
+   "u": [
+    0.54,
+    "kilo"
+   ]
   },
   "2026-11-08": {
-   "n": "Manteca paulina La Paulina",
-   "d": "200 g",
-   "p": 4829,
-   "k": "brick",
-   "c": "#F5E08A",
-   "a": "#3A7BD5",
-   "r": "lacteos",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.604 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790398100088"
-  }
- },
- "productos": [
-  {
-   "n": "Alf.Milka mousse triple",
-   "d": "55 g",
-   "p": 2300,
+   "n": "Chocolate Arcor con leche",
+   "d": "25 g",
+   "p": 1762,
    "k": "bar",
    "c": "#6B3A1E",
    "a": "#fff",
    "r": "golosinas",
-   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 993 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "0000077903785",
-   "diario": false
-  },
+   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.854 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790580607210"
+  }
+ },
+ "productos": [
   {
-   "n": "Alf.torta Terrabusi",
+   "n": "Alfajor Terrabusi torta",
    "d": "70 g",
    "p": 2354,
-   "k": "box",
-   "c": "#E86F8A",
-   "a": "#fff",
-   "r": "almacen",
+   "k": "sleeve",
+   "c": "#1F4FA3",
+   "a": "#F2C230",
+   "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.547 sucursales de CABA y GBA · 07/11/2026",
    "ean": "0000077903860"
   },
   {
-   "n": "Chocolate bloque Shot",
-   "d": "35 g",
-   "p": 2770,
+   "n": "Alfajor triple Pepitos",
+   "d": "57 g",
+   "p": 2309,
+   "k": "sleeve",
+   "c": "#1d1b1a",
+   "a": "#3A7BD5",
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 860 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "0000077915481"
+  },
+  {
+   "n": "Chicles Topline Seven",
+   "d": "14 g",
+   "p": 1456,
+   "k": "sleeve",
+   "c": "#3A7BD5",
+   "a": "#fff",
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.472 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "0000077939753",
+   "diario": false
+  },
+  {
+   "n": "Chocolate Cofler Block",
+   "d": "38 g",
+   "p": 2550,
    "k": "bar",
-   "c": "#6B3A1E",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 928 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "0000077914217"
+   "c": "#1F4FA3",
+   "a": "#F2C230",
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.701 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "0000077953124"
   },
   {
-   "n": "Past. Tic Tac naranja",
-   "d": "16 g",
+   "n": "Tic Tac naranja",
+   "d": "16 ml",
    "p": 1072,
-   "k": "box",
-   "c": "#8a5aa0",
-   "a": "#fff",
-   "r": "almacen",
+   "k": "minibottle",
+   "c": "#FDE3C2",
+   "a": "#F28C28",
+   "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.643 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "0000078600027"
+   "ean": "0000078600027",
+   "diario": false
   },
   {
-   "n": "Chocolate Kinder bueno 11300",
+   "n": "Ferrero Rocher (3 bombones)",
+   "d": "37,5 g",
+   "p": 3634,
+   "k": "box",
+   "c": "#C9A640",
+   "a": "#6B3A1E",
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.621 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "0000078909434"
+  },
+  {
+   "n": "Kinder Bueno",
    "d": "43 g",
    "p": 3245,
-   "k": "bar",
-   "c": "#6B3A1E",
-   "a": "#fff",
-   "r": "almacen",
+   "k": "sleeve",
+   "c": "#fff",
+   "a": "#D23B2E",
+   "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.723 sucursales de CABA y GBA · 07/11/2026",
    "ean": "0000080052760"
   },
   {
-   "n": "Esp gille foamy sens skin Gillette",
-   "d": "179 ml",
-   "p": 9580,
-   "k": "box",
+   "n": "Red Bull en lata",
+   "d": "355 ml",
+   "p": 5010,
+   "k": "can",
+   "c": "#1F4FA3",
+   "a": "#C8D2E0",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.613 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "0000090435225",
+   "u": [
+    0.355,
+    "litro"
+   ]
+  },
+  {
+   "n": "Pasta dental Colgate Triple Acción",
+   "d": "90 g",
+   "p": 4239,
+   "k": "squeeze",
    "c": "#D23B2E",
-   "a": "#F2C230",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.203 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7500435219648"
+   "a": "#fff",
+   "r": "higiene",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.685 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7509546686523"
   },
   {
    "n": "Polvo para hornear Royal",
    "d": "50 g",
    "p": 1840,
-   "k": "box",
-   "c": "#3A7BD5",
+   "k": "tin",
+   "c": "#D23B2E",
    "a": "#fff",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.634 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7622201464882"
+  },
+  {
+   "n": "Galletitas Oreo",
+   "d": "118 g",
+   "p": 2640,
+   "k": "sleeve",
+   "c": "#1F4FA3",
+   "a": "#1d1b1a",
+   "r": "snacks",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.694 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7622201735296"
   },
   {
    "n": "Galletitas Pepitos",
@@ -116,35 +169,58 @@
    "ean": "7622201735906"
   },
   {
-   "n": "Past Halls cherry",
-   "d": "25,2 g",
-   "p": 1151,
-   "k": "box",
-   "c": "#D23B2E",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 970 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7622202247286"
+   "n": "Galletitas Cerealitas",
+   "d": "212 g",
+   "p": 2354,
+   "k": "sleeve",
+   "c": "#3E8E41",
+   "a": "#F2C230",
+   "r": "snacks",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.702 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7622201736033"
   },
   {
-   "n": "Obleas Opera",
-   "d": "220 g",
-   "p": 2967,
+   "n": "Pastillas Halls cherry",
+   "d": "25,2 g",
+   "p": 1151,
    "k": "sleeve",
-   "c": "#D23B2E",
+   "c": "#8E1B3A",
+   "a": "#fff",
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 970 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7622202247286",
+   "diario": false
+  },
+  {
+   "n": "Galletitas Duquesa",
+   "d": "115 g",
+   "p": 1694,
+   "k": "sleeve",
+   "c": "#8E1B3A",
+   "a": "#F5E6C8",
+   "r": "snacks",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.702 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7622300742645"
+  },
+  {
+   "n": "Alfajor Águila minitorta",
+   "d": "69 g",
+   "p": 2368,
+   "k": "sleeve",
+   "c": "#8B5A2B",
    "a": "#F2C230",
    "r": "golosinas",
-   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.728 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790040008175"
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.683 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790040133587"
   },
   {
    "n": "Galletitas Chocolinas",
    "d": "250 g",
    "p": 2824,
    "k": "sleeve",
-   "c": "#1F4FA3",
-   "a": "#8B5A2B",
-   "r": "almacen",
+   "c": "#6B3A1E",
+   "a": "#3A7BD5",
+   "r": "snacks",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.725 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790040143234",
    "u": [
@@ -153,7 +229,22 @@
    ]
   },
   {
-   "n": "Aceite girasol Cocinero",
+   "n": "Galletitas Traviata",
+   "d": "540 g",
+   "p": 3504,
+   "k": "sleeve",
+   "c": "#F2C230",
+   "a": "#D23B2E",
+   "r": "snacks",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.719 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790040144095",
+   "u": [
+    0.54,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Aceite de girasol Cocinero",
    "d": "1,5 L",
    "p": 6962,
    "k": "pet",
@@ -168,26 +259,11 @@
    ]
   },
   {
-   "n": "Fideos Lucchetti mostachol52",
-   "d": "500 g",
-   "p": 1779,
-   "k": "pasta",
-   "c": "#1F4FA3",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.726 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790070336149",
-   "u": [
-    0.5,
-    "kilo"
-   ]
-  },
-  {
    "n": "Tallarines n.º 5 Matarazzo",
    "d": "500 g",
    "p": 2197,
    "k": "pasta",
-   "c": "#1F4FA3",
+   "c": "#2A5DB0",
    "a": "#fff",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.738 sucursales de CABA y GBA · 07/11/2026",
@@ -198,28 +274,28 @@
    ]
   },
   {
-   "n": "Tallarines Don Vicente",
+   "n": "Spaghetti n.º 7 Lucchetti",
    "d": "500 g",
-   "p": 3950,
+   "p": 1759,
    "k": "pasta",
-   "c": "#1F4FA3",
-   "a": "#fff",
+   "c": "#F2C230",
+   "a": "#1F4FA3",
    "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.728 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790070336576",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.725 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790070336385",
    "u": [
     0.5,
     "kilo"
    ]
   },
   {
-   "n": "Bizcochuelo Exquisita chocolate",
+   "n": "Bizcochuelo Exquisita de chocolate",
    "d": "540 g",
    "p": 4905,
    "k": "box",
    "c": "#8B5A2B",
    "a": "#F2C230",
-   "r": "golosinas",
+   "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.739 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790070432971",
    "u": [
@@ -228,7 +304,59 @@
    ]
   },
   {
-   "n": "Sal fina Celusal caja",
+   "n": "Arroz parboil Gallo Oro",
+   "d": "500 g",
+   "p": 1570,
+   "k": "bag",
+   "c": "#F4F1E8",
+   "a": "#D4A017",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.652 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790070433114",
+   "u": [
+    0.5,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Harina leudante Blancaflor",
+   "d": "1 kg",
+   "p": 2294,
+   "k": "bag",
+   "c": "#F5E6C8",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.713 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790070562180"
+  },
+  {
+   "n": "Tapas para empanadas La Salteña (12)",
+   "d": "330 g",
+   "p": 2535,
+   "k": "sleeve",
+   "c": "#F2C230",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.583 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790070622013",
+   "u": [
+    0.33,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Tostadas Riera clásicas",
+   "d": "200 g",
+   "p": 1992,
+   "k": "bag",
+   "c": "#F2C230",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.510 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790071090231"
+  },
+  {
+   "n": "Sal fina Celusal",
    "d": "500 g",
    "p": 1949,
    "k": "box",
@@ -243,37 +371,52 @@
    ]
   },
   {
-   "n": "Lavandina Ayudín original",
+   "n": "Vinagre de alcohol Menoyo",
+   "d": "1 L",
+   "p": 1912,
+   "k": "pet",
+   "c": "#F1EFE6",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.334 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790130000058"
+  },
+  {
+   "n": "Lavandina Ayudín",
    "d": "1 L",
    "p": 1551,
    "k": "jug",
-   "c": "#8a5aa0",
-   "a": "#fff",
+   "c": "#F4F4F4",
+   "a": "#3A7BD5",
    "r": "limpieza",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.728 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790132098459"
   },
   {
-   "n": "Te comun para lavar natural int 50saq La Virginia",
+   "n": "Té La Virginia (50 saquitos)",
    "d": "100 g",
    "p": 2090,
-   "k": "jug",
-   "c": "#3A7BD5",
-   "a": "#fff",
+   "k": "box",
+   "c": "#D23B2E",
+   "a": "#F2C230",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.511 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790150211939"
   },
   {
-   "n": "Esencia Alicante vainilla",
-   "d": "100 ml",
-   "p": 2329,
-   "k": "box",
-   "c": "#D23B2E",
+   "n": "Aceite de oliva Natura",
+   "d": "500 ml",
+   "p": 14900,
+   "k": "bottle",
+   "c": "#7A8F2A",
    "a": "#F2C230",
    "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.721 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790150610305"
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.649 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790272008394",
+   "u": [
+    0.5,
+    "litro"
+   ]
   },
   {
    "n": "Fernet Branca",
@@ -291,7 +434,7 @@
    ]
   },
   {
-   "n": "Pf Lays clasicas",
+   "n": "Papas fritas Lay's clásicas",
    "d": "85 g",
    "p": 4200,
    "k": "bag",
@@ -302,74 +445,73 @@
    "ean": "7790310985458"
   },
   {
-   "n": "Manteca paulina La Paulina",
-   "d": "200 g",
-   "p": 4829,
-   "k": "brick",
-   "c": "#F5E08A",
-   "a": "#3A7BD5",
-   "r": "lacteos",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.604 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790398100088"
-  },
-  {
-   "n": "Ceramicol autobrillo inc",
-   "d": "450 ml",
-   "p": 4689,
-   "k": "box",
+   "n": "Paliqueso Pehuamar",
+   "d": "165 g",
+   "p": 3800,
+   "k": "bag",
    "c": "#F28C28",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.359 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790520995650",
-   "u": [
-    0.45,
-    "litro"
-   ]
+   "a": "#1F4FA3",
+   "r": "snacks",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.697 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790310985526"
   },
   {
-   "n": "Rep Glade aut lavanda &v",
-   "d": "270 ml",
-   "p": 10690,
+   "n": "Vino Toro tinto (en caja)",
+   "d": "1 L",
+   "p": 2700,
+   "k": "tetra",
+   "c": "#6B1E2E",
+   "a": "#F2C230",
+   "r": "alcohol",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.250 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790314063824"
+  },
+  {
+   "n": "Yerba Taragüí",
+   "d": "1 kg",
+   "p": 5584,
+   "k": "yerba",
+   "c": "#D23B2E",
+   "a": "#3E8E41",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.722 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790387013610"
+  },
+  {
+   "n": "Yerba Mañanita",
+   "d": "1 kg",
+   "p": 5610,
+   "k": "yerba",
+   "c": "#F2C230",
+   "a": "#3E8E41",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.716 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790387015317"
+  },
+  {
+   "n": "Mate cocido Taragüí",
+   "d": "150 g",
+   "p": 2640,
    "k": "box",
-   "c": "#7EC8E3",
-   "a": "#fff",
+   "c": "#D23B2E",
+   "a": "#3E8E41",
    "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.136 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790520996015",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.716 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790387800067"
+  },
+  {
+   "n": "Desinfectante Lysoform en aerosol",
+   "d": "360 ml",
+   "p": 5415,
+   "k": "aerosol",
+   "c": "#fff",
+   "a": "#1F4FA3",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.808 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790520995285",
    "u": [
-    0.27,
+    0.36,
     "litro"
-   ]
-  },
-  {
-   "n": "Café planta café mol La Planta De Café.",
-   "d": "250 g",
-   "p": 8076,
-   "k": "bag",
-   "c": "#4B2E1E",
-   "a": "#F2C230",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.708 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790550000157",
-   "u": [
-    0.25,
-    "kilo"
-   ]
-  },
-  {
-   "n": "Café super Cabrales tosta",
-   "d": "250 g",
-   "p": 15932,
-   "k": "bag",
-   "c": "#4B2E1E",
-   "a": "#F2C230",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.721 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790550022234",
-   "u": [
-    0.25,
-    "kilo"
    ]
   },
   {
@@ -377,12 +519,67 @@
    "d": "50 g",
    "p": 2200,
    "k": "pouch",
-   "c": "#E86F8A",
+   "c": "#3A7BD5",
    "a": "#F2C230",
    "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.857 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790580056001",
-   "diario": false
+   "ean": "7790580056001"
+  },
+  {
+   "n": "Atún al natural La Campagnola",
+   "d": "170 g",
+   "p": 6029,
+   "k": "tin",
+   "c": "#D9D9D9",
+   "a": "#1F4FA3",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.717 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790580131364"
+  },
+  {
+   "n": "Arvejas Arcor (lata)",
+   "d": "300 g",
+   "p": 1322,
+   "k": "tin",
+   "c": "#D9D9D9",
+   "a": "#3E8E41",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.695 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790580132392",
+   "u": [
+    0.3,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Polenta Prestopronta",
+   "d": "490 g",
+   "p": 1789,
+   "k": "box",
+   "c": "#F2C230",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.679 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790580138738",
+   "u": [
+    0.49,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Puré de tomate La Campagnola",
+   "d": "530 ml",
+   "p": 1405,
+   "k": "tetra",
+   "c": "#D23B2E",
+   "a": "#3E8E41",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.726 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790580138868",
+   "u": [
+    0.53,
+    "litro"
+   ]
   },
   {
    "n": "Gomitas Mogul ositos",
@@ -393,38 +590,52 @@
    "a": "#F2C230",
    "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 12 cadenas y 1.835 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790580199913",
-   "diario": false
+   "ean": "7790580199913"
   },
   {
-   "n": "Chocolate con leche Arcor",
+   "n": "Tomates perita Arcor (lata)",
+   "d": "400 g",
+   "p": 1582,
+   "k": "tin",
+   "c": "#D9D9D9",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.578 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790580567903",
+   "u": [
+    0.4,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Chocolate Arcor con leche",
    "d": "25 g",
    "p": 1762,
    "k": "bar",
    "c": "#6B3A1E",
    "a": "#fff",
-   "r": "lacteos",
+   "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.854 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790580607210"
   },
   {
-   "n": "Galletitas Saladix jamón",
+   "n": "Galletitas Saladix sabor jamón",
    "d": "100 g",
    "p": 1900,
-   "k": "sleeve",
-   "c": "#1F4FA3",
-   "a": "#8B5A2B",
+   "k": "box",
+   "c": "#D23B2E",
+   "a": "#F2C230",
    "r": "snacks",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.728 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790580716707"
   },
   {
-   "n": "Hamb clásico x4 Paty",
+   "n": "Hamburguesas Paty (4)",
    "d": "320 g",
    "p": 9609,
    "k": "box",
-   "c": "#F2C230",
-   "a": "#fff",
+   "c": "#D23B2E",
+   "a": "#F2C230",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.723 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790670050650",
@@ -434,27 +645,108 @@
    ]
   },
   {
-   "n": "Salchi x 6 Vienissima",
+   "n": "Salchichas Vienissima (6)",
    "d": "230 g",
    "p": 3299,
-   "k": "box",
-   "c": "#E86F8A",
-   "a": "#fff",
+   "k": "sleeve",
+   "c": "#D23B2E",
+   "a": "#F2C230",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.664 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790670052401"
   },
   {
-   "n": "Levadura Calsa familiar",
-   "d": "50 g",
-   "p": 625,
-   "k": "box",
-   "c": "#E86F8A",
+   "n": "Crema para cocinar La Serenísima",
+   "d": "330 ml",
+   "p": 5340,
+   "k": "tetra",
+   "c": "#fff",
+   "a": "#1F4FA3",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.699 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790742141705",
+   "u": [
+    0.33,
+    "litro"
+   ]
+  },
+  {
+   "n": "Leche La Serenísima entera (sachet)",
+   "d": "1 L",
+   "p": 2050,
+   "k": "pouch",
+   "c": "#fff",
+   "a": "#3A7BD5",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.640 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790742348302"
+  },
+  {
+   "n": "Leche La Serenísima larga vida",
+   "d": "1 L",
+   "p": 3030,
+   "k": "tetra",
+   "c": "#fff",
+   "a": "#3A7BD5",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.727 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790742363008"
+  },
+  {
+   "n": "Queso untable Finlandia",
+   "d": "290 g",
+   "p": 5929,
+   "k": "cup",
+   "c": "#fff",
+   "a": "#1F4FA3",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.539 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790742373205",
+   "u": [
+    0.29,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Dulce de leche La Serenísima",
+   "d": "400 g",
+   "p": 4179,
+   "k": "jar",
+   "c": "#F5E6C8",
+   "a": "#3A7BD5",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.729 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790742625304",
+   "u": [
+    0.4,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Coca-Cola en lata",
+   "d": "354 ml",
+   "p": 2700,
+   "k": "can",
+   "c": "#C8102E",
    "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.569 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7790813110401",
-   "diario": false
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.900 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790895000232",
+   "u": [
+    0.354,
+    "litro"
+   ]
+  },
+  {
+   "n": "Cepita multifruta (cajita)",
+   "d": "200 ml",
+   "p": 1300,
+   "k": "minitetra",
+   "c": "#F28C28",
+   "a": "#3E8E41",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 11 cadenas y 1.892 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790895000737"
   },
   {
    "n": "Coca-Cola",
@@ -472,7 +764,22 @@
    ]
   },
   {
-   "n": "Powerade mountain blast",
+   "n": "Agua tónica Schweppes",
+   "d": "1,5 L",
+   "p": 5000,
+   "k": "pet",
+   "c": "#F2E14A",
+   "a": "#1d1b1a",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.719 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790895006715",
+   "u": [
+    1.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Powerade Mountain Blast",
    "d": "500 ml",
    "p": 2200,
    "k": "pet",
@@ -487,12 +794,12 @@
    ]
   },
   {
-   "n": "Aquarius manzana",
+   "n": "Aquarius de manzana",
    "d": "1,5 L",
    "p": 3200,
    "k": "pet",
    "c": "#BFE3F2",
-   "a": "#3A7BD5",
+   "a": "#7DBE3A",
    "r": "bebidas",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.808 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790895640483",
@@ -502,23 +809,49 @@
    ]
   },
   {
-   "n": "Cepita manzana trbk",
+   "n": "Ades de naranja",
+   "d": "1 L",
+   "p": 3649,
+   "k": "tetra",
+   "c": "#F28C28",
+   "a": "#fff",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.270 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790895643842"
+  },
+  {
+   "n": "Jugo Cepita de manzana",
    "d": "1 L",
    "p": 3450,
    "k": "tetra",
-   "c": "#F28C28",
-   "a": "#3E8E41",
+   "c": "#7DBE3A",
+   "a": "#D23B2E",
    "r": "bebidas",
    "s": "Precios Claros (SEPA) · mediana de 12 cadenas y 1.669 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790895647017"
   },
   {
-   "n": "Aperitivo Terma lim cero",
+   "n": "Gancia Americano",
+   "d": "950 ml",
+   "p": 10599,
+   "k": "bottle",
+   "c": "#B5462E",
+   "a": "#F2C230",
+   "r": "alcohol",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.724 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7790950000160",
+   "u": [
+    0.95,
+    "litro"
+   ]
+  },
+  {
+   "n": "Terma limón (sin azúcar)",
    "d": "1,35 L",
    "p": 2990,
-   "k": "bottle",
-   "c": "#3E8E41",
-   "a": "#F2C230",
+   "k": "pet",
+   "c": "#D7E86A",
+   "a": "#3E8E41",
    "r": "alcohol",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.733 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7790950133288",
@@ -528,11 +861,11 @@
    ]
   },
   {
-   "n": "Detergente Magistral ultra limón",
+   "n": "Detergente Magistral limón",
    "d": "300 ml",
    "p": 3400,
-   "k": "jug",
-   "c": "#F2E14A",
+   "k": "squeeze",
+   "c": "#E8E25A",
    "a": "#3E8E41",
    "r": "limpieza",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.736 sucursales de CABA y GBA · 07/11/2026",
@@ -543,41 +876,11 @@
    ]
   },
   {
-   "n": "Vanish pt oxi gel",
-   "d": "400 ml",
-   "p": 3350,
-   "k": "box",
-   "c": "#F28C28",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.127 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791130001762",
-   "u": [
-    0.4,
-    "litro"
-   ]
-  },
-  {
-   "n": "Procenex marina",
-   "d": "900 ml",
-   "p": 2620,
-   "k": "box",
-   "c": "#8B5A2B",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.721 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791130683661",
-   "u": [
-    0.9,
-    "litro"
-   ]
-  },
-  {
-   "n": "Aperitivo Cynar",
+   "n": "Cynar",
    "d": "750 ml",
    "p": 14136,
    "k": "bottle",
-   "c": "#3E8E41",
+   "c": "#2F5A2F",
    "a": "#F2C230",
    "r": "alcohol",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.742 sucursales de CABA y GBA · 07/11/2026",
@@ -588,22 +891,22 @@
    ]
   },
   {
-   "n": "Ala líquido para lavar ropa b e ecola",
-   "d": "800 ml",
-   "p": 4033,
-   "k": "jug",
-   "c": "#3A7BD5",
-   "a": "#fff",
-   "r": "limpieza",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.717 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791290792012",
+   "n": "Gin Gordon's",
+   "d": "700 ml",
+   "p": 19500,
+   "k": "bottle",
+   "c": "#CFE8D4",
+   "a": "#D23B2E",
+   "r": "alcohol",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.717 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7791250002267",
    "u": [
-    0.8,
+    0.7,
     "litro"
    ]
   },
   {
-   "n": "Jabón líquido Skip BioEnzimas",
+   "n": "Jabón líquido Skip para ropa",
    "d": "800 ml",
    "p": 4747,
    "k": "jug",
@@ -618,12 +921,12 @@
    ]
   },
   {
-   "n": "Cif crema bioactive original",
+   "n": "Cif crema",
    "d": "500 ml",
    "p": 4626,
    "k": "squeeze",
    "c": "#F2C230",
-   "a": "#D23B2E",
+   "a": "#3A7BD5",
    "r": "limpieza",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.816 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7791290794221",
@@ -633,43 +936,17 @@
    ]
   },
   {
-   "n": "Desodorante Axe Marine",
-   "d": "150 ml",
-   "p": 4977,
-   "k": "aerosol",
-   "c": "#2B2B2B",
-   "a": "#3A7BD5",
-   "r": "higiene",
-   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.943 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791293043791"
-  },
-  {
-   "n": "Acondicionador Sedal crema balance",
+   "n": "Shampoo Sedal crema balance",
    "d": "340 ml",
    "p": 6437,
    "k": "squeeze",
    "c": "#F28CB0",
    "a": "#fff",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.928 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791293045948",
+   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.923 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7791293045740",
    "u": [
     0.34,
-    "litro"
-   ]
-  },
-  {
-   "n": "Shampoo Dove recon completa su",
-   "d": "400 ml",
-   "p": 10814,
-   "k": "squeeze",
-   "c": "#F28CB0",
-   "a": "#fff",
-   "r": "higiene",
-   "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.900 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791293047102",
-   "u": [
-    0.4,
     "litro"
    ]
   },
@@ -685,26 +962,15 @@
    "ean": "7791293049502"
   },
   {
-   "n": "Yogur firme Ser vainilla",
+   "n": "Yogur firme Ser de vainilla",
    "d": "190 g",
    "p": 3075,
    "k": "cup",
    "c": "#fff",
-   "a": "#8B5A2B",
+   "a": "#7DBE3A",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.732 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7791337007246"
-  },
-  {
-   "n": "Chocolatada Cindor",
-   "d": "200 ml",
-   "p": 3014,
-   "k": "carton",
-   "c": "#6B3A1E",
-   "a": "#F2C230",
-   "r": "lacteos",
-   "s": "Precios Claros (SEPA) · mediana de 12 cadenas y 1.914 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791337007260"
   },
   {
    "n": "Actimel multifruta",
@@ -718,79 +984,90 @@
    "ean": "7791337007819"
   },
   {
+   "n": "Danette de dulce de leche",
+   "d": "100 g",
+   "p": 2939,
+   "k": "cup",
+   "c": "#fff",
+   "a": "#8B5A2B",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.731 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7791337008106"
+  },
+  {
    "n": "Serenito con Rocklets",
    "d": "120 g",
    "p": 3949,
    "k": "cup",
    "c": "#fff",
    "a": "#8B5A2B",
-   "r": "golosinas",
+   "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.743 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7791337008472"
   },
   {
-   "n": "Margarina Danica soft",
-   "d": "200 g",
-   "p": 2822,
-   "k": "box",
-   "c": "#D23B2E",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.657 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791620187761"
+   "n": "Danonino botellita de frutilla",
+   "d": "185 ml",
+   "p": 3390,
+   "k": "minibottle",
+   "c": "#FBD0DC",
+   "a": "#E86F8A",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.731 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7791337008694"
   },
   {
-   "n": "Vino sta julia tinto dulc Santa Julia",
+   "n": "Queso crema Casancrem",
+   "d": "290 g",
+   "p": 5995,
+   "k": "cup",
+   "c": "#fff",
+   "a": "#3A7BD5",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.640 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7791337061361",
+   "u": [
+    0.29,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Vino Santa Julia Malbec",
    "d": "750 ml",
-   "p": 8500,
+   "p": 6590,
    "k": "bottle",
-   "c": "#6B1E2E",
-   "a": "#F2C230",
+   "c": "#4A1020",
+   "a": "#3A7BD5",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.706 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791728248265",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.643 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7791728247114",
    "u": [
     0.75,
     "litro"
    ]
   },
   {
-   "n": "Seven Up sin azúcar",
+   "n": "Pepsi",
    "d": "1,5 L",
    "p": 3950,
-   "k": "bag",
-   "c": "#fff",
+   "k": "pet",
+   "c": "#1F4FA3",
    "a": "#1F4FA3",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.708 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791813434412",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.703 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7791813888413",
    "u": [
     1.5,
     "litro"
    ]
   },
   {
-   "n": "Mayonesa Natura",
-   "d": "500 g",
-   "p": 3042,
-   "k": "pouch",
-   "c": "#F7E3A1",
-   "a": "#3A7BD5",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.733 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7791866001364",
-   "u": [
-    0.5,
-    "kilo"
-   ]
-  },
-  {
-   "n": "Gatorade cool blue",
+   "n": "Gatorade Cool Blue",
    "d": "1,25 L",
    "p": 3851,
    "k": "pet",
-   "c": "#3A7BD5",
-   "a": "#1d1b1a",
+   "c": "#5BB8E8",
+   "a": "#F28C28",
    "r": "bebidas",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.706 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7792170110704",
@@ -800,59 +1077,18 @@
    ]
   },
   {
-   "n": "Harina Cañuelas 000 ur vi",
-   "d": "1 kg",
-   "p": 1180,
-   "k": "bag",
-   "c": "#F5E6C8",
-   "a": "#D23B2E",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.542 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7792180139320"
+   "n": "Cerveza Quilmes Cristal",
+   "d": "1 L",
+   "p": 4649,
+   "k": "bottle",
+   "c": "#7A4E1D",
+   "a": "#1F4FA3",
+   "r": "alcohol",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.640 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7792798007387"
   },
   {
-   "n": "Bizcochuelo Mama Cocina vainilla",
-   "d": "540 g",
-   "p": 3340,
-   "k": "box",
-   "c": "#8B5A2B",
-   "a": "#F2C230",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.512 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7792180139603",
-   "u": [
-    0.54,
-    "kilo"
-   ]
-  },
-  {
-   "n": "Harina Pureza leudante ur",
-   "d": "1 kg",
-   "p": 1999,
-   "k": "bag",
-   "c": "#F5E6C8",
-   "a": "#D23B2E",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.689 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7792180140708"
-  },
-  {
-   "n": "Agua eco/andes con gas Eco De Los Andes",
-   "d": "500 ml",
-   "p": 2100,
-   "k": "pet",
-   "c": "#BFE3F2",
-   "a": "#3A7BD5",
-   "r": "bebidas",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 479 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7792799000035",
-   "u": [
-    0.5,
-    "litro"
-   ]
-  },
-  {
-   "n": "Agua Glaciar",
+   "n": "Agua mineral Glaciar",
    "d": "2 L",
    "p": 3499,
    "k": "pet",
@@ -867,11 +1103,11 @@
    ]
   },
   {
-   "n": "Limpiador desinfectante Poett Primavera",
+   "n": "Limpiador Poett primavera",
    "d": "900 ml",
    "p": 2760,
    "k": "jug",
-   "c": "#3A7BD5",
+   "c": "#E7A6D6",
    "a": "#fff",
    "r": "limpieza",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.732 sucursales de CABA y GBA · 07/11/2026",
@@ -882,26 +1118,11 @@
    ]
   },
   {
-   "n": "Puré de tomate salsati Salsatti",
-   "d": "520 g",
-   "p": 1533,
-   "k": "box",
-   "c": "#D23B2E",
-   "a": "#F2C230",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.638 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7793360000157",
-   "u": [
-    0.52,
-    "kilo"
-   ]
-  },
-  {
-   "n": "Mermelada BC durazno",
+   "n": "Mermelada BC de durazno",
    "d": "390 g",
    "p": 4163,
    "k": "jar",
-   "c": "#E86F8A",
+   "c": "#F7A928",
    "a": "#D23B2E",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.729 sucursales de CABA y GBA · 07/11/2026",
@@ -916,7 +1137,7 @@
    "d": "1 kg",
    "p": 5199,
    "k": "yerba",
-   "c": "#F2C230",
+   "c": "#3A7BD5",
    "a": "#3E8E41",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.655 sucursales de CABA y GBA · 07/11/2026",
@@ -934,12 +1155,27 @@
    "ean": "7793940052002"
   },
   {
-   "n": "Ketchup Hellmanns",
+   "n": "Mayonesa Hellmann's",
+   "d": "475 g",
+   "p": 3089,
+   "k": "pouch",
+   "c": "#fff",
+   "a": "#1F4FA3",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.714 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7794000006072",
+   "u": [
+    0.475,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Ketchup Hellmann's",
    "d": "500 g",
    "p": 4698,
    "k": "squeeze",
-   "c": "#F2C230",
-   "a": "#D23B2E",
+   "c": "#D23B2E",
+   "a": "#fff",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.636 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7794000006164",
@@ -949,7 +1185,7 @@
    ]
   },
   {
-   "n": "Mostaza Savora original",
+   "n": "Mostaza Savora",
    "d": "250 g",
    "p": 1890,
    "k": "squeeze",
@@ -964,49 +1200,38 @@
    ]
   },
   {
-   "n": "Caldo Knorr galletitas x 12",
+   "n": "Maizena",
+   "d": "500 g",
+   "p": 4269,
+   "k": "box",
+   "c": "#F2C230",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.695 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7794000007468",
+   "u": [
+    0.5,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Caldo Knorr de gallina (12 cubos)",
    "d": "114 g",
    "p": 3192,
-   "k": "sleeve",
-   "c": "#1F4FA3",
-   "a": "#8B5A2B",
+   "k": "box",
+   "c": "#F2C230",
+   "a": "#3E8E41",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.711 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7794000008540"
   },
   {
-   "n": "Vino dv Catena caber malb",
-   "d": "750 ml",
-   "p": 23699,
-   "k": "bottle",
-   "c": "#6B1E2E",
-   "a": "#F2C230",
-   "r": "alcohol",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.361 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7794450090492",
-   "u": [
-    0.75,
-    "litro"
-   ]
-  },
-  {
-   "n": "Manteca Tonadita",
-   "d": "200 g",
-   "p": 4399,
-   "k": "brick",
-   "c": "#F5E08A",
-   "a": "#3A7BD5",
-   "r": "lacteos",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.729 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "7798060850026"
-  },
-  {
-   "n": "Levite naranja",
+   "n": "Levité de naranja",
    "d": "500 ml",
    "p": 2205,
-   "k": "tetra",
-   "c": "#F28C28",
-   "a": "#3E8E41",
+   "k": "pet",
+   "c": "#FDE3C2",
+   "a": "#F28C28",
    "r": "bebidas",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.347 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7798062548655",
@@ -1016,12 +1241,12 @@
    ]
   },
   {
-   "n": "Vino Portillo malbec",
+   "n": "Vino Portillo Malbec",
    "d": "750 ml",
    "p": 6990,
    "k": "bottle",
-   "c": "#6B1E2E",
-   "a": "#F2C230",
+   "c": "#4A1020",
+   "a": "#F5E6C8",
    "r": "alcohol",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.742 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7798074864675",
@@ -1031,23 +1256,38 @@
    ]
   },
   {
-   "n": "Citric naranja",
+   "n": "Jugo exprimido Citric de naranja",
    "d": "1 L",
    "p": 6150,
-   "k": "box",
-   "c": "#D23B2E",
-   "a": "#fff",
-   "r": "almacen",
+   "k": "pet",
+   "c": "#F7A928",
+   "a": "#3E8E41",
+   "r": "bebidas",
    "s": "Precios Claros (SEPA) · mediana de 11 cadenas y 1.725 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7798085681834"
   },
   {
-   "n": "Agua Villavicencio",
+   "n": "Monster Energy",
+   "d": "473 ml",
+   "p": 3600,
+   "k": "can",
+   "c": "#1d1b1a",
+   "a": "#7DD13A",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.602 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7798422620014",
+   "u": [
+    0.473,
+    "litro"
+   ]
+  },
+  {
+   "n": "Agua mineral Villavicencio",
    "d": "2 L",
    "p": 3199,
    "k": "pet",
    "c": "#BFE3F2",
-   "a": "#3A7BD5",
+   "a": "#1F4FA3",
    "r": "bebidas",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.721 sucursales de CABA y GBA · 07/11/2026",
    "ean": "7799155000197",
@@ -1057,18 +1297,44 @@
    ]
   },
   {
-   "n": "Crema dep Veet sensible",
-   "d": "100 ml",
-   "p": 10145,
-   "k": "box",
+   "n": "Kit Kat",
+   "d": "41,5 g",
+   "p": 2795,
+   "k": "bar",
    "c": "#D23B2E",
    "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.282 sucursales de CABA y GBA · 07/11/2026",
-   "ean": "8002990292139"
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.325 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7891000248799"
   },
   {
-   "n": "Puré Maggi de papas",
+   "n": "Jabón Dove",
+   "d": "90 g",
+   "p": 2739,
+   "k": "box",
+   "c": "#fff",
+   "a": "#3A7BD5",
+   "r": "higiene",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.733 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7891150075382"
+  },
+  {
+   "n": "Nutella",
+   "d": "350 g",
+   "p": 10998,
+   "k": "jar",
+   "c": "#5A3420",
+   "a": "#fff",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.628 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "7898024394181",
+   "u": [
+    0.35,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Puré de papas Maggi",
    "d": "125 g",
    "p": 3190,
    "k": "box",
@@ -1077,6 +1343,17 @@
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.733 sucursales de CABA y GBA · 07/11/2026",
    "ean": "8445290993021"
+  },
+  {
+   "n": "Café Nescafé Dolca (frasco)",
+   "d": "170 g",
+   "p": 14910,
+   "k": "jar",
+   "c": "#4B2E1E",
+   "a": "#D23B2E",
+   "r": "almacen",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.647 sucursales de CABA y GBA · 07/11/2026",
+   "ean": "8445291082137"
   }
  ]
 }
