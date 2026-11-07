@@ -30,7 +30,7 @@
   },
   {
    "n": "Chocolatada Cindor",
-   "d": "1000 ml · Cindor",
+   "d": "1 L · Cindor",
    "p": 8210,
    "k": "carton",
    "c": "#F2C230",
@@ -172,7 +172,7 @@
    ]
   },
   {
-   "n": "Chocolate. con Leche Arcor",
+   "n": "Chocolate con Leche Arcor",
    "d": "25 g · Arcor",
    "p": 1650,
    "k": "box",
@@ -225,7 +225,7 @@
   },
   {
    "n": "Aquarius Manzana",
-   "d": "1500 ml · Aquarius",
+   "d": "1,5 L · Aquarius",
    "p": 3100,
    "k": "bottle",
    "c": "#3A7BD5",
@@ -238,7 +238,7 @@
   },
   {
    "n": "Aquarius Pomelo",
-   "d": "1500 ml · Aquarius",
+   "d": "1,5 L · Aquarius",
    "p": 3100,
    "k": "bottle",
    "c": "#F28C28",
@@ -263,7 +263,7 @@
    ]
   },
   {
-   "n": "Jabón Líquidoala Para Diluir Ecolava",
+   "n": "Jabón Líquido Ala Para Diluir Ecolava",
    "d": "500 ml · Ala",
    "p": 11990,
    "k": "bottle",
@@ -303,7 +303,7 @@
   },
   {
    "n": "Sprite",
-   "d": "2250 ml · Sprite",
+   "d": "2,25 L · Sprite",
    "p": 6100,
    "k": "bottle",
    "c": "#D23B2E",
@@ -316,7 +316,7 @@
   },
   {
    "n": "Coca Cola",
-   "d": "2250 ml · Coca Cola",
+   "d": "2,25 L · Coca Cola",
    "p": 6100,
    "k": "bottle",
    "c": "#8B5A2B",
@@ -394,16 +394,12 @@
   },
   {
    "n": "Cafe Saquitos Sensaciones Sint",
-   "d": "5 g · Sensaciones",
+   "d": "Sensaciones",
    "p": 6000,
    "k": "bag",
    "c": "#7EC8E3",
    "s": "SEPA – mediana de 1741 sucursales de CABA y GBA · 2026-11-07",
-   "ean": "7792360094968",
-   "u": [
-    0.005,
-    "kilo"
-   ]
+   "ean": "7792360094968"
   },
   {
    "n": "Bizcochuelo Exquisita Chocolate",
@@ -524,7 +520,7 @@
   },
   {
    "n": "Aceite Girasol Cocinero",
-   "d": "1500 ml · Cocinero",
+   "d": "1,5 L · Cocinero",
    "p": 6925,
    "k": "bottle",
    "c": "#8B5A2B",
@@ -680,7 +676,7 @@
   },
   {
    "n": "Aceite Girasol Canuelas",
-   "d": "1500 ml · Cañuelas",
+   "d": "1,5 L · Cañuelas",
    "p": 6985,
    "k": "bottle",
    "c": "#1F4FA3",
@@ -732,7 +728,7 @@
   },
   {
    "n": "Agua Glaciar",
-   "d": "2000 ml · Glaciar",
+   "d": "2 L · Glaciar",
    "p": 3496,
    "k": "bottle",
    "c": "#E86F8A",
@@ -771,7 +767,7 @@
   },
   {
    "n": "Ades Manzana",
-   "d": "1000 ml · Ades",
+   "d": "1 L · Ades",
    "p": 3650,
    "k": "box",
    "c": "#8B5A2B",
