@@ -124,14 +124,14 @@ KINDS = [
     (r"yerba|arroz|az[uú]car|harina|caf[eé]|polenta|sal |lentej|porot|galletit|papas fritas", "bag"),
 ]
 ABREV = [
-    (r"\bantitrans?\.?\b|\bantitr\.?\b", "Antitranspirante"), (r"\bdeo\.?\b", "Desodorante"),
-    (r"\bsh\.?\b", "Shampoo"), (r"\baco?\.?\b", "Acondicionador"), (r"\br-on\b", "Roll-on"),
-    (r"\bcaram\.?\b", "Caramelos"), (r"\bchoc\.?\b", "Chocolate"), (r"\bfid\.?\b", "Fideos"),
-    (r"\bbizc\.?\b", "Bizcochuelo"), (r"\bdet\.?\b", "Detergente"), (r"\bjab\.?\s?liq\.?", "Jabón líquido"),
-    (r"\baer\.?\b", "Aerosol"), (r"\bcr\.?\b", "Crema"), (r"\bliq\.?\b", "Líquido"), (r"\blv\.?\b", "Lavar"),
-    (r"\bsaq\.?\b", "Saquitos"), (r"\bp/dil\.?\b", "para diluir"), (r"\bdesinf\.?\b", "Desinfectante"),
-    (r"\bgall\.?\b|\bgallet\.?\b", "Galletitas"), (r"\bmerm\.?\b", "Mermelada"), (r"\bmayon\.?\b", "Mayonesa"),
-    (r"\bdl\b|\bdulce de l\.?\b", "Dulce de leche"), (r"\bpap\.?\s?hig\.?", "Papel higiénico"),
+    (r"\bantitrans?\.?\b|\bantitr\b\.?", "Antitranspirante"), (r"\bdeo\b\.?", "Desodorante"),
+    (r"\bsh\b\.?", "Shampoo"), (r"\baco?\b\.?", "Acondicionador"), (r"\br-on\b", "Roll-on"),
+    (r"\bcaram\b\.?", "Caramelos"), (r"\bchoc\b\.?", "Chocolate"), (r"\bfid\b\.?", "Fideos"),
+    (r"\bbizc\b\.?", "Bizcochuelo"), (r"\bdet\b\.?", "Detergente"), (r"\bjab\.?\s?liq\.?\s?", "Jabón líquido "),
+    (r"\baer\b\.?", "Aerosol"), (r"\bcr\b\.?", "Crema"), (r"\bliq\b\.?", "Líquido"), (r"\blv\b\.?", "Lavar"),
+    (r"\bsaq\b\.?", "Saquitos"), (r"\bp/dil\b\.?", "para diluir"), (r"\bdesinf\b\.?", "Desinfectante"),
+    (r"\bgall\.?\b|\bgallet\b\.?", "Galletitas"), (r"\bmerm\b\.?", "Mermelada"), (r"\bmayon\b\.?", "Mayonesa"),
+    (r"\bdl\b|\bdulce de l\b\.?", "Dulce de leche"), (r"\bpap\.?\s?hig\.?", "Papel higiénico"),
 ]
 EXCLUIR = r"carefree|toa\b|toall|\bprot\b|protector|nosotras|siempre lib|ladysoft|afeit|venus|gillette|cotonete|algod|nutrilon|nutribaby|vital|pa[ñn]al|preservativ|tampon|\bob\b|cynar|aperitivo|vino|cerveza|fernet|whisky|vodka|pato|pastilla"
 GRUPOS = [
@@ -153,7 +153,7 @@ def expandir(s):
     s = re.sub(r"\s+x\s*\d+[.,]?\d*\s*(ml|cc|gr?|kg|lt?|un)\b.*$", "", s, flags=re.I)
     for patron, rep_ in ABREV:
         s = re.sub(patron, rep_, s, flags=re.I)
-    return s
+    return re.sub(r"\\s+", " ", s).strip()
 
 
 def grupo(desc):
@@ -171,8 +171,12 @@ def tamano(desc, cant, unidad):
     if cant <= 0:
         return "", 0, ""
     u = {"g": "gr", "grs": "gr", "grm": "gr", "l": "lt", "lts": "lt", "litro": "lt", "kgs": "kg", "kilo": "kg", "cm3": "ml", "cc": "ml"}.get(unidad, unidad)
-    if (u == "ml" and cant < 10) or (u == "gr" and cant < 5):
+    if (u == "ml" and cant < 10) or (u == "gr" and cant < 20):
         return "", 0, ""
+    if u == "ml" and cant >= 1000:
+        u, cant = "lt", cant / 1000
+    if u == "gr" and cant >= 1000:
+        u, cant = "kg", cant / 1000
     txt = {"gr": f"{cant:g} g", "kg": f"{cant:g} kg".replace(".", ","), "ml": f"{cant:g} ml", "lt": f"{cant:g} L".replace(".", ",")}.get(u, "")
     return txt, cant, u
 
