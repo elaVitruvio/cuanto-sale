@@ -2,7 +2,7 @@ name: Actualizar precios (SEPA)
 
 on:
   schedule:
-    - cron: "23 15 * * *"   # todos los días 12:23 de Argentina
+    - cron: "5 6 * * *"     # todos los días 03:05 de Argentina (deja agendado hoy y mañana)
   workflow_dispatch: {}      # botón para correrlo a mano
 
 permissions:
@@ -17,12 +17,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Bajar SEPA y generar data/productos.json
+      - name: Bajar SEPA, curar productos y agendar el del día
         run: python scripts/actualizar_precios.py
       - name: Guardar cambios
         run: |
           git config user.name "precios-bot"
           git config user.email "precios-bot@users.noreply.github.com"
-          git add data/productos.json
+          git add data/productos.json data/candidatos.json data/historial.json
           git diff --cached --quiet || git commit -m "Precios del día"
           git push
