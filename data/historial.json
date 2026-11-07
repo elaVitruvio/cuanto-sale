@@ -7,7 +7,7 @@
   "c": "#8B5A2B",
   "a": "#F2C230",
   "r": "almacen",
-  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.739 sucursales de CABA y GBA · 07/11/2026",
+  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.739 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
   "ean": "7790070432971",
   "u": [
    0.54,
@@ -15,14 +15,33 @@
   ]
  },
  "2026-11-08": {
-  "n": "Chocolate Arcor con leche",
-  "d": "25 g",
-  "p": 1762,
-  "k": "bar",
-  "c": "#6B3A1E",
-  "a": "#fff",
-  "r": "golosinas",
-  "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.854 sucursales de CABA y GBA · 07/11/2026",
-  "ean": "7790580607210"
+  "n": "Gin Gordon's",
+  "d": "700 ml",
+  "p": 19500,
+  "k": "bottle",
+  "c": "#CFE8D4",
+  "a": "#D23B2E",
+  "r": "alcohol",
+  "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.717 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+  "ean": "7791250002267",
+  "u": [
+   0.7,
+   "litro"
+  ]
+ },
+ "2026-11-09": {
+  "n": "Polenta Prestopronta",
+  "d": "490 g",
+  "p": 1769,
+  "k": "box",
+  "c": "#F2C230",
+  "a": "#D23B2E",
+  "r": "almacen",
+  "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.679 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+  "ean": "7790580138738",
+  "u": [
+   0.49,
+   "kilo"
+  ]
  }
 }

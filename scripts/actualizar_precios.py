@@ -460,7 +460,7 @@ def curar(cands, fecha):
             "k": k, "c": col, "a": acc,
             "r": r,
             "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
-                  f"{c['sucursales']:,} sucursales de CABA y GBA · {fecha_txt}").replace(",", "."),
+                  f"{c['sucursales']:,} sucursales de CABA y provincia de Bs. As. · {fecha_txt}").replace(",", "."),
             "ean": c["ean"],
         }
         u = unitario(cant, uni)
@@ -496,15 +496,19 @@ def desde_curados(cands, fecha):
             continue
         tam, cant, uni = tamano(c["desc"], c["cant"], c["unidad"], k)
         item = {
-            "n": nombre, "d": extra.get("t", tam), "p": int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
+            "n": nombre, "d": extra.get("t", tam), "p": int(statistics.median_low(med)) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
             "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
-                  f"{c['sucursales']:,} sucursales de CABA y GBA · {fecha_txt}").replace(",", "."),
+                  f"{c['sucursales']:,} sucursales de CABA y provincia de Bs. As. · {fecha_txt}").replace(",", "."),
             "ean": ean,
         }
         u = unitario(cant, uni)
         if u:
             item["u"] = u
-        if extra.get("libre"):
+        n = len(med)
+        iqr = (med[(3 * n) // 4] - med[n // 4]) / max(item["p"], 1) if n >= 4 else 0
+        # golosinas chiquitas, precios muy bajos o precios que dependen mucho de la cadena:
+        # sirven para el modo libre, pero no como producto del día (que se juega a ±5%)
+        if extra.get("libre") or (r == "golosinas" and uni == "gr" and cant < 60) or item["p"] < 700 or iqr > 0.20:
             item["diario"] = False
         out.append(item)
     out.sort(key=lambda x: x["ean"])
@@ -512,13 +516,13 @@ def desde_curados(cands, fecha):
 
 
 def agendar(productos):
-    """Fija el producto del día para hoy y mañana (hora argentina). Una vez fijado no cambia."""
+    """Fija el producto del día para hoy y los 2 días siguientes (hora argentina). Una vez fijado no cambia."""
     hist = {}
     if os.path.exists(HIST):
         with open(HIST, encoding="utf-8") as f:
             hist = json.load(f)
     hoy = datetime.datetime.now(TZ).date()
-    for d in (hoy, hoy + datetime.timedelta(days=1)):
+    for d in (hoy + datetime.timedelta(days=i) for i in range(3)):  # hoy y 2 días de reserva
         clave = d.isoformat()
         if clave in hist:
             continue
