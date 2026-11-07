@@ -460,7 +460,7 @@ def curar(cands, fecha):
             "k": k, "c": col, "a": acc,
             "r": r,
             "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
-                  f"{c['sucursales']:,} sucursales de CABA y provincia de Bs. As. · {fecha_txt}").replace(",", "."),
+                  f"{c['sucursales']:,} sucursales de CABA y provincia de Buenos Aires · {fecha_txt}").replace(",", "."),
             "ean": c["ean"],
         }
         u = unitario(cant, uni)
@@ -499,11 +499,15 @@ def desde_curados(cands, fecha):
         if (c["p10"] and c["p90"] / max(c["p10"], 1) > 2.2) or disparidad(med) > 2.2:
             print("  (precios muy dispares hoy)", nombre, med)
             continue
+        pm = statistics.median(med) if med else c["precio"]
+        if med and sum(abs(m - pm) <= .05 * pm for m in med) < .45 * len(med):
+            print("  (sin precio de consenso hoy)", nombre, med)
+            continue
         tam, cant, uni = tamano(c["desc"], c["cant"], c["unidad"], k, r)
         item = {
             "n": nombre, "d": extra.get("t", tam), **({"g": extra["g"]} if extra.get("g") else {}), "p": int(round(statistics.median(med))) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
             "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
-                  f"{c['sucursales']:,} sucursales de CABA y provincia de Bs. As. · {fecha_txt}").replace(",", "."),
+                  f"{c['sucursales']:,} sucursales de CABA y provincia de Buenos Aires · {fecha_txt}").replace(",", "."),
             "ean": ean,
         }
         u = unitario(cant, uni)
@@ -549,24 +553,34 @@ def agendar(productos):
     hist = leer_historial()
     hoy = datetime.datetime.now(TZ).date()
     por_ean = {p["ean"]: p for p in productos if p.get("diario", True)}
+    presentes = {p["ean"]: p for p in productos}
     for k in list(hist):
-        if k > hoy.isoformat():
-            if hist[k].get("ean") in por_ean:
-                hist[k] = dict(por_ean[hist[k]["ean"]])
-            else:
+        e = hist[k].get("ean")
+        if k == hoy.isoformat() and e in presentes:
+            # hoy: se renuevan nombre, tamaño y dibujo, pero el precio y la fuente quedan fijos
+            hist[k] = {**presentes[e], "p": hist[k]["p"], "s": hist[k]["s"]}
+            if "u" not in presentes[e]:
+                hist[k].pop("u", None)
+        elif k > hoy.isoformat():
+            if e in por_ean:
+                hist[k] = dict(por_ean[e])
+            elif e in presentes:  # llegó hoy pero dejó de ser apto (precios dispares): se reprograma
                 print(f"Reprogramo el {k}: {hist[k].get('n')} ya no es apto")
                 del hist[k]
+            # si hoy no vino en SEPA, se deja como estaba (con el precio anterior)
     for d in (hoy + datetime.timedelta(days=i) for i in range(8)):  # hoy y 7 días de reserva
         clave = d.isoformat()
         if clave in hist:
             continue
         desde = (d - datetime.timedelta(days=SIN_REPETIR_DIAS)).isoformat()
         usados = {v["ean"] for k, v in hist.items() if k >= desde}
-        pool = [p for p in productos if p.get("diario", True) and p["ean"] not in usados]
-        if not pool:
-            pool = [p for p in productos if p.get("diario", True)]
-        # variedad: no repetir el rubro de ayer ni de anteayer si se puede
-        recientes = {hist[x].get("r") for x in ((d - datetime.timedelta(days=j)).isoformat() for j in (1, 2)) if x in hist}
+        aptos = [p for p in productos if p.get("diario", True)]
+        pool = [p for p in aptos if p["ean"] not in usados]
+        if len(pool) < 5:  # no alcanza: los que hace más tiempo que no salen
+            ultimo = {v["ean"]: k2 for k2, v in sorted(hist.items()) if k2 < clave}
+            pool = sorted(aptos, key=lambda p: ultimo.get(p["ean"], ""))[:7]
+        # variedad: no repetir el rubro de los dos días anteriores ni de los dos siguientes ya agendados
+        recientes = {hist[x].get("r") for x in ((d + datetime.timedelta(days=j)).isoformat() for j in (-2, -1, 1, 2)) if x in hist}
         pool = [p for p in pool if p.get("r") not in recientes] or pool
         i = int(hashlib.md5(("cuanto-sale/" + clave).encode()).hexdigest(), 16) % len(pool)
         hist[clave] = dict(pool[i])
@@ -598,12 +612,12 @@ def main():
             json.dump(C, f, ensure_ascii=False, separators=(",", ":"))
         print(f"{len(C['candidatos'])} candidatos → {CAND}")
     productos = desde_curados(C["candidatos"], C["fecha"])
-    if len(productos) < 30:
-        print(f"Solo {len(productos)} curados disponibles; completo con la selección automática")
-        ya = {p["ean"] for p in productos}
-        productos += [p for p in curar(C["candidatos"], C["fecha"]) if p["ean"] not in ya][: 80 - len(productos)]
-    if len(productos) < 20:
-        sys.exit(f"Muy pocos productos ({len(productos)}); no actualizo el archivo")
+    sys.path.insert(0, AQUI)
+    from curados import CURADOS
+    if len(productos) < 0.6 * len(CURADOS):
+        # SEPA vino incompleto: no se toca nada y se sigue jugando con la agenda ya publicada
+        print(f"SEPA incompleto hoy ({len(productos)} de {len(CURADOS)} curados); dejo los archivos como estaban")
+        return
     agenda, jugados = agendar(productos)
     salida = {
         "fecha": C["fecha"],

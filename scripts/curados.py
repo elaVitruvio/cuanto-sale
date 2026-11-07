@@ -4,7 +4,7 @@
 # Campos: ean, nombre, envase, color, acento, rubro, [opcional: dict con "libre": True (solo modo libre),
 #   "t": texto de tamaño, "g": ícono del frente de las cajas (taza burger galleta papa cuchara choclo torta gota hoja)]
 # Envases disponibles en el dibujo: pet can aerosol squeeze jug cup minibottle brick tetra minitetra carton pouch
-#   sleeve stick disc petl tictac tube tinf pillow tub roll chips pasta bar yerba box jar bottle bag sachet rolls tin
+#   sleeve stick disc petl tictac tube tinf pillow tub roll chips vac pasta bar yerba box jar bottle bag sachet rolls tin
 
 CURADOS = [
     # --- bebidas
@@ -63,9 +63,9 @@ CURADOS = [
     ("7790387800067", "Mate cocido Taragüí", "box", "#D23B2E", "#3E8E41", "desayuno", {"t": "50 saquitos", "g": "hoja"}),
     ("7790150211939", "Té La Virginia", "box", "#D23B2E", "#F2C230", "desayuno", {"t": "50 saquitos", "g": "taza"}),
     ("7790580138868", "Puré de tomate La Campagnola", "tetra", "#D23B2E", "#3E8E41", "despensa"),
-    ("7790580131364", "Atún al natural La Campagnola", "tinf", "#D9D9D9", "#1F4FA3", "despensa"),
+    ("7790580131364", "Lomitos de atún al natural La Campagnola", "tinf", "#D9D9D9", "#1F4FA3", "despensa"),
     ("7790580567903", "Tomates perita Arcor", "tin", "#D9D9D9", "#D23B2E", "despensa", {"t": "400 g · lata"}),
-    ("7790580132392", "Arvejas Arcor", "tin", "#D9D9D9", "#3E8E41", "despensa", {"t": "300 g · lata"}),
+    ("7790580132392", "Arvejas secas remojadas Arcor", "tin", "#D9D9D9", "#3E8E41", "despensa", {"t": "300 g · lata"}),
     ("7794000006072", "Mayonesa Hellmann's", "pouch", "#fff", "#1F4FA3", "aderezos"),
     ("7794000006164", "Ketchup Hellmann's", "squeeze", "#D23B2E", "#fff", "aderezos"),
     ("7794000006478", "Mostaza Savora", "squeeze", "#F2C230", "#D23B2E", "aderezos"),
@@ -76,11 +76,11 @@ CURADOS = [
     ("7622201464882", "Polvo para hornear Royal", "tin", "#D23B2E", "#fff", "reposteria"),
     ("7790070432971", "Bizcochuelo Exquisita de chocolate", "box", "#8B5A2B", "#F2C230", "reposteria", {"t": "540 g · para preparar", "g": "torta"}),
     ("8445290993021", "Puré de papas instantáneo Maggi", "box", "#D23B2E", "#F2C230", "despensa", {"g": "papa"}),
-    ("7790580138738", "Polenta Prestopronta", "box", "#F2C230", "#D23B2E", "reposteria", {"g": "choclo"}),
+    ("7790580138738", "Polenta Prestopronta", "box", "#F2C230", "#D23B2E", "despensa", {"g": "choclo"}),
     ("7790130000058", "Vinagre de alcohol Menoyo", "pet", "#F1EFE6", "#D23B2E", "aderezos"),
-    ("7790070622013", "Tapas para empanadas La Salteña hojaldre", "disc", "#F2C230", "#D23B2E", "reposteria", {"t": "12 u. · 330 g"}),
-    ("7790670050650", "Hamburguesas Paty clásicas", "box", "#D23B2E", "#F2C230", "despensa", {"t": "4 u. · 320 g", "g": "burger"}),
-    ("7790670052401", "Salchichas Vienissima", "sleeve", "#D23B2E", "#F2C230", "despensa", {"t": "6 u. · 230 g"}),
+    ("7790070622013", "Tapas para empanadas La Salteña hojaldre", "disc", "#F2C230", "#D23B2E", "frescos", {"t": "12 u. · 330 g"}),
+    ("7790670050650", "Hamburguesas Paty clásicas", "brick", "#D23B2E", "#F2C230", "frescos", {"t": "4 u. · 320 g", "g": "burger"}),
+    ("7790670052401", "Salchichas Vienissima", "vac", "#E8F0F7", "#D23B2E", "frescos", {"t": "6 u. · 230 g"}),
     ("7790071090231", "Tostadas Riera clásicas", "bag", "#F5E6C8", "#8B5A2B", "desayuno"),
     # --- golosinas y snacks
     ("7790580607210", "Chocolate Arcor con leche", "bar", "#6B3A1E", "#fff", "golosinas"),
@@ -95,12 +95,12 @@ CURADOS = [
     ("7790580056001", "Caramelos Sugus", "pouch", "#3A7BD5", "#F2C230", "golosinas"),
     ("0000078600027", "Tic Tac naranja", "tictac", "#FDE3C2", "#F28C28", "golosinas", {"libre": True}),
     ("0000077939753", "Chicles Topline Seven", "stick", "#3A7BD5", "#fff", "golosinas", {"libre": True}),
-    ("7622202247286", "Pastillas Halls cherry", "stick", "#8E1B3A", "#fff", "golosinas", {"libre": True}),
+    ("7622202247286", "Pastillas Halls Cherry", "stick", "#8E1B3A", "#fff", "golosinas", {"libre": True}),
     ("7622201735906", "Galletitas Pepitos", "roll", "#1F4FA3", "#8B5A2B", "snacks"),
     ("7622201735296", "Galletitas Oreo", "roll", "#1F4FA3", "#1d1b1a", "snacks"),
     ("7790040143234", "Galletitas Chocolinas", "roll", "#6B3A1E", "#3A7BD5", "snacks"),
     ("7790040144095", "Galletitas Traviata", "roll", "#F2C230", "#D23B2E", "snacks", {"t": "540 g · paquete familiar"}),
-    ("7790580716707", "Galletitas Saladix sabor jamón", "box", "#D23B2E", "#F2C230", "snacks", {"g": "galleta"}),
+    ("7790580716707", "Galletitas Saladix sabor jamón", "chips", "#D23B2E", "#F2C46B", "snacks", {"g": "galleta"}),
     ("7622201736033", "Galletitas Cerealitas", "roll", "#3E8E41", "#F2C230", "snacks"),
     ("7622300742645", "Galletitas Duquesa", "roll", "#8E1B3A", "#F5E6C8", "snacks"),
     ("7790310985458", "Papas fritas Lay's clásicas", "chips", "#F2C230", "#D23B2E", "snacks"),
@@ -109,12 +109,12 @@ CURADOS = [
     ("7790132098459", "Lavandina Ayudín", "jug", "#F4F4F4", "#3A7BD5", "limpieza"),
     ("7791290794221", "Cif crema", "squeeze", "#F2C230", "#3A7BD5", "limpieza"),
     ("7790990003022", "Detergente Magistral limón", "minibottle", "#E8E25A", "#3E8E41", "limpieza"),
-    ("7791290792814", "Jabón líquido Skip para ropa", "jug", "#3A7BD5", "#fff", "limpieza"),
-    ("7793253003548", "Limpiador Poett primavera", "jug", "#E7A6D6", "#fff", "limpieza"),
+    ("7791290792814", "Jabón líquido Skip BioEnzimas", "jug", "#3A7BD5", "#fff", "limpieza"),
+    ("7793253003548", "Limpiador Poett Primavera", "jug", "#E7A6D6", "#fff", "limpieza"),
     ("7790520995285", "Desinfectante Lysoform en aerosol", "aerosol", "#fff", "#1F4FA3", "limpieza"),
     # --- higiene
     ("7791293049502", "Antitranspirante Rexona Men", "aerosol", "#2B2B2B", "#3A7BD5", "higiene"),
-    ("7791293045740", "Shampoo Sedal crema balance", "squeeze", "#F28CB0", "#fff", "higiene"),
+    ("7791293045740", "Shampoo Sedal Crema Balance", "squeeze", "#F28CB0", "#fff", "higiene"),
     ("7509546686523", "Pasta dental Colgate Triple Acción", "tube", "#D23B2E", "#1F4FA3", "higiene"),
     ("7891150075382", "Jabón Dove Cuida y Protege", "box", "#fff", "#3A7BD5", "higiene", {"g": "gota"}),
 ]

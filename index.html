@@ -22,9 +22,9 @@ button{font-family:inherit;color:inherit;touch-action:manipulation}
 button:focus-visible{outline:3px dashed var(--ink);outline-offset:3px}
 .wrap{width:100%;max-width:420px}
 header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:8px}
-.logo{font:900 21px/1 var(--fd);color:var(--ink);background:var(--yellow);padding:9px 12px 7px 20px;clip-path:polygon(12px 0,100% 0,100% 100%,12px 100%,0 50%);filter:drop-shadow(3px 3px 0 var(--red));transform:rotate(-2deg);letter-spacing:-.3px;white-space:nowrap;position:relative}
+.logo{min-width:0;overflow:hidden;text-overflow:clip;font:900 21px/1 var(--fd);color:var(--ink);background:var(--yellow);padding:9px 12px 7px 20px;clip-path:polygon(12px 0,100% 0,100% 100%,12px 100%,0 50%);filter:drop-shadow(3px 3px 0 var(--red));transform:rotate(-2deg);letter-spacing:-.3px;white-space:nowrap;position:relative}
 .logo:before{content:"";position:absolute;left:7px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:var(--bg)}
-.hbtns{display:flex;gap:6px}
+.hbtns{display:flex;gap:6px;flex:none}
 .ib{width:44px;height:44px;border-radius:50%;border:2px solid var(--ink);background:var(--paper);font:700 18px var(--fm);cursor:pointer;box-shadow:2px 2px 0 var(--ink);display:grid;place-items:center}
 .ib:active{transform:translate(2px,2px);box-shadow:none}
 /* ticket */
@@ -74,7 +74,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 .k{height:50px;border:2px solid var(--ink);background:#fff;border-radius:8px;font:700 22px var(--fm);cursor:pointer;box-shadow:0 3px 0 var(--ink);user-select:none}
 .k:active{transform:translateY(3px);box-shadow:none}
 .k.ok{height:auto;background:var(--yellow);font:900 20px var(--fd)}
-.k.del{font-size:20px;background:#f1ebde}
+.k.del{font-size:26px;background:#f1ebde}
 /* result */
 .res{display:none;text-align:center;padding-top:4px}
 .res.show{display:block;animation:print .4s}
@@ -140,7 +140,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 .bstamp{display:none;font:20px var(--fd);border:3px solid;padding:2px 10px;transform:rotate(-4deg);border-radius:6px;margin:8px auto 2px}
 .bstamp.on{display:table;animation:slam .5s cubic-bezier(.3,1.6,.5,1)}
 .bmsg{text-align:center;font-size:13px;min-height:1em;margin-top:6px;font-weight:700}
-#bBonusOk{position:static}
+#mHelp .card>.btn.y,#bShare2,#bBonusOk{position:sticky;bottom:10px;z-index:1;box-shadow:0 3px 0 var(--ink),0 14px 0 6px var(--paper)}
 .bar i.z{background:transparent;color:var(--muted);border:1px dashed var(--line)}
 @media (max-height:760px){
  body{padding:8px 10px 14px}header{margin-bottom:6px}.logo{font-size:21px}.ib{width:40px;height:40px}
@@ -158,8 +158,10 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
  .row{height:15px;font-size:11px}.entry{margin:4px 0}
  .disp{height:34px;font-size:19px}.k{height:34px;font-size:19px}.ib{width:34px;height:34px}
  .card{padding:16px 14px 20px}.card p,.card li{font-size:12px;line-height:1.4}.mini .row{height:20px}}
-@media (max-height:660px){.row .f{border-width:0 0 0 4px;border-radius:0;transform:none;text-align:left;padding:0 0 0 6px;font-size:11px;line-height:13px}.bo svg{width:44px;height:52px}.bgrid{gap:6px;margin:8px 0 2px}}
-@media (max-height:540px){.row .f{font-size:10px;line-height:12px}}
+@media (max-height:660px){.row{grid-template-columns:20px 1fr 138px}.row .f{font-size:10px;line-height:12px;padding:0;border-width:2px;letter-spacing:-.2px}.bo svg{width:44px;height:52px}.bgrid{gap:6px;margin:8px 0 2px}
+ .tag.done{font-size:12px;padding:2px 5px 1px;left:-8px;bottom:-12px}.tag.done:before{font-size:7px}.prod.done{margin-bottom:14px}}
+@media (max-height:540px){.row .f{border-width:0 0 0 4px;border-radius:0;transform:none;text-align:left;padding:0 0 0 6px;font-size:11px;line-height:13px}.k{height:38px}.th b{display:none}}
+@media (max-height:420px){.th{display:none}.prod{min-height:50px;margin-bottom:4px}.art{flex-basis:50px;height:50px}.art svg{width:42px;height:48px}.tag{width:36px;height:36px;font-size:11px;right:-12px;top:-10px}.pinfo h2{font-size:14px}.pinfo p{font-size:11px}.row{height:14px;line-height:14px}.disp{height:32px}.k{height:32px}.ib{width:32px;height:32px}.logo{font-size:15px}body{padding:4px 8px 6px}.ticket{padding:10px 12px 12px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -237,7 +239,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 <div class="modal" id="mBonus" data-lock><div class="cw"><div class="card" role="dialog" aria-modal="true" aria-labelledby="btitle">
   <div class="bhead">RONDA BONUS · <span id="bcount"></span></div>
   <h3 id="btitle">¿Cuál era el más caro?</h3>
-  <p>De los productos que jugaste, tocá el que salía más.</p>
+  <p>De los últimos que jugaste, tocá el más caro.</p>
   <div class="bgrid" id="bgrid"></div>
   <div class="bstamp" id="bstamp"></div>
   <p class="bmsg" id="bmsg" aria-live="polite"></p>
@@ -259,19 +261,20 @@ function art(k,c,a,g){
  const G={taza:`<path d="M33 40h20v8a10 10 0 01-20 0z" fill="${a}" ${o}/><path d="M53 42h3a3.5 3.5 0 010 7h-3M38 32c0 3 3 3 3 6M46 32c0 3 3 3 3 6" fill="none" ${o} stroke-width="2.5"/>`,
   burger:`<path d="M31 44a13 9 0 0126 0z" fill="${a}" ${o}/><path d="M30 48h28" stroke="#6B3A1E" stroke-width="5" stroke-linecap="round"/><path d="M31 52h26a3 3 0 01-3 4H34a3 3 0 01-3-4z" fill="${a}" ${o}/>`,
   galleta:`<path d="M30 36h28v22H30z" fill="#F2C46B" ${o}/><path d="M30 36l-2 3 2 3-2 3 2 3-2 3 2 3-2 3 2 1M58 36l2 3-2 3 2 3-2 3 2 3-2 3 2 3-2 1" fill="none" ${o} stroke-width="2"/><g fill="#8B5A2B"><circle cx="37" cy="42" r="1.5"/><circle cx="44" cy="42" r="1.5"/><circle cx="51" cy="42" r="1.5"/><circle cx="37" cy="50" r="1.5"/><circle cx="44" cy="50" r="1.5"/><circle cx="51" cy="50" r="1.5"/></g>`,
-  papa:`<path d="M32 48c-2-8 6-13 13-12s12 6 10 12-8 8-13 8-9-3-10-8z" fill="${a}" ${o}/><g fill="#1d1b1a"><circle cx="40" cy="45" r="1.3"/><circle cx="48" cy="49" r="1.3"/></g>`,
-  cuchara:`<ellipse cx="44" cy="40" rx="7" ry="9" fill="#fff" ${o}/><ellipse cx="44" cy="40" rx="3" ry="4.5" fill="#ddd"/><path d="M44 49v11" ${o} stroke-width="4"/>`,
-  choclo:`<path d="M44 32c7 0 9 8 9 14s-3 12-9 12-9-6-9-12 2-14 9-14z" fill="${a}" ${o}/><path d="M37 52c-6-2-8-8-7-14 4 3 6 7 8 12M51 52c6-2 8-8 7-14-4 3-6 7-8 12" fill="#5FA845" ${o} stroke-width="2"/>`,
+  papa:`<path d="M29 47h30a15 11 0 01-30 0z" fill="#fff" ${o}/><path d="M33 47c0-6 5-9 11-9s11 3 11 9z" fill="#F7E3A1" ${o} stroke-width="2"/><path d="M40 35c0-3 3-3 3-6M47 35c0-3 3-3 3-6" fill="none" ${o} stroke-width="2"/>`,
+  cuchara:`<path d="M28 60c4-6 10-8 16-8s12 2 16 8z" fill="#fff" ${o} stroke-width="2"/><g transform="rotate(-35 44 42)"><ellipse cx="44" cy="36" rx="7" ry="10" fill="#fff" ${o}/><path d="M44 46v14" ${o} stroke-width="4"/></g>`,
+  choclo:`<path d="M44 32c7 0 9 8 9 14s-3 12-9 12-9-6-9-12 2-14 9-14z" fill="#FFE27A" ${o}/><path d="M40 38v16M44 36v20M48 38v16" stroke="#C9A640" stroke-width="2"/><path d="M37 52c-6-2-8-8-7-14 4 3 6 7 8 12M51 52c6-2 8-8 7-14-4 3-6 7-8 12" fill="#5FA845" ${o} stroke-width="2"/>`,
   torta:`<path d="M30 46h28v12H30z" fill="#6B3A1E" ${o}/><path d="M30 46c0-5 28-5 28 0v3c-3 0-3 3-6 3s-3-3-6-3-3 3-6 3-3-3-6-3-3 3-4 3z" fill="#fff" ${o} stroke-width="2"/><circle cx="44" cy="39" r="3.5" fill="#D23B2E" ${o} stroke-width="2"/>`,
   gota:`<path d="M44 32c5 7 9 12 9 17a9 9 0 01-18 0c0-5 4-10 9-17z" fill="${a}" ${o}/>`,
   hoja:`<path d="M44 34c-12 4-14 18-6 24 10-4 12-16 6-24z" fill="${a}" ${o}/>`};
  const dot=G[g]||`<circle cx="44" cy="46" r="13" fill="${a}" ${o}/>`;
  const S={
-  pet:`<rect x="40" y="4" width="16" height="9" rx="2" fill="${a}" ${o}/><path d="M42 13h12v7c0 5 14 8 14 20v9c-3 3-3 7 0 10v35c0 5-3 7-6 9l-3 4h-5l-2-3h-6l-2 3h-5l-3-4c-3-2-6-4-6-9V59c3-3 3-7 0-10v-9c0-12 14-15 14-20z" fill="${c}" ${o}/><rect x="27" y="62" width="42" height="22" fill="#fff" ${o}/><path d="M33 70h30M33 77h18" stroke="#1d1b1a" stroke-width="2.5" stroke-linecap="round"/>${hl('M34 44v8M34 90v6')}`,
+  pet:`<rect x="40" y="4" width="16" height="9" rx="2" fill="${a}" ${o}/><path d="M42 13h12v7c0 5 14 8 14 20v9c-3 3-3 7 0 10v35c0 5-3 7-6 9l-3 4h-5l-2-3h-6l-2 3h-5l-3-4c-3-2-6-4-6-9V59c3-3 3-7 0-10v-9c0-12 14-15 14-20z" fill="${c}" ${o}/>${lab(27,62,42,22)}${hl('M34 44v8M34 90v6')}`,
   can:`<path d="M30 16h36l4 8v70l-4 8H30l-4-8V24z" fill="${c}" ${o}/><path d="M26 24h44M26 94h44" stroke="#1d1b1a" stroke-width="3"/><path d="M26 50c14 10 30-6 44 4v14c-14-10-30 6-44-4z" fill="${a}" ${o}/><path d="M42 16v-4h12v4" fill="none" ${o}/>${hl('M33 30v14M33 74v14')}`,
   aerosol:`<rect x="44" y="4" width="8" height="7" rx="2" fill="#1d1b1a"/><path d="M34 26c0-10 4-15 14-15s14 5 14 15z" fill="${a}" ${o}/><path d="M30 34c0-6 6-8 18-8s18 2 18 8v68c0 3-2 5-5 5H35c-3 0-5-2-5-5z" fill="${c}" ${o}/>${lab(30,56,36,26)}${hl('M36 38v12M36 88v10')}`,
   squeeze:`<path d="M28 8h40c4 0 6 3 6 7l-6 69c0 3-2 4-4 4H32c-2 0-4-1-4-4l-6-69c0-4 2-7 6-7z" fill="${c}" ${o}/><rect x="34" y="88" width="28" height="18" rx="4" fill="${a}" ${o}/>${lab(28,34,40,26)}${hl('M32 16l2 14')}`,
   jug:`<path d="M30 10h14v8h10c10 0 18 6 18 18v64c0 4-2 6-6 6H30c-4 0-6-2-6-6V30c0-8 2-12 6-12z" fill="${c}" ${o}/><rect x="30" y="4" width="14" height="8" rx="2" fill="${a}" ${o}/><path d="M54 26h8c3 0 4 2 4 4v10c0 2-1 4-4 4h-8z" fill="#fff" ${o}/>${lab(28,58,40,26)}${hl('M29 34v14')}`,
+  vac:`<rect x="10" y="34" width="76" height="50" rx="8" fill="${c}" ${o}/><g fill="#E8A07A" ${o} stroke-width="2"><rect x="18" y="42" width="60" height="9" rx="4.5"/><rect x="18" y="54" width="60" height="9" rx="4.5"/></g>${lab(28,66,40,14)}`,
   tub:`<path d="M12 48h72l-6 40c0 4-14 8-30 8s-30-4-30-8z" fill="${c}" ${o}/><ellipse cx="48" cy="46" rx="37" ry="9" fill="${a}" ${o}/>${lab(26,60,44,22)}`,
   roll:`<path d="M14 40h68l6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4H14l-6-4 6-4-6-4 6-4-6-4 6-4-6-4z" fill="${c}" ${o}/><g fill="${a}" ${o} stroke-width="2"><circle cx="34" cy="56" r="9"/><circle cx="48" cy="56" r="9"/><circle cx="62" cy="56" r="9"/></g>${hl('M18 45h58')}`,
   chips:`<path d="M18 14h60l-2 8c6 26 6 54 0 76l2 8H18l2-8c-6-22-6-50 0-76z" fill="${c}" ${o}/><path d="M18 14h60M18 106h60" stroke="#1d1b1a" stroke-width="5" stroke-dasharray="3 3"/><ellipse cx="48" cy="52" rx="20" ry="14" fill="${a}" ${o}/><path d="M36 76c8 6 16 6 24 0" fill="#F7D774" ${o} stroke-width="2"/>`,
@@ -321,14 +324,17 @@ function load(m){
  if(m==='daily'){
   dayK=todayKey(); dayN=dayNum(); item=dailyItem();
   const sv=store.get('day',{});
-  guesses=(sv.key===dayK&&sv.id===item.ean&&Array.isArray(sv.g))?sv.g:[];
+  const raw=(sv.key===dayK&&sv.id===item.ean&&Array.isArray(sv.g))?sv.g:[];
+  guesses=raw.filter(g=>g&&+g.v>0).slice(0,MAX).map(g=>({v:+g.v,...judge(+g.v)})); // se recalcula: nunca confiar en lo guardado
   const w=guesses.findIndex(g=>g.r==='win'); if(w>=0)guesses=guesses.slice(0,w+1);
  }else{
-  const fut=Object.entries(AG).filter(([k])=>k>=dayK).map(([,v])=>v.ean); // nunca adelantar productos agendados
-  const skip=new Set([dailyItem().ean,...fut,...freeSeen.slice(-Math.min(20,P.length-2))]);
-  let pool=P.filter(p=>!skip.has(p.ean)&&(p.diario===false||JUG.has(p.ean))); // nunca adelantar productos del día futuros
-  if(pool.length<10)pool=P.filter(p=>!skip.has(p.ean)); item=(pool.length?pool:P)[Math.floor(Math.random()*(pool.length||P.length))];
-  freeSeen.push(item.ean); guesses=[];
+  // solo productos que ya fueron del día o que nunca lo van a ser: el modo libre no adelanta precios
+  const fut=new Set(Object.entries(AG).filter(([k])=>k>=dayK).map(([,v])=>v.ean)); fut.add(dailyItem().ean);
+  const apto=P.filter(p=>!fut.has(p.ean)&&(p.diario===false||JUG.has(p.ean)));
+  const rec=new Set(freeSeen.slice(-Math.max(0,Math.min(20,apto.length-3))));
+  const pool=apto.filter(p=>!rec.has(p.ean)), src=pool.length?pool:apto.length?apto:P.filter(p=>!fut.has(p.ean));
+  item=src[Math.floor(Math.random()*src.length)];
+  freeSeen.push(item.ean); freeSeen=freeSeen.slice(-20); store.set('free',{e:freeSeen}); guesses=[];
  }
  const d=new Date(Date.parse(dayK)+12*3600e3);
  $('#tdate').textContent=d.toLocaleDateString('es-AR',{day:'2-digit',month:'2-digit',year:'2-digit',timeZone:'UTC'});
@@ -341,7 +347,7 @@ function load(m){
  const last=guesses[guesses.length-1];
  if(last&&(last.r==='win'||guesses.length>=MAX)){over=true;finish(last.r==='win',true)}
  const pb=store.get('bpend',{});
- if(pb.items&&(!guesses.length||over))setTimeout(()=>{if(!$('.modal.on')&&store.get('bpend',{}).items)showBonus(store.get('bpend',{}))},500);
+ if(Array.isArray(pb.items)&&(!guesses.length||over))setTimeout(()=>{if(!$('.modal.on')&&Array.isArray(store.get('bpend',{}).items))showBonus(store.get('bpend',{}))},500);
 }
 function judge(g){const diff=(g-item.p)/item.p,a=Math.abs(diff);return{r:a<=.05?'win':a<=.12?'hot':a<=.25?'warm':'cold',up:diff<0,pct:Math.max(Math.round(a*100),a>.05?6:0)}}
 function label(g){return g.r==='win'?'✓ ¡ACERTASTE!':(g.up?'▲ SUBÍ':'▼ BAJÁ')+({hot:' · CALIENTE',warm:' · TIBIO',cold:' · FRÍO'}[g.r])}
@@ -356,9 +362,14 @@ function render(anim){
  $('#rows').innerHTML=h;
  $('#dval').textContent=input?Number(input).toLocaleString('es-AR'):'';
  const left=MAX-guesses.length;
- const lo=Math.max(0,...guesses.filter(g=>g.r!=='win'&&g.up).map(g=>g.v)),hs=guesses.filter(g=>g.r!=='win'&&!g.up).map(g=>g.v),hi=hs.length?Math.min(...hs):0;
- const rng=lo&&hi?`entre ${fmt(lo)} y ${fmt(hi)}`:lo?`más de ${fmt(lo)}`:hi?`menos de ${fmt(hi)}`:'';
- $('#ph').textContent=over?'':guesses.length?(lo&&hi?`${fmt(lo)} a ${fmt(hi)}`:rng):(input?'':'escribí tu precio');
+ // rango posible según lo que dicen las pistas (dirección + temperatura)
+ const T={cold:[.25,1/0],warm:[.12,.25],hot:[.05,.12]};let lo=0,hi=1/0;
+ for(const g of guesses){if(g.r==='win')continue;const[a,b]=T[g.r];
+  if(g.up){lo=Math.max(lo,g.v/(1-a));if(b<1)hi=Math.min(hi,g.v/(1-b))}   // el error se mide sobre el precio real
+  else{hi=Math.min(hi,g.v/(1+a));if(b<1)lo=Math.max(lo,g.v/(1+b))}}
+ lo=Math.ceil(lo);hi=Math.floor(hi);
+ const rng=lo&&hi<1/0?`${fmt(lo)} a ${fmt(hi)}`:lo?`más de ${fmt(lo)}`:hi<1/0?`menos de ${fmt(hi)}`:'';
+ $('#ph').textContent=over?'':guesses.length?rng:(input?'':'escribí tu precio');
 }
 function shake(msg){const d=$('#disp');d.classList.remove('shake');void d.offsetWidth;d.classList.add('shake');if(msg)toast(msg);try{navigator.vibrate&&navigator.vibrate(30)}catch(e){}}
 function press(k){
@@ -388,8 +399,7 @@ function record(won){ // se guarda en el mismo instante del último intento (sob
  H.n++; H.items.push({n:item.n,d:item.d,p:item.p,k:item.k,c:item.c,a:item.a,g:item.g}); H.items=H.items.filter(x=>x&&typeof x==='object').slice(-10);
  store.set('hist',H);
  if(mode==='daily'){
-  const S=store.get('stats',{p:0,w:0,cur:0,max:0,dist:[0,0,0,0,0,0],last:null});
-  if(!Array.isArray(S.dist)||S.dist.length!==6)S.dist=[0,0,0,0,0,0];
+  const S=getStats();
   if(S.last!==dayN){S.p++;if(won){S.w++;S.dist[guesses.length-1]++;S.cur=(S.last===dayN-1?S.cur:0)+1;S.max=Math.max(S.max,S.cur)}else S.cur=0;S.last=dayN;store.set('stats',S)}
  }
  const bonus=H.n%10===0&&H.items.length>=4; if(bonus)store.set('bpend',{n:H.n,items:H.items.slice()});
@@ -410,10 +420,11 @@ function finish(won,restored,rec){
  $('#res').classList.add('show');
  if(!restored){try{navigator.vibrate&&navigator.vibrate(won?[40,60,40]:120)}catch(e){}setTimeout(()=>$('#res').scrollIntoView({behavior:'smooth',block:'nearest'}),100)}
  tick();
+ if(!restored&&[document.body,$('#disp')].includes(document.activeElement))setTimeout(()=>{const t=$(mode==='daily'?'#bShare':'#bFree');if(!$('.modal.on'))t.focus({preventScroll:true,focusVisible:kbd})},150);
  if(!restored)setTimeout(()=>{$('#sr').textContent=`${won?'Ganaste':'Perdiste'}. El precio era ${fmt(item.p)}.`},700);
  if(!restored&&rec){
   const tok=item; // si el jugador ya pasó a otra partida, no abrir nada encima
-  if(store.get('bpend',{}).items)setTimeout(()=>{if(item===tok&&!$('.modal.on'))showBonus(store.get('bpend',{}))},1600);
+  if(Array.isArray(store.get('bpend',{}).items))setTimeout(()=>{if(item===tok&&!$('.modal.on'))showBonus(store.get('bpend',{}))},1600);
   else if(mode==='daily')setTimeout(()=>{if(item===tok&&mode==='daily'&&!$('.modal.on'))showStats()},2800);
  }
 }
@@ -422,14 +433,16 @@ async function refresh(){
   if(D&&Array.isArray(D.productos)&&D.productos.length>=10){P=[...D.productos].sort((a,b)=>String(a.ean).localeCompare(String(b.ean)));AG=D.agenda||{};JUG=new Set(D.jugados||[])}}catch(e){}}
  load('daily');scrollTo({top:0,behavior:'smooth'})}
 function rollover(){
- if(!P.length||todayKey()===dayK||mode!=='daily'||$('.modal.on'))return; // en modo libre nunca se corta la partida
- if(!over&&guesses.length)return;                                     // se termina el del día anterior
- if(over){if(!$('#bNew')){$('#next').innerHTML='<button class="btn y" id="bNew">¡YA SALIÓ EL PRODUCTO NUEVO!</button>';$('#bNew').onclick=refresh}return}
- refresh()}
-document.addEventListener('visibilitychange',()=>{if(!document.hidden)rollover()});
+ if(!P.length||todayKey()===dayK||mode!=='daily')return;  // en modo libre nunca se corta la partida
+ if(!over&&(guesses.length||input))return;                // se termina el del día anterior
+ if(!over){if(!$('.modal.on')){refresh();toast('¡Ya salió el producto de hoy!')}return}
+ if(!$('#bNew')){$('#next').innerHTML='<button class="btn y" id="bNew">¡YA SALIÓ EL PRODUCTO NUEVO!</button>';
+  $('#bNew').onclick=()=>{document.querySelectorAll('.modal.on').forEach(closeM);refresh()}}}
+document.addEventListener('visibilitychange',()=>{if(document.hidden)return;if(over&&mode==='daily'&&todayKey()!==dayK&&!$('.modal.on'))refresh();else rollover()});
 function tick(){
  if(mode!=='daily'||!over){$('#next').textContent='';return}
  if(todayKey()!==dayK){rollover();return}
+ if($('#bNew'))return;
  $('#next').innerHTML=`Nuevo producto en <b>${clock()}</b>`;
 }
 function clock(){const t=Math.max(0,msToNext()),p=n=>String(n).padStart(2,'0');return `${p(Math.floor(t/36e5))}:${p(Math.floor(t%36e5/6e4))}:${p(Math.floor(t/1e3)%60)}`}
@@ -439,7 +452,8 @@ function shareText(){
  const won=guesses.some(g=>g.r==='win');
  const best=guesses.reduce((b,g)=>!b||g.pct<b.pct?g:b,null);
  const line=guesses.map(g=>g.r==='win'?'🟩':({hot:'🟧',warm:'🟨',cold:'🟦'}[g.r])+(g.up?'⬆️':'⬇️')).join(' ');
- return `🛒 ¿Cuánto sale? #${dayN} · ${won?guesses.length:'X'}/6${won?'':' (me quedé a '+best.pct+'%)'}\n${line}\n${URL_JUEGO}`;
+ const w=guesses.find(g=>g.r==='win'),e=w?(Math.abs(w.v-item.p)/item.p*100).toFixed(1).replace('.',','):'';
+ return `🛒 ¿Cuánto sale? #${dayN} · ${w?guesses.length:'X'}/6 · ${w?(e==='0,0'?'¡clavado!':'le erré por '+e+'%'):'me quedé a '+best.pct+'%'}\n${line}\n${URL_JUEGO}`;
 }
 async function share(){
  const t=shareText();
@@ -451,26 +465,36 @@ function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clea
 // ---------- MODALES ----------
 let lastFocus=null, kbd=false;
 addEventListener('keydown',()=>kbd=true,true); addEventListener('pointerdown',()=>kbd=false,true);
-function openM(id){const m=$(id);m._kbd=kbd;lastFocus=document.activeElement;m.classList.add('on');$('.wrap').inert=true;document.body.classList.add('lock');setTimeout(()=>{const c=m.querySelector('.card');c.tabIndex=-1;c.focus({preventScroll:true})},30)}
+function openM(id){const m=$(id);m._kbd=kbd;lastFocus=document.activeElement;m.classList.add('on');$('.wrap').inert=true;document.body.classList.add('lock');setTimeout(()=>{const c=m.querySelector('.card');c.tabIndex=-1;const b=id==='#mHelp'?m.querySelector('.btn.y'):null;(b||c).focus({preventScroll:true,focusVisible:kbd})},30)}
 function closeM(m){m.classList.remove('on');if(!$('.modal.on')){document.body.classList.remove('lock');$('.wrap').inert=false}if(lastFocus&&/^b(Help|Stats)$/.test(lastFocus.id)&&!m._kbd)lastFocus.blur();else{const t=[lastFocus,$('#bShare'),$('#bFree'),$('#disp')].find(e=>e&&e!==document.body&&e.offsetParent&&!e.hidden);t&&t.focus({preventScroll:true})}if(m.id==='mBonus'&&mode==='daily'&&over&&m._fromDaily)setTimeout(showStats,250)}
 document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{
  if(e.target.closest('[data-close]')||(e.target===m&&!m.hasAttribute('data-lock')))closeM(m)}));
+function getStats(){
+ const S=store.get('stats',{p:0,w:0,cur:0,max:0,dist:[0,0,0,0,0,0],last:null});
+ for(const k of['p','w','cur','max'])S[k]=Math.max(0,Math.floor(+S[k])||0);
+ S.dist=(Array.isArray(S.dist)&&S.dist.length===6?S.dist:[0,0,0,0,0,0]).map(v=>Math.max(0,Math.floor(+v)||0));
+ S.last=S.last!==null&&Number.isFinite(+S.last)?+S.last:null;
+ return S;
+}
 function showStats(){
- const S=store.get('stats',{p:0,w:0,cur:0,max:0,dist:[0,0,0,0,0,0]});
+ const S=getStats();
  $('#sgrid').innerHTML=[[S.p,'Jugados'],[S.p?Math.round(S.w/S.p*100):0,'% ganados'],[(S.last!=null&&S.last>=dayNum()-1)?S.cur:0,'Racha'],[S.max,'Mejor racha']].map(([v,l])=>`<div><b>${v}</b><span>${l}</span></div>`).join('');
  const mx=Math.max(1,...S.dist); const me=S.last===dayN&&mode==='daily'&&over&&guesses.some(g=>g.r==='win')?guesses.length-1:-1;
  $('#sdist').innerHTML=S.dist.map((v,i)=>`<div class="bar" role="img" aria-label="${i+1} ${i?'intentos':'intento'}: ${v} ${v===1?'partida':'partidas'}${i===me?' (hoy)':''}">${i+1}<i class="${i===me?'me':v?'':'z'}" style="width:${8+v/mx*85}%">${v}</i></div>`).join('');
  statsExtra();
- const sv=store.get('day',{}); $('#bShare2').hidden=!(mode==='daily'&&sv.key===dayK&&item&&sv.id===dailyItem().ean&&(sv.g.some(g=>g.r==='win')||sv.g.length>=MAX));
+ $('#bShare2').hidden=!(mode==='daily'&&over);
  openM('#mStats');
 }
 function statsExtra(){
  const B=store.get('bonus',{p:0,w:0});
- const h=store.get('hist',{n:0,items:[]}), falta=10-(h.n%10);
- $('#sextra').innerHTML=(B.p?`Ronda bonus: <b>${B.w} de ${B.p}</b> acertadas<br>`:'')+`Próxima ronda bonus en <b>${falta} ${falta===1?'producto':'productos'}</b><br>Nuevo producto en <b>${clock()}</b>`;
+ const h=store.get('hist',{n:0,items:[]}), falta=10-((Math.max(0,Math.floor(+h.n)||0))%10);
+ $('#sextra').innerHTML=(B.p?`Ronda bonus: <b>${B.w} de ${B.p}</b> acertadas<br>`:'')+`Próxima ronda bonus en <b>${falta} ${falta===1?'producto':'productos'}</b><br>`+(todayKey()!==dayK?'<b>¡Ya salió el producto de hoy!</b>':`Nuevo producto en <b>${clock()}</b>`);
 }
 // ---------- BONUS: cada 10 productos, ¿cuál era el más caro? ----------
 function showBonus(H){
+ const its=Array.isArray(H&&H.items)?H.items.filter(o=>o&&typeof o.p==='number'&&o.p>0&&o.n):[];
+ if(its.length<3){store.set('bpend',{});if(mode==='daily'&&over)setTimeout(showStats,400);return}
+ H.items=its;
  const seen=new Set(), all=H.items.filter(o=>{const k=o.n+o.d;if(seen.has(k))return false;seen.add(k);return true});
  const top=all.reduce((b,o)=>o.p>b.p?o:b);
  const rest=all.filter(o=>o!==top&&o.p<=top.p*.9).filter((o,i,arr)=>arr.findIndex(x=>x.p===o.p)===i).sort(()=>Math.random()-.5).slice(0,3);
@@ -494,7 +518,7 @@ function showBonus(H){
   const st=$('#bstamp'); st.textContent=ok?'¡OJO DE GÓNDOLA!':'¡UFA!'; st.style.color=ok?'var(--green)':'var(--red)'; st.className='bstamp on';
   $('#bmsg').textContent=(ok?'Era el más caro.':`El más caro era ${top.n}.`)+` Bonus acertados: ${B.w} de ${B.p}.`;
   $('#bBonusOk').hidden=false; $('#bBonusOk').focus({preventScroll:true,focusVisible:kbd});
-  setTimeout(()=>{const c=$('#mBonus .card');c.scrollTo({top:c.scrollHeight,behavior:'smooth'})},150);
+  setTimeout(()=>{const c=$('#mBonus .card');c.scrollTo({top:$('#bgrid').offsetTop-12,behavior:'smooth'})},150);
   try{navigator.vibrate&&navigator.vibrate(ok?[40,60,40]:120)}catch(e){}
  };
  const m=$('#mBonus'); m._fromDaily=mode==='daily';
@@ -526,10 +550,11 @@ function start(D){
  P=[...D.productos].sort((a,b)=>String(a.ean).localeCompare(String(b.ean)));
  AG=D.agenda||{}; JUG=new Set(D.jugados||[]);
  $('#msg').hidden=true; $('#game').hidden=false;
- load('daily');
+ const fs=store.get('free',{}); freeSeen=Array.isArray(fs.e)?fs.e.filter(x=>typeof x==='string').slice(-20):[];
+ try{load('daily')}catch(e){store.set('day',{});store.set('bpend',{});load('daily')}
  if(!store.get('seen',false)){openM('#mHelp');store.set('seen',true)}
 }
-function fail(){$('#msg').innerHTML='No pudimos cargar los precios de hoy.<br>Probá de nuevo en un rato.<br><button class="btn y" onclick="location.reload()">REINTENTAR</button>'}
+function fail(){$('#msg').hidden=false;$('#game').hidden=true;$('#msg').innerHTML='No pudimos cargar los precios de hoy.<br>Probá de nuevo en un rato.<br><button class="btn y" onclick="location.reload()">REINTENTAR</button>'}
 if(EMBED)start(EMBED);
 else fetch('data/productos.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(start).catch(fail);
 </script>
