@@ -10,7 +10,7 @@ Etapas:
      (así una sola cadena grande no define el precio). Guarda los más difundidos en
      data/candidatos.json.
   3. Con esos candidatos arma una lista curada y variada (cupos por rubro, marca y fabricante),
-     limpia nombres, elige envase y colores, y agenda el producto del día de hoy y de mañana
+     limpia nombres, elige envase y colores, y agenda el producto del día de hoy y de los 3 días siguientes
      (fijo para todos y sin repetir en 60 días).
 
 Uso:
@@ -171,7 +171,7 @@ def candidatos(precios, info, fecha):
 EXCLUIR = (r"carefree|\btoa\b|toall|\bprot\b|protector|nosotras|siempre lib|ladysoft|afeit|venus|gillette|"
            r"cotonete|algod|nutrilon|nutribaby|vital\b|pa[ñn]al|preservativ|tampon|\bob\b|\bpato\b|pastilla|"
            r"\bp4\b|4flex|alimento (para )?(perro|gato)|dog|cat chow|pedigree|whiskas|recarga|repuesto|"
-           r"\bpromo\b|\bpack\b|\bx ?\d+ ?u(n|nid)?\b|combo|\bkit\b|regalo|vodka|whisky|gin\b|ron\b")
+           r"\bpromo\b|\bpack\b|\bx ?\d+ ?u(n|nid)?\b|combo|\bkit\b|regalo|vodka|whisky|ron\b")
 
 # (rubro, regex, cupo)
 RUBROS = [
@@ -352,7 +352,7 @@ def con_marca(nombre, marca):
     return f"{nombre} {mb}"
 
 
-def tamano(desc, cant, unidad, envase):
+def tamano(desc, cant, unidad, envase, rubro_=None):
     m = re.search(r"x?\s*(\d+[.,]?\d*)\s*(ml|cc|grs?|g|kg|lts?|l|cm3)\b", desc, re.I)
     if m:
         cant, unidad = num(m.group(1)), m.group(2).lower()
@@ -362,7 +362,7 @@ def tamano(desc, cant, unidad, envase):
          "cm3": "ml", "cc": "ml"}.get(unidad, unidad)
     if u not in ("gr", "kg", "ml", "lt"):
         return "", 0, ""
-    if envase in ENVASE_BEBIDA and u in ("gr", "kg"):  # bebidas cargadas en gramos
+    if rubro_ in ("bebidas", "alcohol") and u in ("gr", "kg"):  # bebidas cargadas en gramos
         u = "ml" if u == "gr" else "lt"
     if (u == "ml" and cant < 10) or (u == "gr" and cant < 10):
         return "", 0, ""
@@ -435,7 +435,7 @@ def curar(cands, fecha):
             continue
         nombre = NOMBRES.get(c["ean"]) or con_marca(limpiar_nombre(desc, r), marca)
         k, col, acc = estilo(nombre, desc)
-        tam, cant, uni = tamano(desc, c["cant"], c["unidad"], k)
+        tam, cant, uni = tamano(desc, c["cant"], c["unidad"], k, r)
         if not tam:
             continue
         if k == "pet" and r in ("bebidas", "alcohol") and uni == "ml" and cant <= 473 and "agua" not in nombre.lower():
@@ -480,6 +480,11 @@ def desde_curados(cands, fecha):
     """Arma la lista con los productos curados a mano (curados.py) y el precio del día de SEPA."""
     sys.path.insert(0, AQUI)
     from curados import CURADOS
+    from collections import Counter
+    firma = Counter((f[2], f[3].lower(), f[4].lower(), (f[6].get("g", "") if len(f) > 6 else "")) for f in CURADOS)
+    dup = [k for k, n in firma.items() if n > 1]
+    if dup:
+        sys.exit(f"Hay productos con el mismo dibujo (envase, color, acento, ícono): {dup}")
     por_ean = {c["ean"]: c for c in cands}
     fecha_txt = datetime.date.fromisoformat(fecha).strftime("%d/%m/%Y") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", fecha or "") else fecha
     out = []
@@ -494,9 +499,9 @@ def desde_curados(cands, fecha):
         if (c["p10"] and c["p90"] / max(c["p10"], 1) > 2.2) or disparidad(med) > 2.2:
             print("  (precios muy dispares hoy)", nombre, med)
             continue
-        tam, cant, uni = tamano(c["desc"], c["cant"], c["unidad"], k)
+        tam, cant, uni = tamano(c["desc"], c["cant"], c["unidad"], k, r)
         item = {
-            "n": nombre, "d": extra.get("t", tam), "p": int(statistics.median_low(med)) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
+            "n": nombre, "d": extra.get("t", tam), **({"g": extra["g"]} if extra.get("g") else {}), "p": int(round(statistics.median(med))) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
             "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
                   f"{c['sucursales']:,} sucursales de CABA y provincia de Bs. As. · {fecha_txt}").replace(",", "."),
             "ean": ean,
@@ -508,7 +513,9 @@ def desde_curados(cands, fecha):
         iqr = (med[(3 * n) // 4] - med[n // 4]) / max(item["p"], 1) if n >= 4 else 0
         # golosinas chiquitas, precios muy bajos o precios que dependen mucho de la cadena:
         # sirven para el modo libre, pero no como producto del día (que se juega a ±5%)
-        if extra.get("libre") or (r == "golosinas" and uni == "gr" and cant < 60) or item["p"] < 700 or iqr > 0.20:
+        cerca = sum(abs(m - item["p"]) <= .05 * item["p"] for m in med)  # cadenas a ±5% del precio
+        if (extra.get("libre") or (r == "golosinas" and uni == "gr" and cant < 60) or item["p"] < 700 or iqr > 0.20
+                or not (c["p10"] <= item["p"] <= c["p90"]) or cerca < len(med) / 2):
             item["diario"] = False
         out.append(item)
     out.sort(key=lambda x: x["ean"])
@@ -516,13 +523,18 @@ def desde_curados(cands, fecha):
 
 
 def agendar(productos):
-    """Fija el producto del día para hoy y los 2 días siguientes (hora argentina). Una vez fijado no cambia."""
+    """Fija el producto del día para hoy y los 3 días siguientes (hora argentina). Una vez fijado no cambia."""
     hist = {}
     if os.path.exists(HIST):
         with open(HIST, encoding="utf-8") as f:
             hist = json.load(f)
     hoy = datetime.datetime.now(TZ).date()
-    for d in (hoy + datetime.timedelta(days=i) for i in range(3)):  # hoy y 2 días de reserva
+    # los días futuros ya agendados se actualizan con el precio de hoy (el de hoy no se toca: ya se está jugando)
+    por_ean = {p["ean"]: p for p in productos if p.get("diario", True)}
+    for k in list(hist):
+        if k > hoy.isoformat() and hist[k]["ean"] in por_ean:
+            hist[k] = dict(por_ean[hist[k]["ean"]])
+    for d in (hoy + datetime.timedelta(days=i) for i in range(4)):  # hoy y 3 días de reserva
         clave = d.isoformat()
         if clave in hist:
             continue

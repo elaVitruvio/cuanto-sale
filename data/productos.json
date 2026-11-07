@@ -4,7 +4,7 @@
  "agenda": {
   "2026-11-07": {
    "n": "Bizcochuelo Exquisita de chocolate",
-   "d": "540 g",
+   "d": "540 g · para preparar",
    "p": 4905,
    "k": "box",
    "c": "#8B5A2B",
@@ -15,35 +15,43 @@
    "u": [
     0.54,
     "kilo"
-   ]
+   ],
+   "g": "torta"
   },
   "2026-11-08": {
-   "n": "Gin Gordon's",
-   "d": "700 ml",
-   "p": 19500,
-   "k": "bottle",
-   "c": "#CFE8D4",
-   "a": "#D23B2E",
-   "r": "alcohol",
-   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.717 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7791250002267",
-   "u": [
-    0.7,
-    "litro"
-   ]
+   "n": "Danette de dulce de leche",
+   "d": "100 g",
+   "p": 2939,
+   "k": "cup",
+   "c": "#fff",
+   "a": "#8B5A2B",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.731 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7791337008106"
   },
   "2026-11-09": {
-   "n": "Polenta Prestopronta",
-   "d": "490 g",
-   "p": 1769,
-   "k": "box",
-   "c": "#F2C230",
-   "a": "#D23B2E",
+   "n": "Polvo para hornear Royal",
+   "d": "50 g",
+   "p": 1840,
+   "k": "tin",
+   "c": "#D23B2E",
+   "a": "#fff",
    "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.679 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7790580138738",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.634 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7622201464882"
+  },
+  "2026-11-10": {
+   "n": "Dulce de leche La Serenísima",
+   "d": "400 g",
+   "p": 4179,
+   "k": "jar",
+   "c": "#F5E6C8",
+   "a": "#3A7BD5",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.729 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7790742625304",
    "u": [
-    0.49,
+    0.4,
     "kilo"
    ]
   }
@@ -52,7 +60,7 @@
   {
    "n": "Alfajor Terrabusi torta",
    "d": "70 g",
-   "p": 2309,
+   "p": 2354,
    "k": "sleeve",
    "c": "#1F4FA3",
    "a": "#F2C230",
@@ -75,7 +83,7 @@
   {
    "n": "Chicles Topline Seven",
    "d": "14 g",
-   "p": 1412,
+   "p": 1456,
    "k": "stick",
    "c": "#3A7BD5",
    "a": "#fff",
@@ -87,7 +95,7 @@
   {
    "n": "Chocolate Cofler Block",
    "d": "38 g",
-   "p": 2530,
+   "p": 2550,
    "k": "bar",
    "c": "#1F4FA3",
    "a": "#F2C230",
@@ -98,9 +106,9 @@
   },
   {
    "n": "Tic Tac naranja",
-   "d": "16 ml",
+   "d": "16 g",
    "p": 1072,
-   "k": "minibottle",
+   "k": "tictac",
    "c": "#FDE3C2",
    "a": "#F28C28",
    "r": "golosinas",
@@ -111,7 +119,7 @@
   {
    "n": "Ferrero Rocher",
    "d": "3 bombones · 37,5 g",
-   "p": 3589,
+   "p": 3634,
    "k": "box",
    "c": "#C9A640",
    "a": "#6B3A1E",
@@ -135,7 +143,7 @@
   {
    "n": "Red Bull en lata",
    "d": "355 ml",
-   "p": 4970,
+   "p": 5010,
    "k": "can",
    "c": "#1F4FA3",
    "a": "#C8D2E0",
@@ -152,9 +160,9 @@
    "n": "Pasta dental Colgate Triple Acción",
    "d": "90 g",
    "p": 4239,
-   "k": "squeeze",
+   "k": "tube",
    "c": "#D23B2E",
-   "a": "#fff",
+   "a": "#1F4FA3",
    "r": "higiene",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.685 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7509546686523"
@@ -173,7 +181,7 @@
   {
    "n": "Galletitas Oreo",
    "d": "118 g",
-   "p": 2639,
+   "p": 2640,
    "k": "sleeve",
    "c": "#1F4FA3",
    "a": "#1d1b1a",
@@ -195,13 +203,14 @@
   {
    "n": "Galletitas Cerealitas",
    "d": "212 g",
-   "p": 2320,
+   "p": 2354,
    "k": "sleeve",
    "c": "#3E8E41",
    "a": "#F2C230",
    "r": "snacks",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.702 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7622201736033"
+   "ean": "7622201736033",
+   "diario": false
   },
   {
    "n": "Pastillas Halls cherry",
@@ -218,7 +227,7 @@
   {
    "n": "Galletitas Duquesa",
    "d": "115 g",
-   "p": 1690,
+   "p": 1694,
    "k": "sleeve",
    "c": "#8E1B3A",
    "a": "#F5E6C8",
@@ -229,7 +238,7 @@
   {
    "n": "Alfajor Águila minitorta",
    "d": "69 g",
-   "p": 2357,
+   "p": 2368,
    "k": "sleeve",
    "c": "#8B5A2B",
    "a": "#F2C230",
@@ -255,7 +264,7 @@
   {
    "n": "Galletitas Traviata",
    "d": "540 g",
-   "p": 3490,
+   "p": 3504,
    "k": "sleeve",
    "c": "#F2C230",
    "a": "#D23B2E",
@@ -270,7 +279,7 @@
   {
    "n": "Aceite de girasol Cocinero",
    "d": "1,5 L",
-   "p": 6925,
+   "p": 6962,
    "k": "pet",
    "c": "#F2C230",
    "a": "#3E8E41",
@@ -314,7 +323,8 @@
   },
   {
    "n": "Bizcochuelo Exquisita de chocolate",
-   "d": "540 g",
+   "d": "540 g · para preparar",
+   "g": "torta",
    "p": 4905,
    "k": "box",
    "c": "#8B5A2B",
@@ -371,10 +381,10 @@
   {
    "n": "Tostadas Riera clásicas",
    "d": "200 g",
-   "p": 1989,
+   "p": 1992,
    "k": "bag",
-   "c": "#F2C230",
-   "a": "#D23B2E",
+   "c": "#F5E6C8",
+   "a": "#8B5A2B",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.510 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790071090231"
@@ -397,7 +407,7 @@
   {
    "n": "Vinagre de alcohol Menoyo",
    "d": "1 L",
-   "p": 1875,
+   "p": 1912,
    "k": "pet",
    "c": "#F1EFE6",
    "a": "#D23B2E",
@@ -414,23 +424,26 @@
    "a": "#3A7BD5",
    "r": "limpieza",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.728 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7790132098459"
+   "ean": "7790132098459",
+   "diario": false
   },
   {
    "n": "Té La Virginia",
    "d": "50 saquitos",
+   "g": "taza",
    "p": 2090,
    "k": "box",
    "c": "#D23B2E",
    "a": "#F2C230",
    "r": "almacen",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.511 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7790150211939"
+   "ean": "7790150211939",
+   "diario": false
   },
   {
    "n": "Aceite de oliva Natura",
    "d": "500 ml",
-   "p": 14890,
+   "p": 14900,
    "k": "bottle",
    "c": "#7A8F2A",
    "a": "#F2C230",
@@ -493,7 +506,7 @@
   {
    "n": "Yerba Taragüí",
    "d": "1 kg",
-   "p": 5519,
+   "p": 5584,
    "k": "yerba",
    "c": "#D23B2E",
    "a": "#3E8E41",
@@ -504,7 +517,7 @@
   {
    "n": "Yerba Mañanita",
    "d": "1 kg",
-   "p": 5519,
+   "p": 5610,
    "k": "yerba",
    "c": "#F2C230",
    "a": "#3E8E41",
@@ -515,7 +528,8 @@
   {
    "n": "Mate cocido Taragüí",
    "d": "150 g",
-   "p": 2639,
+   "g": "hoja",
+   "p": 2640,
    "k": "box",
    "c": "#D23B2E",
    "a": "#3E8E41",
@@ -526,7 +540,7 @@
   {
    "n": "Desinfectante Lysoform en aerosol",
    "d": "360 ml",
-   "p": 5340,
+   "p": 5415,
    "k": "aerosol",
    "c": "#fff",
    "a": "#1F4FA3",
@@ -554,7 +568,7 @@
    "n": "Atún al natural La Campagnola",
    "d": "170 g",
    "p": 6029,
-   "k": "tin",
+   "k": "tinf",
    "c": "#D9D9D9",
    "a": "#1F4FA3",
    "r": "almacen",
@@ -564,7 +578,7 @@
   {
    "n": "Arvejas Arcor",
    "d": "300 g · lata",
-   "p": 1299,
+   "p": 1322,
    "k": "tin",
    "c": "#D9D9D9",
    "a": "#3E8E41",
@@ -574,12 +588,14 @@
    "u": [
     0.3,
     "kilo"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Polenta Prestopronta",
    "d": "490 g",
-   "p": 1769,
+   "g": "choclo",
+   "p": 1789,
    "k": "box",
    "c": "#F2C230",
    "a": "#D23B2E",
@@ -593,7 +609,7 @@
   },
   {
    "n": "Puré de tomate La Campagnola",
-   "d": "530 ml",
+   "d": "530 g",
    "p": 1405,
    "k": "tetra",
    "c": "#D23B2E",
@@ -603,13 +619,13 @@
    "ean": "7790580138868",
    "u": [
     0.53,
-    "litro"
+    "kilo"
    ]
   },
   {
    "n": "Gomitas Mogul ositos",
    "d": "30 g",
-   "p": 991,
+   "p": 1005,
    "k": "pouch",
    "c": "#E86F8A",
    "a": "#F2C230",
@@ -636,7 +652,7 @@
   {
    "n": "Chocolate Arcor con leche",
    "d": "25 g",
-   "p": 1725,
+   "p": 1762,
    "k": "bar",
    "c": "#6B3A1E",
    "a": "#fff",
@@ -648,6 +664,7 @@
   {
    "n": "Galletitas Saladix sabor jamón",
    "d": "100 g",
+   "g": "galleta",
    "p": 1900,
    "k": "box",
    "c": "#D23B2E",
@@ -659,6 +676,7 @@
   {
    "n": "Hamburguesas Paty clásicas",
    "d": "4 u. · 320 g",
+   "g": "burger",
    "p": 9609,
    "k": "box",
    "c": "#D23B2E",
@@ -701,12 +719,13 @@
    "n": "Leche La Serenísima entera",
    "d": "1 L · sachet",
    "p": 2050,
-   "k": "pouch",
+   "k": "pillow",
    "c": "#fff",
    "a": "#3A7BD5",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.640 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7790742348302"
+   "ean": "7790742348302",
+   "diario": false
   },
   {
    "n": "Leche La Serenísima larga vida",
@@ -827,7 +846,7 @@
   {
    "n": "Aquarius de manzana",
    "d": "1,5 L",
-   "p": 3100,
+   "p": 3200,
    "k": "pet",
    "c": "#BFE3F2",
    "a": "#7DBE3A",
@@ -905,7 +924,8 @@
    "u": [
     0.3,
     "litro"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Cynar",
@@ -940,7 +960,7 @@
   {
    "n": "Jabón líquido Skip para ropa",
    "d": "800 ml",
-   "p": 4745,
+   "p": 4748,
    "k": "jug",
    "c": "#3A7BD5",
    "a": "#fff",
@@ -955,7 +975,7 @@
   {
    "n": "Cif crema",
    "d": "500 ml",
-   "p": 4582,
+   "p": 4626,
    "k": "squeeze",
    "c": "#F2C230",
    "a": "#3A7BD5",
@@ -970,7 +990,7 @@
   {
    "n": "Shampoo Sedal crema balance",
    "d": "340 ml",
-   "p": 6384,
+   "p": 6437,
    "k": "squeeze",
    "c": "#F28CB0",
    "a": "#fff",
@@ -985,7 +1005,7 @@
   {
    "n": "Antitranspirante Rexona Men",
    "d": "150 ml",
-   "p": 5120,
+   "p": 5121,
    "k": "aerosol",
    "c": "#2B2B2B",
    "a": "#3A7BD5",
@@ -1006,7 +1026,7 @@
   },
   {
    "n": "Actimel multifruta",
-   "d": "100 ml",
+   "d": "100 g",
    "p": 2260,
    "k": "minibottle",
    "c": "#fff",
@@ -1032,14 +1052,14 @@
    "p": 3949,
    "k": "cup",
    "c": "#fff",
-   "a": "#8B5A2B",
+   "a": "#F2C230",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.743 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7791337008472"
   },
   {
    "n": "Danonino botellita de frutilla",
-   "d": "185 ml",
+   "d": "185 g",
    "p": 3390,
    "k": "minibottle",
    "c": "#FBD0DC",
@@ -1076,7 +1096,8 @@
    "u": [
     0.75,
     "litro"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Pepsi",
@@ -1185,7 +1206,8 @@
    "a": "#3A7BD5",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.735 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7793940052002"
+   "ean": "7793940052002",
+   "diario": false
   },
   {
    "n": "Mayonesa Hellmann's",
@@ -1235,7 +1257,8 @@
   {
    "n": "Maizena",
    "d": "500 g",
-   "p": 4213,
+   "g": "cuchara",
+   "p": 4269,
    "k": "box",
    "c": "#F2C230",
    "a": "#D23B2E",
@@ -1261,7 +1284,7 @@
   {
    "n": "Levité de naranja",
    "d": "500 ml",
-   "p": 2200,
+   "p": 2205,
    "k": "pet",
    "c": "#FDE3C2",
    "a": "#F28C28",
@@ -1322,7 +1345,7 @@
    "p": 3199,
    "k": "pet",
    "c": "#BFE3F2",
-   "a": "#1F4FA3",
+   "a": "#D23B2E",
    "r": "bebidas",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.721 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7799155000197",
@@ -1334,7 +1357,7 @@
   {
    "n": "Kit Kat",
    "d": "41,5 g",
-   "p": 2790,
+   "p": 2795,
    "k": "bar",
    "c": "#D23B2E",
    "a": "#fff",
@@ -1346,6 +1369,7 @@
   {
    "n": "Jabón Dove Cuida y Protege",
    "d": "90 g",
+   "g": "gota",
    "p": 2739,
    "k": "box",
    "c": "#fff",
@@ -1370,8 +1394,9 @@
    ]
   },
   {
-   "n": "Puré de papas Maggi",
+   "n": "Puré de papas instantáneo Maggi",
    "d": "125 g",
+   "g": "papa",
    "p": 3190,
    "k": "box",
    "c": "#D23B2E",
@@ -1381,9 +1406,9 @@
    "ean": "8445290993021"
   },
   {
-   "n": "Café Nescafé Dolca suave",
+   "n": "Café instantáneo Nescafé Dolca suave",
    "d": "170 g · frasco",
-   "p": 14909,
+   "p": 14910,
    "k": "jar",
    "c": "#4B2E1E",
    "a": "#D23B2E",
