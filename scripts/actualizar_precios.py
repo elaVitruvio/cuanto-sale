@@ -10,7 +10,7 @@ Etapas:
      (así una sola cadena grande no define el precio). Guarda los más difundidos en
      data/candidatos.json.
   3. Con esos candidatos arma una lista curada y variada (cupos por rubro, marca y fabricante),
-     limpia nombres, elige envase y colores, y agenda el producto del día de hoy y de los 3 días siguientes
+     limpia nombres, elige envase y colores, y agenda el producto del día de hoy y de los 7 días siguientes
      (fijo para todos y sin repetir en 60 días).
 
 Uso:
@@ -507,7 +507,7 @@ def desde_curados(cands, fecha):
             "ean": ean,
         }
         u = unitario(cant, uni)
-        if u:
+        if u and "para preparar" not in extra.get("t", ""):
             item["u"] = u
         n = len(med)
         iqr = (med[(3 * n) // 4] - med[n // 4]) / max(item["p"], 1) if n >= 4 else 0
@@ -515,26 +515,48 @@ def desde_curados(cands, fecha):
         # sirven para el modo libre, pero no como producto del día (que se juega a ±5%)
         cerca = sum(abs(m - item["p"]) <= .05 * item["p"] for m in med)  # cadenas a ±5% del precio
         if (extra.get("libre") or (r == "golosinas" and uni == "gr" and cant < 60) or item["p"] < 700 or iqr > 0.20
-                or not (c["p10"] <= item["p"] <= c["p90"]) or cerca < len(med) / 2):
+                or not (.90 * item["p"] <= c["p10"] <= item["p"] <= c["p90"] <= 1.10 * item["p"])
+                or cerca < .55 * len(med)):
             item["diario"] = False
         out.append(item)
     out.sort(key=lambda x: x["ean"])
     return out
 
 
-def agendar(productos):
-    """Fija el producto del día para hoy y los 3 días siguientes (hora argentina). Una vez fijado no cambia."""
-    hist = {}
-    if os.path.exists(HIST):
+def leer_historial():
+    """Lee data/historial.json. Si falta o está roto, rescata la agenda publicada en productos.json."""
+    try:
         with open(HIST, encoding="utf-8") as f:
             hist = json.load(f)
+        if not isinstance(hist, dict):
+            raise ValueError("el historial no es un objeto")
+        return hist
+    except (OSError, ValueError) as e:
+        print("Historial ilegible, uso la agenda de productos.json:", e)
+        try:
+            with open(OUT, encoding="utf-8") as f:
+                return dict(json.load(f).get("agenda") or {})
+        except (OSError, ValueError):
+            return {}
+
+
+def agendar(productos):
+    """Agenda el producto del día para hoy y los 7 días siguientes (hora argentina).
+
+    El de hoy no cambia nunca (ya se está jugando). Los días futuros se actualizan con el precio
+    del día y, si un producto dejó de ser apto (sin datos o precios dispares), se reprograma.
+    Devuelve la agenda desde ayer y la lista de EAN ya jugados (para el modo libre)."""
+    hist = leer_historial()
     hoy = datetime.datetime.now(TZ).date()
-    # los días futuros ya agendados se actualizan con el precio de hoy (el de hoy no se toca: ya se está jugando)
     por_ean = {p["ean"]: p for p in productos if p.get("diario", True)}
     for k in list(hist):
-        if k > hoy.isoformat() and hist[k]["ean"] in por_ean:
-            hist[k] = dict(por_ean[hist[k]["ean"]])
-    for d in (hoy + datetime.timedelta(days=i) for i in range(4)):  # hoy y 3 días de reserva
+        if k > hoy.isoformat():
+            if hist[k].get("ean") in por_ean:
+                hist[k] = dict(por_ean[hist[k]["ean"]])
+            else:
+                print(f"Reprogramo el {k}: {hist[k].get('n')} ya no es apto")
+                del hist[k]
+    for d in (hoy + datetime.timedelta(days=i) for i in range(8)):  # hoy y 7 días de reserva
         clave = d.isoformat()
         if clave in hist:
             continue
@@ -543,20 +565,20 @@ def agendar(productos):
         pool = [p for p in productos if p.get("diario", True) and p["ean"] not in usados]
         if not pool:
             pool = [p for p in productos if p.get("diario", True)]
-        # alternar rubros: no repetir el rubro del día anterior si se puede
-        ayer = hist.get((d - datetime.timedelta(days=1)).isoformat())
-        if ayer:
-            otro = [p for p in pool if p.get("r") != ayer.get("r")]
-            pool = otro or pool
+        # variedad: no repetir el rubro de ayer ni de anteayer si se puede
+        recientes = {hist[x].get("r") for x in ((d - datetime.timedelta(days=j)).isoformat() for j in (1, 2)) if x in hist}
+        pool = [p for p in pool if p.get("r") not in recientes] or pool
         i = int(hashlib.md5(("cuanto-sale/" + clave).encode()).hexdigest(), 16) % len(pool)
         hist[clave] = dict(pool[i])
         print(f"Producto del {clave}: {pool[i]['n']} ({pool[i]['p']})")
     limite = (hoy - datetime.timedelta(days=120)).isoformat()
     hist = {k: v for k, v in sorted(hist.items()) if k >= limite}
-    with open(HIST, "w", encoding="utf-8") as f:
+    with open(HIST + ".tmp", "w", encoding="utf-8") as f:  # escritura atómica
         json.dump(hist, f, ensure_ascii=False, indent=1)
+    os.replace(HIST + ".tmp", HIST)
     ayer = (hoy - datetime.timedelta(days=1)).isoformat()
-    return {k: v for k, v in hist.items() if k >= ayer}
+    jugados = sorted({v["ean"] for k, v in hist.items() if k < hoy.isoformat()})
+    return {k: v for k, v in hist.items() if k >= ayer}, jugados
 
 
 def main():
@@ -582,11 +604,12 @@ def main():
         productos += [p for p in curar(C["candidatos"], C["fecha"]) if p["ean"] not in ya][: 80 - len(productos)]
     if len(productos) < 20:
         sys.exit(f"Muy pocos productos ({len(productos)}); no actualizo el archivo")
-    agenda = agendar(productos)
+    agenda, jugados = agendar(productos)
     salida = {
         "fecha": C["fecha"],
         "fuente": "Precios Claros – Base SEPA, Secretaría de Comercio (datos.produccion.gob.ar), CC BY 4.0",
         "agenda": agenda,
+        "jugados": jugados,
         "productos": productos,
     }
     with open(OUT, "w", encoding="utf-8") as f:

@@ -9,7 +9,7 @@
    "k": "box",
    "c": "#8B5A2B",
    "a": "#F2C230",
-   "r": "almacen",
+   "r": "reposteria",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.739 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790070432971",
    "u": [
@@ -19,43 +19,96 @@
    "g": "torta"
   },
   "2026-11-08": {
+   "n": "Yerba Mañanita",
+   "d": "1 kg",
+   "p": 5610,
+   "k": "yerba",
+   "c": "#F2C230",
+   "a": "#3E8E41",
+   "r": "desayuno",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.716 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7790387015317"
+  },
+  "2026-11-09": {
+   "n": "Limpiador Poett primavera",
+   "d": "900 ml",
+   "p": 2760,
+   "k": "jug",
+   "c": "#E7A6D6",
+   "a": "#fff",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.732 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7793253003548",
+   "u": [
+    0.9,
+    "litro"
+   ]
+  },
+  "2026-11-10": {
+   "n": "Jugo exprimido Citric de naranja",
+   "d": "1 L",
+   "p": 6150,
+   "k": "pet",
+   "c": "#F7A928",
+   "a": "#3E8E41",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · mediana de 11 cadenas y 1.725 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7798085681834"
+  },
+  "2026-11-11": {
+   "n": "Fernet Branca",
+   "d": "750 ml",
+   "p": 21000,
+   "k": "bottle",
+   "c": "#2B2B2B",
+   "a": "#D23B2E",
+   "r": "alcohol",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.734 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7790290101602",
+   "u": [
+    0.75,
+    "litro"
+   ]
+  },
+  "2026-11-12": {
+   "n": "Arroz parboil Gallo Oro",
+   "d": "500 g",
+   "p": 1570,
+   "k": "bag",
+   "c": "#F4F1E8",
+   "a": "#D4A017",
+   "r": "despensa",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.652 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7790070433114",
+   "u": [
+    0.5,
+    "kilo"
+   ]
+  },
+  "2026-11-13": {
    "n": "Danette de dulce de leche",
    "d": "100 g",
    "p": 2939,
    "k": "cup",
-   "c": "#fff",
-   "a": "#8B5A2B",
+   "c": "#6B3A1E",
+   "a": "#F5E6C8",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.731 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7791337008106"
   },
-  "2026-11-09": {
-   "n": "Polvo para hornear Royal",
-   "d": "50 g",
-   "p": 1840,
-   "k": "tin",
-   "c": "#D23B2E",
-   "a": "#fff",
-   "r": "almacen",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.634 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7622201464882"
-  },
-  "2026-11-10": {
-   "n": "Dulce de leche La Serenísima",
-   "d": "400 g",
-   "p": 4179,
-   "k": "jar",
-   "c": "#F5E6C8",
-   "a": "#3A7BD5",
-   "r": "lacteos",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.729 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7790742625304",
-   "u": [
-    0.4,
-    "kilo"
-   ]
+  "2026-11-14": {
+   "n": "Paliqueso Pehuamar",
+   "d": "165 g",
+   "p": 3800,
+   "k": "chips",
+   "c": "#F28C28",
+   "a": "#1F4FA3",
+   "r": "snacks",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.697 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
+   "ean": "7790310985526"
   }
  },
+ "jugados": [],
  "productos": [
   {
    "n": "Alfajor Terrabusi torta",
@@ -66,7 +119,8 @@
    "a": "#F2C230",
    "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.547 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "0000077903860"
+   "ean": "0000077903860",
+   "diario": false
   },
   {
    "n": "Alfajor triple Pepitos",
@@ -174,7 +228,7 @@
    "k": "tin",
    "c": "#D23B2E",
    "a": "#fff",
-   "r": "almacen",
+   "r": "reposteria",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.634 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7622201464882"
   },
@@ -182,7 +236,7 @@
    "n": "Galletitas Oreo",
    "d": "118 g",
    "p": 2640,
-   "k": "sleeve",
+   "k": "roll",
    "c": "#1F4FA3",
    "a": "#1d1b1a",
    "r": "snacks",
@@ -193,7 +247,7 @@
    "n": "Galletitas Pepitos",
    "d": "119 g",
    "p": 2480,
-   "k": "sleeve",
+   "k": "roll",
    "c": "#1F4FA3",
    "a": "#8B5A2B",
    "r": "snacks",
@@ -204,7 +258,7 @@
    "n": "Galletitas Cerealitas",
    "d": "212 g",
    "p": 2354,
-   "k": "sleeve",
+   "k": "roll",
    "c": "#3E8E41",
    "a": "#F2C230",
    "r": "snacks",
@@ -228,7 +282,7 @@
    "n": "Galletitas Duquesa",
    "d": "115 g",
    "p": 1694,
-   "k": "sleeve",
+   "k": "roll",
    "c": "#8E1B3A",
    "a": "#F5E6C8",
    "r": "snacks",
@@ -244,13 +298,14 @@
    "a": "#F2C230",
    "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.683 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7790040133587"
+   "ean": "7790040133587",
+   "diario": false
   },
   {
    "n": "Galletitas Chocolinas",
    "d": "250 g",
    "p": 2824,
-   "k": "sleeve",
+   "k": "roll",
    "c": "#6B3A1E",
    "a": "#3A7BD5",
    "r": "snacks",
@@ -263,9 +318,9 @@
   },
   {
    "n": "Galletitas Traviata",
-   "d": "540 g",
+   "d": "540 g · paquete familiar",
    "p": 3504,
-   "k": "sleeve",
+   "k": "roll",
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "snacks",
@@ -283,7 +338,7 @@
    "k": "pet",
    "c": "#F2C230",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.735 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790060023684",
    "u": [
@@ -298,7 +353,7 @@
    "k": "pasta",
    "c": "#2A5DB0",
    "a": "#fff",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.738 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790070336316",
    "u": [
@@ -313,7 +368,7 @@
    "k": "pasta",
    "c": "#F2C230",
    "a": "#1F4FA3",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.725 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790070336385",
    "u": [
@@ -329,13 +384,9 @@
    "k": "box",
    "c": "#8B5A2B",
    "a": "#F2C230",
-   "r": "almacen",
+   "r": "reposteria",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.739 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
-   "ean": "7790070432971",
-   "u": [
-    0.54,
-    "kilo"
-   ]
+   "ean": "7790070432971"
   },
   {
    "n": "Arroz parboil Gallo Oro",
@@ -344,7 +395,7 @@
    "k": "bag",
    "c": "#F4F1E8",
    "a": "#D4A017",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.652 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790070433114",
    "u": [
@@ -359,7 +410,7 @@
    "k": "bag",
    "c": "#F5E6C8",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "reposteria",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.713 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790070562180"
   },
@@ -370,7 +421,7 @@
    "k": "disc",
    "c": "#F2C230",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "reposteria",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.583 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790070622013",
    "u": [
@@ -385,7 +436,7 @@
    "k": "bag",
    "c": "#F5E6C8",
    "a": "#8B5A2B",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.510 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790071090231"
   },
@@ -396,7 +447,7 @@
    "k": "box",
    "c": "#3A7BD5",
    "a": "#fff",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.696 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790072002080",
    "u": [
@@ -411,7 +462,7 @@
    "k": "pet",
    "c": "#F1EFE6",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.334 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790130000058"
   },
@@ -435,7 +486,7 @@
    "k": "box",
    "c": "#D23B2E",
    "a": "#F2C230",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.511 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790150211939",
    "diario": false
@@ -447,7 +498,7 @@
    "k": "bottle",
    "c": "#7A8F2A",
    "a": "#F2C230",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.649 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790272008394",
    "u": [
@@ -474,7 +525,7 @@
    "n": "Papas fritas Lay's clásicas",
    "d": "85 g",
    "p": 4200,
-   "k": "bag",
+   "k": "chips",
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "snacks",
@@ -485,7 +536,7 @@
    "n": "Paliqueso Pehuamar",
    "d": "165 g",
    "p": 3800,
-   "k": "bag",
+   "k": "chips",
    "c": "#F28C28",
    "a": "#1F4FA3",
    "r": "snacks",
@@ -510,7 +561,7 @@
    "k": "yerba",
    "c": "#D23B2E",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.722 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790387013610"
   },
@@ -521,19 +572,19 @@
    "k": "yerba",
    "c": "#F2C230",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.716 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790387015317"
   },
   {
    "n": "Mate cocido Taragüí",
-   "d": "150 g",
+   "d": "50 saquitos",
    "g": "hoja",
    "p": 2640,
    "k": "box",
    "c": "#D23B2E",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.716 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790387800067"
   },
@@ -550,7 +601,8 @@
    "u": [
     0.36,
     "litro"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Caramelos Sugus",
@@ -571,7 +623,7 @@
    "k": "tinf",
    "c": "#D9D9D9",
    "a": "#1F4FA3",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.717 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790580131364"
   },
@@ -582,7 +634,7 @@
    "k": "tin",
    "c": "#D9D9D9",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.695 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790580132392",
    "u": [
@@ -599,7 +651,7 @@
    "k": "box",
    "c": "#F2C230",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "reposteria",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.679 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790580138738",
    "u": [
@@ -614,7 +666,7 @@
    "k": "tetra",
    "c": "#D23B2E",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.726 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790580138868",
    "u": [
@@ -641,7 +693,7 @@
    "k": "tin",
    "c": "#D9D9D9",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.578 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790580567903",
    "u": [
@@ -681,7 +733,7 @@
    "k": "box",
    "c": "#D23B2E",
    "a": "#F2C230",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.723 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790670050650",
    "u": [
@@ -696,7 +748,7 @@
    "k": "sleeve",
    "c": "#D23B2E",
    "a": "#F2C230",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.664 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790670052401"
   },
@@ -705,8 +757,8 @@
    "d": "330 ml",
    "p": 5340,
    "k": "tetra",
-   "c": "#fff",
-   "a": "#1F4FA3",
+   "c": "#1F4FA3",
+   "a": "#fff",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.699 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790742141705",
@@ -742,9 +794,9 @@
    "n": "Queso untable Finlandia",
    "d": "290 g",
    "p": 5929,
-   "k": "cup",
-   "c": "#fff",
-   "a": "#1F4FA3",
+   "k": "tub",
+   "c": "#1F4FA3",
+   "a": "#fff",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.539 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7790742373205",
@@ -825,7 +877,8 @@
    "u": [
     1.5,
     "litro"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Powerade Mountain Blast",
@@ -856,7 +909,8 @@
    "u": [
     1.5,
     "litro"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Ades de naranja",
@@ -1040,8 +1094,8 @@
    "d": "100 g",
    "p": 2939,
    "k": "cup",
-   "c": "#fff",
-   "a": "#8B5A2B",
+   "c": "#6B3A1E",
+   "a": "#F5E6C8",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.731 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7791337008106"
@@ -1051,8 +1105,8 @@
    "d": "120 g",
    "p": 3949,
    "k": "cup",
-   "c": "#fff",
-   "a": "#F2C230",
+   "c": "#F2C230",
+   "a": "#3A7BD5",
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.743 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7791337008472"
@@ -1072,7 +1126,7 @@
    "n": "Queso crema Casancrem",
    "d": "290 g",
    "p": 5995,
-   "k": "cup",
+   "k": "tub",
    "c": "#fff",
    "a": "#3A7BD5",
    "r": "lacteos",
@@ -1132,7 +1186,7 @@
   },
   {
    "n": "Cerveza Quilmes Cristal",
-   "d": "1 L",
+   "d": "1 L · retornable",
    "p": 4649,
    "k": "bottle",
    "c": "#7A4E1D",
@@ -1154,7 +1208,8 @@
    "u": [
     2.0,
     "litro"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Limpiador Poett primavera",
@@ -1178,7 +1233,7 @@
    "k": "jar",
    "c": "#F7A928",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.729 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7793360131516",
    "u": [
@@ -1193,7 +1248,7 @@
    "k": "yerba",
    "c": "#3A7BD5",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.655 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7793704000928"
   },
@@ -1216,7 +1271,7 @@
    "k": "pouch",
    "c": "#fff",
    "a": "#1F4FA3",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.714 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7794000006072",
    "u": [
@@ -1231,7 +1286,7 @@
    "k": "squeeze",
    "c": "#D23B2E",
    "a": "#fff",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.636 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7794000006164",
    "u": [
@@ -1246,7 +1301,7 @@
    "k": "squeeze",
    "c": "#F2C230",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.744 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7794000006478",
    "u": [
@@ -1262,13 +1317,14 @@
    "k": "box",
    "c": "#F2C230",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "reposteria",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.695 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7794000007468",
    "u": [
     0.5,
     "kilo"
-   ]
+   ],
+   "diario": false
   },
   {
    "n": "Caldo Knorr de gallina",
@@ -1277,7 +1333,7 @@
    "k": "box",
    "c": "#F2C230",
    "a": "#3E8E41",
-   "r": "almacen",
+   "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.711 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7794000008540"
   },
@@ -1385,7 +1441,7 @@
    "k": "jar",
    "c": "#5A3420",
    "a": "#fff",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.628 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "7898024394181",
    "u": [
@@ -1401,7 +1457,7 @@
    "k": "box",
    "c": "#D23B2E",
    "a": "#F2C230",
-   "r": "almacen",
+   "r": "despensa",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.733 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "8445290993021"
   },
@@ -1412,7 +1468,7 @@
    "k": "jar",
    "c": "#4B2E1E",
    "a": "#D23B2E",
-   "r": "almacen",
+   "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.647 sucursales de CABA y provincia de Bs. As. · 07/11/2026",
    "ean": "8445291082137"
   }
