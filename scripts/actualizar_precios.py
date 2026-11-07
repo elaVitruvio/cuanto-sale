@@ -115,13 +115,28 @@ def procesar(path):
 
 
 KINDS = [
-    (r"aceite|gaseosa|agua|cerveza|vino|jugo listo|vinagre|lavandina|detergente|shampoo|suavizante", "bottle"),
-    (r"leche|crema|yogur", "carton"),
+    (r"chocolatada|leche entera|leche desc|leche larga|leche ultra|yogur|cepita|jugo", "carton"),
+    (r"aceite|gaseosa|agua|cerveza|vino|vinagre|lavandina|detergente|shampoo|acondicionador|suavizante|coca|sprite|fanta|pepsi|aquarius|powerade|cynar|fernet|jab[oó]n l[ií]quido|limpiador|antitranspirante|desodorante|roll-on|aerosol", "bottle"),
     (r"dulce de leche|mermelada|mayonesa|manteca|queso untable", "jar"),
     (r"papel higi", "rolls"),
     (r"jugo en polvo|jugo polvo|sobre", "sachet"),
     (r"arveja|atun|atún|choclo|tomate|lata|durazno", "can"),
-    (r"yerba|arroz|az[uú]car|harina|caf[eé]|polenta|sal |lentej|porot", "bag"),
+    (r"yerba|arroz|az[uú]car|harina|caf[eé]|polenta|sal |lentej|porot|galletit|papas fritas", "bag"),
+]
+ABREV = [
+    (r"\bantitrans?\.?\b|\bantitr\.?\b", "Antitranspirante"), (r"\bdeo\.?\b", "Desodorante"),
+    (r"\bsh\.?\b", "Shampoo"), (r"\baco?\.?\b", "Acondicionador"), (r"\br-on\b", "Roll-on"),
+    (r"\bcaram\.?\b", "Caramelos"), (r"\bchoc\.?\b", "Chocolate"), (r"\bfid\.?\b", "Fideos"),
+    (r"\bbizc\.?\b", "Bizcochuelo"), (r"\bdet\.?\b", "Detergente"), (r"\bjab\.?\s?liq\.?", "Jabón líquido"),
+    (r"\baer\.?\b", "Aerosol"), (r"\bcr\.?\b", "Crema"), (r"\bliq\.?\b", "Líquido"), (r"\blv\.?\b", "Lavar"),
+    (r"\bsaq\.?\b", "Saquitos"), (r"\bp/dil\.?\b", "para diluir"), (r"\bdesinf\.?\b", "Desinfectante"),
+    (r"\bgall\.?\b|\bgallet\.?\b", "Galletitas"), (r"\bmerm\.?\b", "Mermelada"), (r"\bmayon\.?\b", "Mayonesa"),
+    (r"\bdl\b|\bdulce de l\.?\b", "Dulce de leche"), (r"\bpap\.?\s?hig\.?", "Papel higiénico"),
+]
+EXCLUIR = r"carefree|toa\b|toall|\bprot\b|protector|nosotras|siempre lib|ladysoft|afeit|venus|gillette|cotonete|algod|nutrilon|nutribaby|vital|pa[ñn]al|preservativ|tampon|\bob\b|cynar|aperitivo|vino|cerveza|fernet|whisky|vodka|pato|pastilla"
+GRUPOS = [
+    ("higiene", r"antitrans|antitr|desodor|\bdeo\b|shampoo|\bsh\b|acond|\baco?\b|roll|r-on|jab[oó]n de tocador|crema dental|cepillo|colgate|dove|rexona|axe|nivea|sedal|elvive|pantene|h&s", 6),
+    ("limpieza", r"detergente|\bdet\b|lavandina|cif|lysoform|skip|ala\b|ayud|magistral|limpiador|desinf|suaviz|\baer\b|\bjab\.?\s?liq", 8),
 ]
 COLORES = ["#D23B2E", "#F2C230", "#3A7BD5", "#3E8E41", "#8B5A2B", "#F28C28", "#1F4FA3", "#7EC8E3", "#8a5aa0", "#E86F8A"]
 
@@ -134,6 +149,34 @@ def tipo(desc):
     return "box"
 
 
+def expandir(s):
+    s = re.sub(r"\s+x\s*\d+[.,]?\d*\s*(ml|cc|gr?|kg|lt?|un)\b.*$", "", s, flags=re.I)
+    for patron, rep_ in ABREV:
+        s = re.sub(patron, rep_, s, flags=re.I)
+    return s
+
+
+def grupo(desc):
+    d = desc.lower()
+    for nombre, patron, _ in GRUPOS:
+        if re.search(patron, d):
+            return nombre
+    return "almacen"
+
+
+def tamano(desc, cant, unidad):
+    m = re.search(r"x\s*(\d+[.,]?\d*)\s*(ml|cc|gr?|kg|lt?)\b", desc, re.I)
+    if m:
+        cant, unidad = num(m.group(1)), m.group(2).lower()
+    if cant <= 0:
+        return "", 0, ""
+    u = {"g": "gr", "grs": "gr", "grm": "gr", "l": "lt", "lts": "lt", "litro": "lt", "kgs": "kg", "kilo": "kg", "cm3": "ml", "cc": "ml"}.get(unidad, unidad)
+    if (u == "ml" and cant < 10) or (u == "gr" and cant < 5):
+        return "", 0, ""
+    txt = {"gr": f"{cant:g} g", "kg": f"{cant:g} kg".replace(".", ","), "ml": f"{cant:g} ml", "lt": f"{cant:g} L".replace(".", ",")}.get(u, "")
+    return txt, cant, u
+
+
 def titulo(s):
     chicas = {"de", "del", "la", "el", "y", "con", "sin", "en", "x"}
     pal = s.lower().split()
@@ -143,13 +186,13 @@ def titulo(s):
 def unitario(precio, cant, unidad):
     if cant <= 0:
         return None
-    if unidad in ("kg", "kilo", "kgs"):
+    if unidad == "kg":
         return [cant, "kilo"]
-    if unidad in ("gr", "g", "grm", "grs"):
+    if unidad == "gr":
         return [cant / 1000, "kilo"]
-    if unidad in ("lt", "l", "lts", "litro"):
+    if unidad == "lt":
         return [cant, "litro"]
-    if unidad in ("ml", "cc", "cm3"):
+    if unidad == "ml":
         return [cant / 1000, "litro"]
     return None
 
@@ -161,27 +204,37 @@ def elegir(precios, info, fecha):
         marca = i["marca"].upper()
         if len(lista) < MIN_SUCURSALES or not marca or marca in ("SIN MARCA", "GENERICO", "GENÉRICO", "VARIOS"):
             continue
+        if re.search(EXCLUIR, i["desc"].lower()):
+            continue
         candidatos.append((len(lista), pid))
     candidatos.sort(reverse=True)
-    elegidos, por_marca = [], defaultdict(int)
+    elegidos, por_marca, por_grupo, vistos = [], defaultdict(int), defaultdict(int), set()
+    topes = {g: t for g, _, t in GRUPOS}
     for n, pid in candidatos:
         i = info[pid]
-        if por_marca[i["marca"].upper()] >= 2:
+        g = grupo(i["desc"])
+        if por_marca[i["marca"].upper()] >= 2 or por_grupo[g] >= topes.get(g, 999):
             continue
+        desc = titulo(expandir(i["desc"]))
+        tam, cant, uni = tamano(i["desc"], i["cant"], i["unidad"])
+        clave = (desc, tam)
+        if clave in vistos:
+            continue
+        vistos.add(clave)
         por_marca[i["marca"].upper()] += 1
+        por_grupo[g] += 1
         med = statistics.median(precios[pid])
-        desc = titulo(i["desc"])
         h = int(hashlib.md5(pid.encode()).hexdigest(), 16)
         item = {
             "n": desc,
-            "d": f"Marca {titulo(i['marca'])}",
+            "d": " · ".join(x for x in (tam, titulo(i["marca"])) if x),
             "p": int(round(med)),
-            "k": tipo(i["desc"]),
+            "k": tipo(desc),
             "c": COLORES[h % len(COLORES)],
             "s": f"SEPA – mediana de {n} sucursales de CABA y GBA · {fecha}",
             "ean": pid,
         }
-        u = unitario(med, i["cant"], i["unidad"])
+        u = unitario(med, cant, uni)
         if u:
             item["u"] = u
         elegidos.append(item)
