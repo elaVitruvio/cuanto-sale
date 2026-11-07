@@ -1,0 +1,762 @@
+{
+ "fecha": "2026-11-07",
+ "fuente": "Precios Claros – Base SEPA, Secretaría de Comercio (datos.produccion.gob.ar), CC BY 4.0",
+ "productos": [
+  {
+   "n": "Antitrans Rexona Hombre",
+   "d": "Marca Rexona",
+   "p": 5120,
+   "k": "box",
+   "c": "#8a5aa0",
+   "s": "SEPA – mediana de 1969 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791293049502",
+   "u": [
+    0.15,
+    "litro"
+   ]
+  },
+  {
+   "n": "Deo Axe H Marine 48h",
+   "d": "Marca Axe",
+   "p": 4930,
+   "k": "box",
+   "c": "#3A7BD5",
+   "s": "SEPA – mediana de 1943 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791293043791",
+   "u": [
+    0.15,
+    "litro"
+   ]
+  },
+  {
+   "n": "Chocolatada Cindor",
+   "d": "Marca Cindor",
+   "p": 8210,
+   "k": "can",
+   "c": "#F2C230",
+   "s": "SEPA – mediana de 1931 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791337007253",
+   "u": [
+    1.0,
+    "litro"
+   ]
+  },
+  {
+   "n": "Prot Carefree Largos",
+   "d": "Marca Carefree",
+   "p": 11998,
+   "k": "box",
+   "c": "#D23B2E",
+   "s": "SEPA – mediana de 1930 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790010002806"
+  },
+  {
+   "n": "Ac Sedal Crema Balance",
+   "d": "Marca Sedal",
+   "p": 6384,
+   "k": "carton",
+   "c": "#1F4FA3",
+   "s": "SEPA – mediana de 1928 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791293045948",
+   "u": [
+    0.34,
+    "litro"
+   ]
+  },
+  {
+   "n": "Antitr Dove M Original",
+   "d": "Marca Dove",
+   "p": 8455,
+   "k": "box",
+   "c": "#3E8E41",
+   "s": "SEPA – mediana de 1926 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7891150081239",
+   "u": [
+    0.25,
+    "litro"
+   ]
+  },
+  {
+   "n": "Antitrans Rexona M Nutri",
+   "d": "Marca Rexona",
+   "p": 5122,
+   "k": "box",
+   "c": "#8a5aa0",
+   "s": "SEPA – mediana de 1924 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791293049557",
+   "u": [
+    0.15,
+    "litro"
+   ]
+  },
+  {
+   "n": "Sh Sedal Crema Balance",
+   "d": "Marca Sedal",
+   "p": 6385,
+   "k": "carton",
+   "c": "#8a5aa0",
+   "s": "SEPA – mediana de 1923 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791293045740",
+   "u": [
+    0.34,
+    "litro"
+   ]
+  },
+  {
+   "n": "Toa Siempre Lib Esp Uf",
+   "d": "Marca Siempre Libre",
+   "p": 2516,
+   "k": "box",
+   "c": "#F28C28",
+   "s": "SEPA – mediana de 1916 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790010002769"
+  },
+  {
+   "n": "Chocolatada Cindor",
+   "d": "Marca Cindor",
+   "p": 2879,
+   "k": "can",
+   "c": "#D23B2E",
+   "s": "SEPA – mediana de 1914 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791337007260",
+   "u": [
+    0.2,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Toa Siempre Libr Especial",
+   "d": "Marca Siempre Libre",
+   "p": 2424,
+   "k": "box",
+   "c": "#8B5A2B",
+   "s": "SEPA – mediana de 1901 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790010002653"
+  },
+  {
+   "n": "R-on Nivea B&w Power",
+   "d": "Marca Nivea",
+   "p": 3341,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1901 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "4005900036759",
+   "u": [
+    0.05,
+    "litro"
+   ]
+  },
+  {
+   "n": "Sh Dove Recon Completa Su",
+   "d": "Marca Dove",
+   "p": 10639,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1900 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791293047102",
+   "u": [
+    0.4,
+    "litro"
+   ]
+  },
+  {
+   "n": "Coca Cola",
+   "d": "Marca Coca Cola",
+   "p": 2700,
+   "k": "box",
+   "c": "#3E8E41",
+   "s": "SEPA – mediana de 1900 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895000232",
+   "u": [
+    0.354,
+    "litro"
+   ]
+  },
+  {
+   "n": "Cepita Multifruta",
+   "d": "Marca Cepita",
+   "p": 1300,
+   "k": "box",
+   "c": "#7EC8E3",
+   "s": "SEPA – mediana de 1892 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895000737",
+   "u": [
+    0.2,
+    "litro"
+   ]
+  },
+  {
+   "n": "R-on Nivea Dry F-men",
+   "d": "Marca Nivea",
+   "p": 3341,
+   "k": "box",
+   "c": "#3E8E41",
+   "s": "SEPA – mediana de 1887 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "4005808257553",
+   "u": [
+    0.05,
+    "litro"
+   ]
+  },
+  {
+   "n": "Powerade Mountain Blast",
+   "d": "Marca Powerade",
+   "p": 2200,
+   "k": "box",
+   "c": "#3A7BD5",
+   "s": "SEPA – mediana de 1883 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895640025",
+   "u": [
+    0.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Powerade Frutas Tropical",
+   "d": "Marca Powerade",
+   "p": 2200,
+   "k": "box",
+   "c": "#F2C230",
+   "s": "SEPA – mediana de 1882 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895641183",
+   "u": [
+    0.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Algodon Estrella Clasico",
+   "d": "Marca Estrella",
+   "p": 1481,
+   "k": "box",
+   "c": "#1F4FA3",
+   "s": "SEPA – mediana de 1880 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790064000261",
+   "u": [
+    0.075,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Toa Nosotras Buenas Noche",
+   "d": "Marca Nosotras",
+   "p": 3960,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1858 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790770601851"
+  },
+  {
+   "n": "Caram Sugus Confitado",
+   "d": "Marca Sugus",
+   "p": 2200,
+   "k": "box",
+   "c": "#3E8E41",
+   "s": "SEPA – mediana de 1857 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790580056001",
+   "u": [
+    0.05,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Choc. con Leche Arcor",
+   "d": "Marca Arcor",
+   "p": 1650,
+   "k": "carton",
+   "c": "#1F4FA3",
+   "s": "SEPA – mediana de 1854 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790580607210",
+   "u": [
+    0.025,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Gomitas Mogul Ositos",
+   "d": "Marca Mogul",
+   "p": 990,
+   "k": "box",
+   "c": "#F2C230",
+   "s": "SEPA – mediana de 1835 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790580199913",
+   "u": [
+    0.03,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Sh H&s Argan",
+   "d": "Marca Head&shoulders",
+   "p": 13831,
+   "k": "box",
+   "c": "#F28C28",
+   "s": "SEPA – mediana de 1829 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7500435202695",
+   "u": [
+    0.375,
+    "litro"
+   ]
+  },
+  {
+   "n": "Deo Axe Black",
+   "d": "Marca Axe",
+   "p": 4930,
+   "k": "box",
+   "c": "#F2C230",
+   "s": "SEPA – mediana de 1818 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791293028781",
+   "u": [
+    0.15,
+    "litro"
+   ]
+  },
+  {
+   "n": "Aer Cif Desinf Original",
+   "d": "Marca Cif",
+   "p": 4640,
+   "k": "box",
+   "c": "#7EC8E3",
+   "s": "SEPA – mediana de 1818 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791290795778",
+   "u": [
+    0.36,
+    "litro"
+   ]
+  },
+  {
+   "n": "Afeit Venus Simply",
+   "d": "Marca Venus",
+   "p": 7886,
+   "k": "box",
+   "c": "#3A7BD5",
+   "s": "SEPA – mediana de 1818 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7702018072392"
+  },
+  {
+   "n": "Cif Cr Bioactive Original",
+   "d": "Marca Cif",
+   "p": 4550,
+   "k": "box",
+   "c": "#F2C230",
+   "s": "SEPA – mediana de 1816 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791290794221",
+   "u": [
+    0.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Aquarius Manzana",
+   "d": "Marca Aquarius",
+   "p": 3100,
+   "k": "box",
+   "c": "#3A7BD5",
+   "s": "SEPA – mediana de 1808 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895640483",
+   "u": [
+    1.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Deo Lysoform Original",
+   "d": "Marca Lysoform",
+   "p": 5330,
+   "k": "box",
+   "c": "#1F4FA3",
+   "s": "SEPA – mediana de 1808 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790520995285",
+   "u": [
+    0.36,
+    "litro"
+   ]
+  },
+  {
+   "n": "Pastilla Mochilax2 Pato",
+   "d": "Marca Pato",
+   "p": 5965,
+   "k": "box",
+   "c": "#8B5A2B",
+   "s": "SEPA – mediana de 1806 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790520024510",
+   "u": [
+    0.08,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Sh Elvive Collagen Lifter",
+   "d": "Marca Elvive",
+   "p": 13490,
+   "k": "box",
+   "c": "#1F4FA3",
+   "s": "SEPA – mediana de 1802 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790033342095",
+   "u": [
+    0.4,
+    "litro"
+   ]
+  },
+  {
+   "n": "Nutrilon 3 Brick",
+   "d": "Marca Nutrilon",
+   "p": 3175,
+   "k": "box",
+   "c": "#F2C230",
+   "s": "SEPA – mediana de 1799 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7795323775348",
+   "u": [
+    0.2,
+    "litro"
+   ]
+  },
+  {
+   "n": "Aco Elvive Collagen Lifte",
+   "d": "Marca Elvive",
+   "p": 13490,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1795 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790033342125",
+   "u": [
+    0.4,
+    "litro"
+   ]
+  },
+  {
+   "n": "Aquarius Pomelo",
+   "d": "Marca Aquarius",
+   "p": 3100,
+   "k": "box",
+   "c": "#F28C28",
+   "s": "SEPA – mediana de 1792 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895640490",
+   "u": [
+    1.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Nutrilon 2 Brick",
+   "d": "Marca Nutrilon",
+   "p": 3329,
+   "k": "box",
+   "c": "#F28C28",
+   "s": "SEPA – mediana de 1791 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7795323775331",
+   "u": [
+    0.2,
+    "litro"
+   ]
+  },
+  {
+   "n": "Sh H&s Manzana Fresh",
+   "d": "Marca Head&shoulders",
+   "p": 13830,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1791 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7500435019880",
+   "u": [
+    0.375,
+    "litro"
+   ]
+  },
+  {
+   "n": "Cepita Manzana",
+   "d": "Marca Cepita",
+   "p": 1300,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1785 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895000720",
+   "u": [
+    0.2,
+    "litro"
+   ]
+  },
+  {
+   "n": "Jab.liq.ala P/dil Ecolava",
+   "d": "Marca Ala",
+   "p": 11990,
+   "k": "box",
+   "c": "#D23B2E",
+   "s": "SEPA – mediana de 1772 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791290792043",
+   "u": [
+    0.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Ayudin Lavandina Gel Expert Lavanda x 700 Ml",
+   "d": "Marca Ayudin",
+   "p": 3850,
+   "k": "bottle",
+   "c": "#8a5aa0",
+   "s": "SEPA – mediana de 1769 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7793253003838",
+   "u": [
+    0.001,
+    "litro"
+   ]
+  },
+  {
+   "n": "Skip Liq Lv Ropa Bio Enzi",
+   "d": "Marca Skip",
+   "p": 4745,
+   "k": "box",
+   "c": "#3A7BD5",
+   "s": "SEPA – mediana de 1758 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791290792814",
+   "u": [
+    0.8,
+    "litro"
+   ]
+  },
+  {
+   "n": "Sprite",
+   "d": "Marca Sprite",
+   "p": 6100,
+   "k": "box",
+   "c": "#D23B2E",
+   "s": "SEPA – mediana de 1755 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895001000",
+   "u": [
+    2.25,
+    "litro"
+   ]
+  },
+  {
+   "n": "Coca Cola",
+   "d": "Marca Coca Cola",
+   "p": 6100,
+   "k": "box",
+   "c": "#8B5A2B",
+   "s": "SEPA – mediana de 1754 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790895000997",
+   "u": [
+    2.25,
+    "litro"
+   ]
+  },
+  {
+   "n": "Cotonetes Johnsons",
+   "d": "Marca Johnsons",
+   "p": 3870,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1752 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7891010560737"
+  },
+  {
+   "n": "Yerba Mañanita 4flex 1/2",
+   "d": "Marca Mañanita",
+   "p": 3095,
+   "k": "bag",
+   "c": "#7EC8E3",
+   "s": "SEPA – mediana de 1748 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790387015324",
+   "u": [
+    0.5,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Oblea Bon O Bon Leche x 30 G",
+   "d": "Marca Bon-o-bon",
+   "p": 1615,
+   "k": "carton",
+   "c": "#F2C230",
+   "s": "SEPA – mediana de 1747 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790580346515",
+   "u": [
+    0.001,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Mostaza Savora Original",
+   "d": "Marca Savora",
+   "p": 1856,
+   "k": "box",
+   "c": "#1F4FA3",
+   "s": "SEPA – mediana de 1744 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7794000006478",
+   "u": [
+    0.25,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Postre C Rocklet Serenito",
+   "d": "Marca Serenito",
+   "p": 3935,
+   "k": "box",
+   "c": "#F28C28",
+   "s": "SEPA – mediana de 1743 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791337008472",
+   "u": [
+    0.12,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Vino Portillo Malbec",
+   "d": "Marca Portillo",
+   "p": 6990,
+   "k": "bottle",
+   "c": "#3E8E41",
+   "s": "SEPA – mediana de 1742 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7798074864675",
+   "u": [
+    0.75,
+    "litro"
+   ]
+  },
+  {
+   "n": "Actimel Multifruta",
+   "d": "Marca Actimel",
+   "p": 2195,
+   "k": "box",
+   "c": "#F28C28",
+   "s": "SEPA – mediana de 1742 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791337007819",
+   "u": [
+    0.1,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Aperitivo Cynar",
+   "d": "Marca Cynar",
+   "p": 14200,
+   "k": "box",
+   "c": "#D23B2E",
+   "s": "SEPA – mediana de 1742 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791200000626",
+   "u": [
+    0.75,
+    "litro"
+   ]
+  },
+  {
+   "n": "Cafe Saq Sensaciones Sint",
+   "d": "Marca Sensaciones",
+   "p": 6000,
+   "k": "bag",
+   "c": "#7EC8E3",
+   "s": "SEPA – mediana de 1741 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7792360094968",
+   "u": [
+    0.005,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Bizc Exquisita Chocolate",
+   "d": "Marca Exquisita",
+   "p": 4905,
+   "k": "box",
+   "c": "#8B5A2B",
+   "s": "SEPA – mediana de 1739 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790070432971",
+   "u": [
+    0.54,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Yerba Amanda P4 N Trad",
+   "d": "Marca Amanda",
+   "p": 2675,
+   "k": "bag",
+   "c": "#F28C28",
+   "s": "SEPA – mediana de 1738 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7792710000182",
+   "u": [
+    0.5,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Fid Matarazzo Tallarin N5",
+   "d": "Marca Matarazzo",
+   "p": 2200,
+   "k": "box",
+   "c": "#3A7BD5",
+   "s": "SEPA – mediana de 1738 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790070336316",
+   "u": [
+    0.5,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Det Magistral Ultra Limon",
+   "d": "Marca Magistral",
+   "p": 5239,
+   "k": "box",
+   "c": "#8B5A2B",
+   "s": "SEPA – mediana de 1737 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790990003039",
+   "u": [
+    0.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Fid Matarazzo Tirabuzon28",
+   "d": "Marca Matarazzo",
+   "p": 2200,
+   "k": "box",
+   "c": "#E86F8A",
+   "s": "SEPA – mediana de 1737 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790070336293",
+   "u": [
+    0.5,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Serenito con Chocobombas",
+   "d": "Marca Serenito",
+   "p": 3935,
+   "k": "box",
+   "c": "#3E8E41",
+   "s": "SEPA – mediana de 1736 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7791337008489",
+   "u": [
+    0.118,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Det Magistral Ultra Limon",
+   "d": "Marca Magistral",
+   "p": 3400,
+   "k": "box",
+   "c": "#8B5A2B",
+   "s": "SEPA – mediana de 1736 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790990003022",
+   "u": [
+    0.3,
+    "litro"
+   ]
+  },
+  {
+   "n": "Bizc Exquisita Vainilla",
+   "d": "Marca Exquisita",
+   "p": 4200,
+   "k": "box",
+   "c": "#8B5A2B",
+   "s": "SEPA – mediana de 1736 sucursales de CABA y GBA · 2026-11-07",
+   "ean": "7790070432964",
+   "u": [
+    0.54,
+    "kilo"
+   ]
+  }
+ ]
+}
