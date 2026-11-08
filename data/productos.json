@@ -39,85 +39,6 @@
     0.9,
     "litro"
    ]
-  },
-  "2026-11-10": {
-   "n": "Jugo exprimido Citric de naranja",
-   "d": "1 L",
-   "p": 6150,
-   "k": "pet",
-   "c": "#F7A928",
-   "a": "#3E8E41",
-   "r": "bebidas",
-   "s": "Precios Claros (SEPA) · mediana de 11 cadenas y 1.725 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7798085681834"
-  },
-  "2026-11-11": {
-   "n": "Fernet Branca",
-   "d": "750 ml",
-   "p": 21000,
-   "k": "bottle",
-   "c": "#2B2B2B",
-   "a": "#D23B2E",
-   "r": "alcohol",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.734 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7790290101602",
-   "u": [
-    0.75,
-    "litro"
-   ]
-  },
-  "2026-11-12": {
-   "n": "Arroz parboil Gallo Oro",
-   "d": "500 g",
-   "p": 1570,
-   "k": "bag",
-   "c": "#F4F1E8",
-   "a": "#D4A017",
-   "r": "despensa",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.652 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7790070433114",
-   "u": [
-    0.5,
-    "kilo"
-   ]
-  },
-  "2026-11-13": {
-   "n": "Danette de dulce de leche",
-   "d": "100 g",
-   "p": 2939,
-   "k": "cup",
-   "c": "#6B3A1E",
-   "a": "#F5E6C8",
-   "r": "lacteos",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.731 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7791337008106"
-  },
-  "2026-11-14": {
-   "n": "Paliqueso Pehuamar",
-   "d": "165 g",
-   "p": 3800,
-   "k": "chips",
-   "c": "#F28C28",
-   "a": "#1F4FA3",
-   "r": "snacks",
-   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.697 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7790310985526"
-  },
-  "2026-11-15": {
-   "n": "Polenta Prestopronta",
-   "d": "490 g",
-   "g": "choclo",
-   "p": 1789,
-   "k": "box",
-   "c": "#F2C230",
-   "a": "#D23B2E",
-   "r": "despensa",
-   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.679 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7790580138738",
-   "u": [
-    0.49,
-    "kilo"
-   ]
   }
  },
  "jugados": [
@@ -176,9 +97,9 @@
    "n": "Ferrero Rocher",
    "d": "3 bombones · 37,5 g",
    "p": 3634,
-   "k": "box",
-   "c": "#C9A640",
-   "a": "#6B3A1E",
+   "k": "roll",
+   "c": "#F4F1E8",
+   "a": "#C9A640",
    "r": "golosinas",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.621 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "0000078909434",
@@ -211,6 +132,17 @@
     "litro"
    ],
    "diario": false
+  },
+  {
+   "n": "Shampoo Head & Shoulders",
+   "d": "180 ml",
+   "p": 8236,
+   "k": "squeeze",
+   "c": "#1F4FA3",
+   "a": "#fff",
+   "r": "higiene",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.271 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7500435249355"
   },
   {
    "n": "Pasta dental Colgate Triple Acción",
@@ -251,7 +183,7 @@
    "p": 2480,
    "k": "roll",
    "c": "#1F4FA3",
-   "a": "#8B5A2B",
+   "a": "#F2E2C0",
    "r": "snacks",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.735 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7622201735906"
@@ -325,6 +257,36 @@
    ]
   },
   {
+   "n": "Nuggets de pollo Granja del Sol",
+   "d": "400 g",
+   "p": 11448,
+   "k": "brick",
+   "c": "#F28C28",
+   "a": "#fff",
+   "r": "frescos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.635 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790070034410",
+   "u": [
+    0.4,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Patitas de pollo",
+   "d": "400 g",
+   "p": 9065,
+   "k": "brick",
+   "c": "#F2C230",
+   "a": "#1F4FA3",
+   "r": "frescos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.560 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790070036599",
+   "u": [
+    0.4,
+    "kilo"
+   ]
+  },
+  {
    "n": "Tallarines n.º 5 Matarazzo",
    "d": "500 g",
    "p": 2197,
@@ -393,6 +355,21 @@
    "ean": "7790070562180"
   },
   {
+   "n": "Ravioles La Salteña jamón y muzzarella",
+   "d": "450 g",
+   "p": 4490,
+   "k": "pillow",
+   "c": "#3E8E41",
+   "a": "#F2C230",
+   "r": "frescos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.518 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790070621870",
+   "u": [
+    0.45,
+    "kilo"
+   ]
+  },
+  {
    "n": "Tapas para empanadas La Salteña hojaldre",
    "d": "12 u. · 330 g",
    "p": 2535,
@@ -411,7 +388,7 @@
    "n": "Tostadas Riera clásicas",
    "d": "200 g",
    "p": 1992,
-   "k": "bag",
+   "k": "pillow",
    "c": "#F5E6C8",
    "a": "#8B5A2B",
    "r": "desayuno",
@@ -443,6 +420,17 @@
    "r": "aderezos",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.334 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7790130000058"
+  },
+  {
+   "n": "Papel higiénico Higienol Fresh",
+   "d": "120 m",
+   "p": 2726,
+   "k": "rolls",
+   "c": "#B9E3C6",
+   "a": "#3E8E41",
+   "r": "higiene",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.335 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790250016182"
   },
   {
    "n": "Aceite de oliva Natura",
@@ -508,6 +496,21 @@
    "ean": "7790314063824"
   },
   {
+   "n": "Hamburguesas Swift clásicas",
+   "d": "4 u. · 320 g",
+   "p": 9464,
+   "k": "brick",
+   "c": "#1F4FA3",
+   "a": "#D23B2E",
+   "r": "frescos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.694 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790360026576",
+   "u": [
+    0.32,
+    "kilo"
+   ]
+  },
+  {
    "n": "Yerba Taragüí",
    "d": "1 kg",
    "p": 5584,
@@ -532,11 +535,11 @@
   {
    "n": "Mate cocido Taragüí",
    "d": "50 saquitos",
-   "g": "hoja",
+   "g": "taza",
    "p": 2640,
    "k": "box",
-   "c": "#D23B2E",
-   "a": "#3E8E41",
+   "c": "#F5E6C8",
+   "a": "#D23B2E",
    "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.716 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7790387800067"
@@ -558,6 +561,36 @@
    "diario": false
   },
   {
+   "n": "Aromatizante Glade lavanda",
+   "d": "360 ml",
+   "p": 4374,
+   "k": "aerosol",
+   "c": "#8a5aa0",
+   "a": "#fff",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.496 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790520998262",
+   "u": [
+    0.36,
+    "litro"
+   ]
+  },
+  {
+   "n": "Mr. Músculo cocina (repuesto)",
+   "d": "450 ml",
+   "p": 2984,
+   "k": "pouch",
+   "c": "#7DBE3A",
+   "a": "#F2C230",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.531 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790520998880",
+   "u": [
+    0.45,
+    "litro"
+   ]
+  },
+  {
    "n": "Lomitos de atún al natural La Campagnola",
    "d": "170 g",
    "p": 6029,
@@ -569,20 +602,15 @@
    "ean": "7790580131364"
   },
   {
-   "n": "Arvejas secas remojadas Arcor",
-   "d": "300 g · lata",
-   "p": 1322,
-   "k": "tin",
-   "c": "#D9D9D9",
-   "a": "#3E8E41",
-   "r": "despensa",
-   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.695 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7790580132392",
-   "u": [
-    0.3,
-    "kilo"
-   ],
-   "diario": false
+   "n": "Baño de repostería Águila",
+   "d": "150 g",
+   "p": 4774,
+   "k": "bar",
+   "c": "#6B3A1E",
+   "a": "#F2C230",
+   "r": "reposteria",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.221 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790580131470"
   },
   {
    "n": "Polenta Prestopronta",
@@ -670,6 +698,28 @@
    "ean": "7790670052401"
   },
   {
+   "n": "Shampoo Plusbelle Nutrición",
+   "d": "1 L",
+   "p": 6030,
+   "k": "squeeze",
+   "c": "#7DBE3A",
+   "a": "#F2C230",
+   "r": "higiene",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.387 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790740000264"
+  },
+  {
+   "n": "Crema de leche La Serenísima",
+   "d": "200 ml",
+   "p": 3439,
+   "k": "carton",
+   "c": "#fff",
+   "a": "#1F4FA3",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.210 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790742141309"
+  },
+  {
    "n": "Crema para cocinar La Serenísima",
    "d": "330 ml",
    "p": 5340,
@@ -720,6 +770,21 @@
    "r": "lacteos",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.729 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7790742625304",
+   "u": [
+    0.4,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Dulce de leche Ilolay",
+   "d": "400 g",
+   "p": 3877,
+   "k": "jar",
+   "c": "#F5E6C8",
+   "a": "#D23B2E",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.595 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7790787153664",
    "u": [
     0.4,
     "kilo"
@@ -789,7 +854,7 @@
    "n": "Aquarius de manzana",
    "d": "1,5 L",
    "p": 3200,
-   "k": "pet",
+   "k": "petl",
    "c": "#BFE3F2",
    "a": "#7DBE3A",
    "r": "bebidas",
@@ -855,6 +920,21 @@
    ]
   },
   {
+   "n": "Limpiador Procenex Marina",
+   "d": "900 ml",
+   "p": 2620,
+   "k": "jug",
+   "c": "#3FA9C9",
+   "a": "#fff",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.721 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7791130683661",
+   "u": [
+    0.9,
+    "litro"
+   ]
+  },
+  {
    "n": "Cynar",
    "d": "750 ml",
    "p": 14136,
@@ -885,6 +965,21 @@
    ]
   },
   {
+   "n": "Jabón líquido Ala Ecolavado",
+   "d": "800 ml",
+   "p": 4033,
+   "k": "jug",
+   "c": "#1F4FA3",
+   "a": "#D23B2E",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.717 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7791290792012",
+   "u": [
+    0.8,
+    "litro"
+   ]
+  },
+  {
    "n": "Jabón líquido Skip BioEnzimas",
    "d": "800 ml",
    "p": 4748,
@@ -909,6 +1004,21 @@
    "r": "limpieza",
    "s": "Precios Claros (SEPA) · mediana de 10 cadenas y 1.816 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7791290794221",
+   "u": [
+    0.5,
+    "litro"
+   ]
+  },
+  {
+   "n": "Detergente Ala pomelo",
+   "d": "500 ml",
+   "p": 3720,
+   "k": "minibottle",
+   "c": "#F7A6A0",
+   "a": "#1F4FA3",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.027 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7791290794306",
    "u": [
     0.5,
     "litro"
@@ -996,6 +1106,17 @@
    "ean": "7791337008694"
   },
   {
+   "n": "Yogurísimo griego frutilla",
+   "d": "190 g",
+   "p": 3925,
+   "k": "cup",
+   "c": "#1F4FA3",
+   "a": "#fff",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.651 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7791337010826"
+  },
+  {
    "n": "Queso crema Casancrem",
    "d": "290 g",
    "p": 5995,
@@ -1009,22 +1130,6 @@
     0.29,
     "kilo"
    ]
-  },
-  {
-   "n": "Vino Santa Julia Malbec",
-   "d": "750 ml",
-   "p": 6590,
-   "k": "bottle",
-   "c": "#4A1020",
-   "a": "#3A7BD5",
-   "r": "alcohol",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.643 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7791728247114",
-   "u": [
-    0.75,
-    "litro"
-   ],
-   "diario": false
   },
   {
    "n": "Pepsi",
@@ -1051,22 +1156,6 @@
    "r": "alcohol",
    "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.640 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7792798007387"
-  },
-  {
-   "n": "Agua mineral Glaciar",
-   "d": "2 L",
-   "p": 3499,
-   "k": "pet",
-   "c": "#BFE3F2",
-   "a": "#3A7BD5",
-   "r": "bebidas",
-   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.727 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7792931000039",
-   "u": [
-    2.0,
-    "litro"
-   ],
-   "diario": false
   },
   {
    "n": "Limpiador Poett Primavera",
@@ -1108,6 +1197,28 @@
    "r": "desayuno",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.655 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7793704000928"
+  },
+  {
+   "n": "Leche entera Tregar larga vida",
+   "d": "1 L",
+   "p": 2550,
+   "k": "tetra",
+   "c": "#fff",
+   "a": "#D23B2E",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.179 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7793913001822"
+  },
+  {
+   "n": "Manteca La Serenísima",
+   "d": "200 g",
+   "p": 5211,
+   "k": "brick",
+   "c": "#F5E08A",
+   "a": "#3A7BD5",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.734 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7793940054006"
   },
   {
    "n": "Mayonesa Hellmann's",
@@ -1278,6 +1389,21 @@
    "r": "higiene",
    "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.733 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
    "ean": "7891150075382"
+  },
+  {
+   "n": "Antitranspirante Dove Original",
+   "d": "250 ml",
+   "p": 8459,
+   "k": "aerosol",
+   "c": "#fff",
+   "a": "#C9A640",
+   "r": "higiene",
+   "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.926 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+   "ean": "7891150081239",
+   "u": [
+    0.25,
+    "litro"
+   ]
   },
   {
    "n": "Nutella",

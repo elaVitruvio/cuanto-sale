@@ -517,6 +517,9 @@ def desde_curados(cands, fecha):
         iqr = (med[(3 * n) // 4] - med[n // 4]) / max(item["p"], 1) if n >= 4 else 0
         # golosinas chiquitas, precios muy bajos o precios que dependen mucho de la cadena:
         # sirven para el modo libre, pero no como producto del día (que se juega a ±5%)
+        if not (c["p10"] <= item["p"] <= c["p90"]) or c["p90"] / max(c["p10"], 1) > 1.35:
+            print("  (precio poco representativo hoy, ni para modo libre)", nombre)
+            continue
         cerca = sum(abs(m - item["p"]) <= .05 * item["p"] for m in med)  # cadenas a ±5% del precio
         if (extra.get("libre") or (r == "golosinas" and uni == "gr" and cant < 60) or item["p"] < 700 or iqr > 0.20
                 or not (.90 * item["p"] <= c["p10"] <= item["p"] <= c["p90"] <= 1.10 * item["p"])
@@ -536,7 +539,9 @@ def leer_historial():
             raise ValueError("el historial no es un objeto")
         return hist
     except (OSError, ValueError) as e:
-        print("Historial ilegible, uso la agenda de productos.json:", e)
+        if os.path.exists(HIST):  # existe pero está roto: frenar para no perder la memoria de 60 días
+            sys.exit(f"historial.json ilegible ({e}): restauralo con 'git checkout data/historial.json'")
+        print("No hay historial, uso la agenda de productos.json:", e)
         try:
             with open(OUT, encoding="utf-8") as f:
                 return dict(json.load(f).get("agenda") or {})
@@ -563,22 +568,27 @@ def agendar(productos):
                 hist[k].pop("u", None)
         elif k > hoy.isoformat():
             if e in por_ean:
-                hist[k] = dict(por_ean[e])
+                hist[k] = {**por_ean[e], "visto": hoy.isoformat()}
             elif e in presentes:  # llegó hoy pero dejó de ser apto (precios dispares): se reprograma
                 print(f"Reprogramo el {k}: {hist[k].get('n')} ya no es apto")
                 del hist[k]
-            # si hoy no vino en SEPA, se deja como estaba (con el precio anterior)
+            elif k == (hoy + datetime.timedelta(days=1)).isoformat() and hist[k].get("visto", "") < (hoy - datetime.timedelta(days=2)).isoformat():
+                print(f"Reprogramo el {k}: su precio tiene más de 2 días")
+                del hist[k]
+            # si no, se deja como estaba (con el precio anterior, de hace 2 días como mucho)
     for d in (hoy + datetime.timedelta(days=i) for i in range(8)):  # hoy y 7 días de reserva
         clave = d.isoformat()
         if clave in hist:
             continue
-        desde = (d - datetime.timedelta(days=SIN_REPETIR_DIAS)).isoformat()
-        usados = {v["ean"] for k, v in hist.items() if k >= desde}
         aptos = [p for p in productos if p.get("diario", True)]
+        ventana = min(SIN_REPETIR_DIAS, max(14, len(aptos) * 2 // 3))  # no pedir imposibles con pocos aptos
+        usados = {v.get("ean") for k, v in hist.items() if abs((datetime.date.fromisoformat(k) - d).days) < ventana}
         pool = [p for p in aptos if p["ean"] not in usados]
-        if len(pool) < 5:  # no alcanza: los que hace más tiempo que no salen
-            ultimo = {v["ean"]: k2 for k2, v in sorted(hist.items()) if k2 < clave}
-            pool = sorted(aptos, key=lambda p: ultimo.get(p["ean"], ""))[:7]
+        if len(pool) < 5:  # no alcanza: los más lejanos a cualquier día agendado (antes o después)
+            def lejania(e):
+                fs = [datetime.date.fromisoformat(k2) for k2, v in hist.items() if v.get("ean") == e and k2 != clave]
+                return min((abs((d - x).days) for x in fs), default=10 ** 4)
+            pool = sorted(aptos, key=lambda p: lejania(p["ean"]), reverse=True)[:7]
         # variedad: no repetir el rubro de los dos días anteriores ni de los dos siguientes ya agendados
         recientes = {hist[x].get("r") for x in ((d + datetime.timedelta(days=j)).isoformat() for j in (-2, -1, 1, 2)) if x in hist}
         pool = [p for p in pool if p.get("r") not in recientes] or pool
@@ -591,8 +601,11 @@ def agendar(productos):
         json.dump(hist, f, ensure_ascii=False, indent=1)
     os.replace(HIST + ".tmp", HIST)
     ayer = (hoy - datetime.timedelta(days=1)).isoformat()
+    manana = (hoy + datetime.timedelta(days=1)).isoformat()
     jugados = sorted({v["ean"] for k, v in hist.items() if k < hoy.isoformat()})
-    return {k: v for k, v in hist.items() if k >= ayer}, jugados
+    # se publica solo de ayer a mañana: la reserva de 7 días queda en el repo, no en el JSON del juego
+    publica = {k: {x: y for x, y in v.items() if x != "visto"} for k, v in hist.items() if ayer <= k <= manana}
+    return publica, jugados
 
 
 def main():
