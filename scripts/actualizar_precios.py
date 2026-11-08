@@ -459,7 +459,7 @@ def curar(cands, fecha):
             "p": int(c["precio"]),
             "k": k, "c": col, "a": acc,
             "r": r,
-            "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
+            "s": (f"Precios Claros (SEPA) · precio central entre {len(med)} cadenas y "
                   f"{c['sucursales']:,} sucursales de CABA y provincia de Buenos Aires · {fecha_txt}").replace(",", "."),
             "ean": c["ean"],
         }
@@ -505,13 +505,13 @@ def desde_curados(cands, fecha):
             continue
         tam, cant, uni = tamano(c["desc"], c["cant"], c["unidad"], k, r)
         item = {
-            "n": nombre, "d": extra.get("t", tam), **({"g": extra["g"]} if extra.get("g") else {}), "p": int(round(statistics.median(med))) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
-            "s": (f"Precios Claros (SEPA) · mediana de {len(med)} cadenas y "
+            "n": nombre, "d": extra.get("t", tam), **({"g": extra["g"]} if extra.get("g") else {}), "p": int(min(med, key=lambda m: (abs(m - statistics.median(med)), m))) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
+            "s": (f"Precios Claros (SEPA) · precio central entre {len(med)} cadenas y "
                   f"{c['sucursales']:,} sucursales de CABA y provincia de Buenos Aires · {fecha_txt}").replace(",", "."),
             "ean": ean,
         }
         u = unitario(cant, uni)
-        if u and "para preparar" not in extra.get("t", ""):
+        if u and k != "aerosol" and "para preparar" not in extra.get("t", ""):
             item["u"] = u
         n = len(med)
         iqr = (med[(3 * n) // 4] - med[n // 4]) / max(item["p"], 1) if n >= 4 else 0
@@ -581,7 +581,7 @@ def agendar(productos):
         if clave in hist:
             continue
         aptos = [p for p in productos if p.get("diario", True)]
-        ventana = min(SIN_REPETIR_DIAS, max(14, len(aptos) * 2 // 3))  # no pedir imposibles con pocos aptos
+        ventana = SIN_REPETIR_DIAS if len(aptos) >= SIN_REPETIR_DIAS + 15 else max(14, len(aptos) * 2 // 3)  # no pedir imposibles con pocos aptos
         usados = {v.get("ean") for k, v in hist.items() if abs((datetime.date.fromisoformat(k) - d).days) < ventana}
         pool = [p for p in aptos if p["ean"] not in usados]
         if len(pool) < 5:  # no alcanza: los más lejanos a cualquier día agendado (antes o después)
@@ -590,6 +590,10 @@ def agendar(productos):
                 return min((abs((d - x).days) for x in fs), default=10 ** 4)
             pool = sorted(aptos, key=lambda p: lejania(p["ean"]), reverse=True)[:7]
         # variedad: no repetir el rubro de los dos días anteriores ni de los dos siguientes ya agendados
+        # nada de "gemelos" (misma familia: leche/leche, yerba/yerba, hamburguesas/hamburguesas) a menos de 10 días
+        fam = lambda p: p.get("f") or p["n"].split()[0].lower()
+        vecinos = {fam(hist[x]) for x in ((d + datetime.timedelta(days=j)).isoformat() for j in range(-10, 11) if j) if x in hist}
+        pool = [p for p in pool if fam(p) not in vecinos] or pool
         recientes = {hist[x].get("r") for x in ((d + datetime.timedelta(days=j)).isoformat() for j in (-2, -1, 1, 2)) if x in hist}
         pool = [p for p in pool if p.get("r") not in recientes] or pool
         i = int(hashlib.md5(("cuanto-sale/" + clave).encode()).hexdigest(), 16) % len(pool)
@@ -604,7 +608,7 @@ def agendar(productos):
     manana = (hoy + datetime.timedelta(days=1)).isoformat()
     jugados = sorted({v["ean"] for k, v in hist.items() if k < hoy.isoformat()})
     # se publica solo de ayer a mañana: la reserva de 7 días queda en el repo, no en el JSON del juego
-    publica = {k: {x: y for x, y in v.items() if x != "visto"} for k, v in hist.items() if ayer <= k <= manana}
+    publica = {k: {x: y for x, y in v.items() if x != "visto"} for k, v in hist.items() if ayer <= k}  # historial.json es público igual (Pages): se publica la reserva para que nunca falte el del día
     return publica, jugados
 
 
@@ -629,8 +633,16 @@ def main():
     from curados import CURADOS
     if len(productos) < 0.6 * len(CURADOS):
         # SEPA vino incompleto: no se toca nada y se sigue jugando con la agenda ya publicada
-        print(f"SEPA incompleto hoy ({len(productos)} de {len(CURADOS)} curados); dejo los archivos como estaban")
-        return
+        print(f"SEPA incompleto hoy ({len(productos)} de {len(CURADOS)} curados): sigo con los productos de ayer")
+        try:
+            with open(OUT, encoding="utf-8") as f:
+                previo = json.load(f)
+            productos, C["fecha"] = previo["productos"], previo["fecha"]
+        except (OSError, ValueError, KeyError):
+            return
+    faltan = [p.get("n") for p in productos if not all(x in p for x in ("n", "d", "p", "k", "c", "a", "r", "s", "ean"))]
+    if faltan:  # nunca publicar productos incompletos
+        sys.exit(f"Productos con datos incompletos: {faltan[:5]}")
     agenda, jugados = agendar(productos)
     salida = {
         "fecha": C["fecha"],

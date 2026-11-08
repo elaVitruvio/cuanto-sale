@@ -2,7 +2,7 @@
 # El precio sale todos los días de SEPA (mediana entre cadenas). Si un producto no aparece ese día,
 # o sus precios entre cadenas son demasiado dispares, se saltea.
 # Campos: ean, nombre, envase, color, acento, rubro, [opcional: dict con "libre": True (solo modo libre),
-#   "t": texto de tamaño, "g": ícono del frente de las cajas (taza burger galleta papa cuchara choclo torta gota hoja)]
+#   "t": texto de tamaño, "g": ícono del frente de las cajas (taza burger galleta papa cuchara choclo torta gota hoja; en "roll": chispas)]
 # Envases disponibles en el dibujo: pet can aerosol squeeze jug cup minibottle brick tetra minitetra carton pouch
 #   sleeve stick disc petl tictac tube tinf pillow tub roll chips vac pasta bar yerba box jar bottle bag sachet rolls tin
 
@@ -37,7 +37,7 @@ CURADOS = [
     ("7791250002267", "Gin Gordon's", "bottle", "#CFE8D4", "#D23B2E", "alcohol"),
     # --- lácteos
     ("7790742348302", "Leche La Serenísima entera", "pillow", "#fff", "#3A7BD5", "lacteos", {"t": "1 L · sachet"}),
-    ("7790742363008", "Leche La Serenísima larga vida", "tetra", "#fff", "#3A7BD5", "lacteos"),
+    ("7790742363008", "Leche entera La Serenísima larga vida", "tetra", "#fff", "#3A7BD5", "lacteos"),
     ("7790742625304", "Dulce de leche La Serenísima", "jar", "#F5E6C8", "#3A7BD5", "lacteos"),
     ("7793940054006", "Manteca La Serenísima", "brick", "#F5E08A", "#3A7BD5", "lacteos"),
     ("7790742141705", "Crema para cocinar La Serenísima", "tetra", "#1F4FA3", "#fff", "lacteos"),
@@ -63,7 +63,7 @@ CURADOS = [
     ("7790387800067", "Mate cocido Taragüí", "box", "#F5E6C8", "#D23B2E", "desayuno", {"t": "50 saquitos", "g": "taza"}),
     ("7790150211939", "Té La Virginia", "box", "#D23B2E", "#F2C230", "desayuno", {"t": "50 saquitos", "g": "taza"}),
     ("7790580138868", "Puré de tomate La Campagnola", "tetra", "#D23B2E", "#3E8E41", "despensa"),
-    ("7790580131364", "Lomitos de atún al natural La Campagnola", "tinf", "#D9D9D9", "#1F4FA3", "despensa"),
+    ("7790580131364", "Atún al natural La Campagnola", "tinf", "#D9D9D9", "#1F4FA3", "despensa"),
     ("7790580567903", "Tomates perita Arcor", "tin", "#D9D9D9", "#D23B2E", "despensa", {"t": "400 g · lata"}),
     ("7790580132392", "Arvejas secas remojadas Arcor", "tin", "#D9D9D9", "#3E8E41", "despensa", {"t": "300 g · lata"}),
     ("7794000006072", "Mayonesa Hellmann's", "pouch", "#fff", "#1F4FA3", "aderezos"),
@@ -78,7 +78,7 @@ CURADOS = [
     ("8445290993021", "Puré de papas instantáneo Maggi", "box", "#D23B2E", "#F2C230", "despensa", {"g": "papa"}),
     ("7790580138738", "Polenta Prestopronta", "box", "#F2C230", "#D23B2E", "despensa", {"g": "choclo"}),
     ("7790130000058", "Vinagre de alcohol Menoyo", "pet", "#F1EFE6", "#D23B2E", "aderezos"),
-    ("7790070622013", "Tapas para empanadas La Salteña hojaldre", "disc", "#F2C230", "#D23B2E", "frescos", {"t": "12 u. · 330 g"}),
+    ("7790070622013", "Tapas para empanadas de hojaldre La Salteña", "disc", "#F2C230", "#D23B2E", "frescos", {"t": "12 u. · 330 g"}),
     ("7790670050650", "Hamburguesas Paty clásicas", "brick", "#D23B2E", "#F2C230", "frescos", {"t": "4 u. · 320 g", "g": "burger"}),
     ("7790670052401", "Salchichas Vienissima", "vac", "#E8F0F7", "#D23B2E", "frescos", {"t": "6 u. · 230 g"}),
     ("7790071090231", "Tostadas Riera clásicas", "pillow", "#F5E6C8", "#8B5A2B", "desayuno"),
@@ -86,7 +86,7 @@ CURADOS = [
     ("7790580607210", "Chocolate Arcor con leche", "bar", "#6B3A1E", "#fff", "golosinas"),
     ("0000077953124", "Chocolate Cofler Block", "bar", "#1F4FA3", "#F2C230", "golosinas"),
     ("7891000248799", "Kit Kat", "bar", "#D23B2E", "#fff", "golosinas"),
-    ("0000080052760", "Kinder Bueno", "sleeve", "#fff", "#D23B2E", "golosinas"),
+    ("0000080052760", "Kinder Bueno", "bar", "#fff", "#D23B2E", "golosinas"),
     ("0000078909434", "Ferrero Rocher", "roll", "#F4F1E8", "#C9A640", "golosinas", {"t": "3 bombones · 37,5 g"}),
     ("0000077903860", "Alfajor Terrabusi torta", "sleeve", "#1F4FA3", "#F2C230", "golosinas"),
     ("0000077915481", "Alfajor triple Pepitos", "sleeve", "#1d1b1a", "#3A7BD5", "golosinas"),
@@ -96,10 +96,10 @@ CURADOS = [
     ("0000078600027", "Tic Tac naranja", "tictac", "#FDE3C2", "#F28C28", "golosinas", {"libre": True}),
     ("0000077939753", "Chicles Topline Seven", "stick", "#3A7BD5", "#fff", "golosinas", {"libre": True}),
     ("7622202247286", "Pastillas Halls Cherry", "stick", "#8E1B3A", "#fff", "golosinas", {"libre": True}),
-    ("7622201735906", "Galletitas Pepitos", "roll", "#1F4FA3", "#F2E2C0", "snacks"),
+    ("7622201735906", "Galletitas Pepitos", "roll", "#1F4FA3", "#E9C48A", "snacks", {"g": "chispas"}),
     ("7622201735296", "Galletitas Oreo", "roll", "#1F4FA3", "#1d1b1a", "snacks"),
     ("7790040143234", "Galletitas Chocolinas", "roll", "#6B3A1E", "#3A7BD5", "snacks"),
-    ("7790040144095", "Galletitas Traviata", "roll", "#F2C230", "#D23B2E", "snacks", {"t": "540 g · paquete familiar"}),
+    ("7790040144095", "Galletitas Traviata", "box", "#F2C230", "#D23B2E", "snacks", {"t": "540 g · paquete familiar", "g": "galleta"}),
     ("7790580716707", "Galletitas Saladix sabor jamón", "chips", "#D23B2E", "#F2C46B", "snacks", {"g": "galleta"}),
     ("7622201736033", "Galletitas Cerealitas", "roll", "#3E8E41", "#F2C230", "snacks"),
     ("7622300742645", "Galletitas Duquesa", "roll", "#8E1B3A", "#F5E6C8", "snacks"),
@@ -109,7 +109,7 @@ CURADOS = [
     ("7790132098459", "Lavandina Ayudín", "jug", "#F4F4F4", "#3A7BD5", "limpieza"),
     ("7791290794221", "Cif crema", "squeeze", "#F2C230", "#3A7BD5", "limpieza"),
     ("7790990003022", "Detergente Magistral limón", "minibottle", "#E8E25A", "#3E8E41", "limpieza"),
-    ("7791290792814", "Jabón líquido Skip BioEnzimas", "jug", "#3A7BD5", "#fff", "limpieza"),
+    ("7791290792814", "Jabón líquido Skip BioEnzimas", "jug", "#3A7BD5", "#7DBE3A", "limpieza"),
     ("7793253003548", "Limpiador Poett Primavera", "jug", "#E7A6D6", "#fff", "limpieza"),
     ("7790520995285", "Desinfectante Lysoform en aerosol", "aerosol", "#fff", "#1F4FA3", "limpieza"),
     # --- higiene
@@ -122,14 +122,14 @@ CURADOS = [
     ("7791290792012", "Jabón líquido Ala Ecolavado", "jug", "#1F4FA3", "#D23B2E", "limpieza"),
     ("7791290794306", "Detergente Ala pomelo", "minibottle", "#F7A6A0", "#1F4FA3", "limpieza"),
     ("7790520998262", "Aromatizante Glade lavanda", "aerosol", "#8a5aa0", "#fff", "limpieza"),
-    ("7790520998880", "Mr. Músculo cocina (repuesto)", "pouch", "#7DBE3A", "#F2C230", "limpieza"),
+    ("7790520998880", "Mr. Músculo cocina repuesto", "pouch", "#7DBE3A", "#F2C230", "limpieza", {"t": "450 ml · doypack"}),
     ("7790250016182", "Papel higiénico Higienol Fresh", "rolls", "#B9E3C6", "#3E8E41", "higiene", {"t": "120 m"}),
     ("7500435249355", "Shampoo Head & Shoulders", "squeeze", "#1F4FA3", "#fff", "higiene"),
     ("7790740000264", "Shampoo Plusbelle Nutrición", "squeeze", "#7DBE3A", "#F2C230", "higiene"),
     ("7891150081239", "Antitranspirante Dove Original", "aerosol", "#fff", "#C9A640", "higiene"),
     ("7790360026576", "Hamburguesas Swift clásicas", "brick", "#1F4FA3", "#D23B2E", "frescos", {"t": "4 u. · 320 g"}),
     ("7790070034410", "Nuggets de pollo Granja del Sol", "brick", "#F28C28", "#fff", "frescos"),
-    ("7790070621870", "Ravioles La Salteña jamón y muzzarella", "pillow", "#3E8E41", "#F2C230", "frescos"),
+    ("7790070621870", "Ravioles de jamón y muzzarella La Salteña", "pillow", "#3E8E41", "#F2C230", "frescos"),
     ("7790070036599", "Patitas de pollo", "brick", "#F2C230", "#1F4FA3", "frescos"),
     ("7790787153664", "Dulce de leche Ilolay", "jar", "#F5E6C8", "#D23B2E", "lacteos"),
     ("7791337010826", "Yogurísimo griego frutilla", "cup", "#1F4FA3", "#fff", "lacteos"),

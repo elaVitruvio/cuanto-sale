@@ -30,7 +30,7 @@
   "c": "#E7A6D6",
   "a": "#fff",
   "r": "limpieza",
-  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.732 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.732 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7793253003548",
   "u": [
    0.9,
@@ -46,7 +46,7 @@
   "c": "#F7A928",
   "a": "#3E8E41",
   "r": "bebidas",
-  "s": "Precios Claros (SEPA) · mediana de 11 cadenas y 1.725 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 11 cadenas y 1.725 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7798085681834",
   "visto": "2026-11-08"
  },
@@ -58,7 +58,7 @@
   "c": "#2B2B2B",
   "a": "#D23B2E",
   "r": "alcohol",
-  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.734 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.734 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7790290101602",
   "u": [
    0.75,
@@ -74,7 +74,7 @@
   "c": "#F4F1E8",
   "a": "#D4A017",
   "r": "despensa",
-  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.652 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.652 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7790070433114",
   "u": [
    0.5,
@@ -90,7 +90,7 @@
   "c": "#6B3A1E",
   "a": "#F5E6C8",
   "r": "lacteos",
-  "s": "Precios Claros (SEPA) · mediana de 9 cadenas y 1.731 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.731 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7791337008106",
   "visto": "2026-11-08"
  },
@@ -102,7 +102,7 @@
   "c": "#F28C28",
   "a": "#1F4FA3",
   "r": "snacks",
-  "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.697 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 8 cadenas y 1.697 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7790310985526",
   "visto": "2026-11-08"
  },
@@ -110,12 +110,12 @@
   "n": "Polenta Prestopronta",
   "d": "490 g",
   "g": "choclo",
-  "p": 1789,
+  "p": 1769,
   "k": "box",
   "c": "#F2C230",
   "a": "#D23B2E",
   "r": "despensa",
-  "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.679 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 8 cadenas y 1.679 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7790580138738",
   "u": [
    0.49,
