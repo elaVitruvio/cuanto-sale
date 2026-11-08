@@ -99,5 +99,21 @@
   "r": "snacks",
   "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.697 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
   "ean": "7790310985526"
+ },
+ "2026-11-15": {
+  "n": "Polenta Prestopronta",
+  "d": "490 g",
+  "g": "choclo",
+  "p": 1789,
+  "k": "box",
+  "c": "#F2C230",
+  "a": "#D23B2E",
+  "r": "despensa",
+  "s": "Precios Claros (SEPA) · mediana de 8 cadenas y 1.679 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "ean": "7790580138738",
+  "u": [
+   0.49,
+   "kilo"
+  ]
  }
 }
