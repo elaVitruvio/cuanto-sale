@@ -36,7 +36,7 @@
    0.9,
    "litro"
   ],
-  "visto": "2026-11-08"
+  "diario": false
  },
  "2026-11-10": {
   "n": "Jugo exprimido Citric de naranja",
@@ -46,9 +46,9 @@
   "c": "#F7A928",
   "a": "#3E8E41",
   "r": "bebidas",
-  "s": "Precios Claros (SEPA) · precio central entre 11 cadenas y 1.725 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 10 cadenas y 851 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
   "ean": "7798085681834",
-  "visto": "2026-11-08"
+  "visto": "2026-11-09"
  },
  "2026-11-11": {
   "n": "Fernet Branca",
@@ -58,29 +58,24 @@
   "c": "#2B2B2B",
   "a": "#D23B2E",
   "r": "alcohol",
-  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.734 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 8 cadenas y 865 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
   "ean": "7790290101602",
   "u": [
    0.75,
    "litro"
   ],
-  "visto": "2026-11-08"
+  "visto": "2026-11-09"
  },
  "2026-11-12": {
-  "n": "Arroz parboil Gallo Oro",
-  "d": "500 g",
-  "p": 1570,
-  "k": "bag",
-  "c": "#F4F1E8",
-  "a": "#D4A017",
-  "r": "despensa",
-  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.652 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-  "ean": "7790070433114",
-  "u": [
-   0.5,
-   "kilo"
-  ],
-  "visto": "2026-11-08"
+  "n": "Antitranspirante Rexona Men",
+  "d": "150 ml",
+  "p": 5122,
+  "k": "aerosol",
+  "c": "#2B2B2B",
+  "a": "#3A7BD5",
+  "r": "higiene",
+  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.101 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+  "ean": "7791293049502"
  },
  "2026-11-13": {
   "n": "Danette de dulce de leche",
@@ -90,9 +85,9 @@
   "c": "#6B3A1E",
   "a": "#F5E6C8",
   "r": "lacteos",
-  "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.731 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 8 cadenas y 873 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
   "ean": "7791337008106",
-  "visto": "2026-11-08"
+  "visto": "2026-11-09"
  },
  "2026-11-14": {
   "n": "Paliqueso Pehuamar",
@@ -102,9 +97,9 @@
   "c": "#F28C28",
   "a": "#1F4FA3",
   "r": "snacks",
-  "s": "Precios Claros (SEPA) · precio central entre 8 cadenas y 1.697 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 7 cadenas y 825 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
   "ean": "7790310985526",
-  "visto": "2026-11-08"
+  "visto": "2026-11-09"
  },
  "2026-11-15": {
   "n": "Polenta Prestopronta",
@@ -115,12 +110,27 @@
   "c": "#F2C230",
   "a": "#D23B2E",
   "r": "despensa",
-  "s": "Precios Claros (SEPA) · precio central entre 8 cadenas y 1.679 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
+  "s": "Precios Claros (SEPA) · precio central entre 7 cadenas y 818 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
   "ean": "7790580138738",
   "u": [
    0.49,
    "kilo"
   ],
-  "visto": "2026-11-08"
+  "visto": "2026-11-09"
+ },
+ "2026-11-16": {
+  "n": "Ketchup Hellmann's",
+  "d": "500 g",
+  "p": 4698,
+  "k": "squeeze",
+  "c": "#D23B2E",
+  "a": "#fff",
+  "r": "aderezos",
+  "s": "Precios Claros (SEPA) · precio central entre 8 cadenas y 767 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+  "ean": "7794000006164",
+  "u": [
+   0.5,
+   "kilo"
+  ]
  }
 }
