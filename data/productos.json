@@ -442,7 +442,7 @@
   {
    "n": "Spaghetti n.º 7 Lucchetti",
    "d": "500 g",
-   "g": "fideo",
+   "g": "tira",
    "p": 1759,
    "k": "pasta",
    "c": "#F2C230",
@@ -502,7 +502,7 @@
   {
    "n": "Harina leudante Blancaflor",
    "d": "1 kg",
-   "g": "nube",
+   "g": "espiga",
    "p": 2294,
    "k": "bag",
    "c": "#F5E6C8",
@@ -514,7 +514,7 @@
   {
    "n": "Harina Favorita 000",
    "d": "1 kg",
-   "g": "nube",
+   "g": "espiga",
    "p": 1300,
    "k": "bag",
    "c": "#fff",
@@ -543,7 +543,7 @@
   {
    "n": "Tapas para empanadas de hojaldre La Salteña",
    "d": "12 u. · 330 g",
-   "g": "pan",
+   "g": "empanada",
    "p": 2535,
    "k": "disc",
    "c": "#F2C230",
@@ -600,7 +600,7 @@
   {
    "n": "Vinagre de alcohol Menoyo",
    "d": "1 L",
-   "g": "burbuja",
+   "g": "hoja",
    "p": 1875,
    "k": "pet",
    "c": "#F1EFE6",
@@ -654,7 +654,7 @@
   {
    "n": "Papas fritas Lay's clásicas",
    "d": "85 g",
-   "g": "papa",
+   "g": "chip",
    "p": 4200,
    "k": "chips",
    "c": "#F2C230",
@@ -725,7 +725,7 @@
   {
    "n": "Desinfectante Lysoform en aerosol",
    "d": "380 ml",
-   "g": "burbuja",
+   "g": "destello",
    "p": 5340,
    "k": "aerosol",
    "c": "#fff",
@@ -750,7 +750,7 @@
   {
    "n": "Mr. Músculo cocina repuesto",
    "d": "450 ml · doypack",
-   "g": "burbuja",
+   "g": "destello",
    "p": 2979,
    "k": "pouch",
    "c": "#7DBE3A",
@@ -783,7 +783,7 @@
   {
    "n": "Atún al natural La Campagnola",
    "d": "170 g",
-   "g": "ola",
+   "g": "pez",
    "p": 6000,
    "k": "tinf",
    "c": "#D9D9D9",
@@ -1241,7 +1241,7 @@
   {
    "n": "Jabón líquido Skip BioEnzimas",
    "d": "800 ml",
-   "g": "burbujas",
+   "g": "ola",
    "p": 4750,
    "k": "jug",
    "c": "#3A7BD5",
@@ -1290,7 +1290,7 @@
   {
    "n": "Cif desinfectante en aerosol",
    "d": "260 g",
-   "g": "burbuja",
+   "g": "destello",
    "p": 4700,
    "k": "aerosol",
    "c": "#7DBE3A",
@@ -1566,7 +1566,7 @@
   {
    "n": "Harina Pureza leudante",
    "d": "1 kg",
-   "g": "nube",
+   "g": "espiga",
    "p": 1999,
    "k": "bag",
    "c": "#fff",
