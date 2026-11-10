@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-08",
+ "fecha": "2026-11-09",
  "fuente": "Precios Claros – Base SEPA, Secretaría de Comercio (datos.produccion.gob.ar), CC BY 4.0",
  "agenda": {
   "2026-11-08": {
@@ -37,7 +37,7 @@
    "c": "#F7A928",
    "a": "#3E8E41",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 10 cadenas · 851 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 10 cadenas · 1.685 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7798085681834"
   },
   "2026-11-11": {
@@ -48,7 +48,7 @@
    "c": "#2B2B2B",
    "a": "#F2E6C8",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 865 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.703 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790290101602",
    "u": [
     0.75,
@@ -63,29 +63,29 @@
    "c": "#2B2B2B",
    "a": "#3A7BD5",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.101 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.938 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791293049502"
   },
   "2026-11-13": {
    "n": "Danette de dulce de leche",
    "d": "100 g",
-   "p": 2939,
+   "p": 3019,
    "k": "cup",
    "c": "#6B3A1E",
    "a": "#F5E6C8",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 873 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.710 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791337008106"
   },
   "2026-11-14": {
    "n": "Paliqueso Pehuamar",
    "d": "165 g",
-   "p": 3800,
+   "p": 3850,
    "k": "chips",
    "c": "#F28C28",
    "a": "#1F4FA3",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 825 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.668 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790310985526"
   },
   "2026-11-15": {
@@ -97,7 +97,7 @@
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 818 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.659 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790580138738",
    "u": [
     0.49,
@@ -112,7 +112,7 @@
    "c": "#D23B2E",
    "a": "#fff",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 767 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.618 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7794000006164",
    "u": [
     0.5,
@@ -128,12 +128,12 @@
   {
    "n": "Alfajor triple Pepitos",
    "d": "57 g",
-   "p": 2309,
+   "p": 2350,
    "k": "sleeve",
    "c": "#1d1b1a",
    "a": "#3A7BD5",
    "r": "golosinas",
-   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 809 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 828 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "0000077915481",
    "diario": false
   },
@@ -145,7 +145,7 @@
    "c": "#1F4FA3",
    "a": "#F2C230",
    "r": "golosinas",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 835 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.674 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "0000077953124",
    "diario": false
   },
@@ -157,31 +157,45 @@
    "c": "#FDE3C2",
    "a": "#F28C28",
    "r": "golosinas",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 808 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.638 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "0000078600027",
    "diario": false
   },
   {
    "n": "Ferrero Rocher",
    "d": "3 bombones · 37,5 g",
-   "p": 3679,
+   "p": 3589,
    "k": "roll",
    "c": "#F4F1E8",
    "a": "#C9A640",
    "r": "golosinas",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 786 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "0000078909434"
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.617 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "0000078909434",
+   "diario": false
+  },
+  {
+   "n": "Kinder Bueno",
+   "d": "43 g",
+   "g": "kb",
+   "p": 3245,
+   "k": "bar",
+   "c": "#fff",
+   "a": "#D23B2E",
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.697 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "0000080052760",
+   "diario": false
   },
   {
    "n": "Red Bull en lata",
    "d": "355 ml",
    "g": "sol",
-   "p": 5050,
+   "p": 4970,
    "k": "can",
    "c": "#C8D2E0",
    "a": "#1F4FA3",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 788 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.601 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "0000090435225",
    "u": [
     0.355,
@@ -191,24 +205,24 @@
   },
   {
    "n": "Shampoo Head & Shoulders",
-   "d": "0,18 L",
-   "p": 8238,
+   "d": "180 ml",
+   "p": 8237,
    "k": "squeeze",
    "c": "#1F4FA3",
    "a": "#fff",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 444 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.272 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7500435249355"
   },
   {
    "n": "Pasta dental Colgate Triple Acción",
    "d": "90 g",
-   "p": 4156,
+   "p": 4239,
    "k": "tube",
    "c": "#D23B2E",
    "a": "#1F4FA3",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 815 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.653 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7509546686523"
   },
   {
@@ -219,19 +233,19 @@
    "c": "#1F4FA3",
    "a": "#1d1b1a",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 825 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.666 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7622201735296"
   },
   {
    "n": "Galletitas Pepitos",
    "d": "119 g",
    "g": "chispas",
-   "p": 2420,
+   "p": 2480,
    "k": "roll",
    "c": "#1F4FA3",
    "a": "#E9C48A",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 867 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.708 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7622201735906"
   },
   {
@@ -242,30 +256,40 @@
    "c": "#3E8E41",
    "a": "#F2C230",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 833 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7622201736033",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.674 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7622201736033"
   },
   {
    "n": "Galletitas Duquesa",
    "d": "115 g",
-   "p": 1699,
+   "p": 1730,
    "k": "roll",
    "c": "#8E1B3A",
    "a": "#F5E6C8",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 834 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.674 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7622300742645"
+  },
+  {
+   "n": "Alfajor Águila minitorta",
+   "d": "69 g",
+   "p": 2380,
+   "k": "sleeve",
+   "c": "#8B5A2B",
+   "a": "#F2C230",
+   "r": "golosinas",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.667 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790040133587"
   },
   {
    "n": "Galletitas Chocolinas",
    "d": "250 g",
-   "p": 2819,
+   "p": 2824,
    "k": "roll",
    "c": "#6B3A1E",
    "a": "#3A7BD5",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 853 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.695 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790040143234",
    "u": [
     0.25,
@@ -281,7 +305,7 @@
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 850 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.691 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790040144095",
    "u": [
     0.54,
@@ -291,12 +315,12 @@
   {
    "n": "Aceite de girasol Cocinero",
    "d": "1,5 L",
-   "p": 6999,
+   "p": 6925,
    "k": "pet",
    "c": "#F2C230",
    "a": "#3E8E41",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 867 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.710 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790060023684",
    "u": [
     1.5,
@@ -306,12 +330,12 @@
   {
    "n": "Nuggets de pollo Granja del Sol",
    "d": "400 g",
-   "p": 11450,
+   "p": 11445,
    "k": "brick",
    "c": "#F28C28",
    "a": "#fff",
    "r": "frescos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 804 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.625 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790070034410",
    "u": [
     0.4,
@@ -326,7 +350,7 @@
    "c": "#F2C230",
    "a": "#1F4FA3",
    "r": "frescos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 717 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.548 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790070036599",
    "u": [
     0.4,
@@ -336,18 +360,17 @@
   {
    "n": "Tallarines n.º 5 Matarazzo",
    "d": "500 g",
-   "p": 2119,
+   "p": 2197,
    "k": "pasta",
    "c": "#2A5DB0",
    "a": "#fff",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 862 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.700 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790070336316",
    "u": [
     0.5,
     "kilo"
-   ],
-   "diario": false
+   ]
   },
   {
    "n": "Spaghetti n.º 7 Lucchetti",
@@ -357,26 +380,24 @@
    "c": "#F2C230",
    "a": "#1F4FA3",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 856 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.695 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790070336385",
    "u": [
     0.5,
     "kilo"
-   ],
-   "diario": false
+   ]
   },
   {
    "n": "Bizcochuelo Exquisita de chocolate",
    "d": "540 g · para preparar",
    "g": "torta",
-   "p": 4845,
+   "p": 4905,
    "k": "box",
    "c": "#8B5A2B",
    "a": "#F2C230",
    "r": "reposteria",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 871 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7790070432971",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.710 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790070432971"
   },
   {
    "n": "Arroz parboil Gallo Oro",
@@ -386,23 +407,22 @@
    "c": "#F4F1E8",
    "a": "#D4A017",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 779 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.618 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790070433114",
    "u": [
     0.5,
     "kilo"
-   ],
-   "diario": false
+   ]
   },
   {
    "n": "Harina leudante Blancaflor",
    "d": "1 kg",
-   "p": 2259,
+   "p": 2294,
    "k": "bag",
    "c": "#F5E6C8",
    "a": "#D23B2E",
    "r": "reposteria",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 841 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.679 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790070562180"
   },
   {
@@ -413,7 +433,7 @@
    "c": "#3E8E41",
    "a": "#F2C230",
    "r": "frescos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 696 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.506 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790070621870",
    "u": [
     0.45,
@@ -428,69 +448,91 @@
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "frescos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 700 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7790070622013",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.529 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790070622013"
   },
   {
    "n": "Tostadas Riera clásicas",
    "d": "200 g",
-   "p": 1995,
+   "p": 2049,
    "k": "pillow",
    "c": "#F5E6C8",
    "a": "#8B5A2B",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 634 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.463 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790071090231"
   },
   {
    "n": "Sal fina Celusal",
    "d": "500 g",
-   "p": 1899,
+   "p": 1950,
    "k": "box",
    "c": "#3A7BD5",
    "a": "#fff",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 828 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.681 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790072002080",
    "u": [
     0.5,
     "kilo"
-   ],
-   "diario": false
+   ]
+  },
+  {
+   "n": "Vinagre de alcohol Menoyo",
+   "d": "1 L",
+   "p": 1950,
+   "k": "pet",
+   "c": "#F1EFE6",
+   "a": "#D23B2E",
+   "r": "aderezos",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.324 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790130000058"
   },
   {
    "n": "Lavandina Ayudín",
    "d": "1 L",
-   "p": 1550,
+   "p": 1551,
    "k": "jug",
    "c": "#F4F4F4",
    "a": "#3A7BD5",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 861 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.702 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790132098459",
+   "diario": false
+  },
+  {
+   "n": "Té La Virginia",
+   "d": "50 saquitos",
+   "g": "taza",
+   "p": 2090,
+   "k": "box",
+   "c": "#D23B2E",
+   "a": "#F2C230",
+   "r": "desayuno",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.492 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790150211939",
    "diario": false
   },
   {
    "n": "Papel higiénico Higienol Fresh",
    "d": "120 m",
-   "p": 2725,
+   "p": 2726,
    "k": "rolls",
    "c": "#B9E3C6",
    "a": "#3E8E41",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 639 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.305 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790250016182"
   },
   {
    "n": "Aceite de oliva Natura",
    "d": "500 ml",
-   "p": 14890,
+   "p": 14990,
    "k": "bottle",
    "c": "#7A8F2A",
    "a": "#F2C230",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 778 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.604 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790272008394",
    "u": [
     0.5,
@@ -505,7 +547,7 @@
    "c": "#2B2B2B",
    "a": "#F2E6C8",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 865 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.703 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790290101602",
    "u": [
     0.75,
@@ -520,18 +562,18 @@
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 856 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.699 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790310985458"
   },
   {
    "n": "Paliqueso Pehuamar",
    "d": "165 g",
-   "p": 3800,
+   "p": 3850,
    "k": "chips",
    "c": "#F28C28",
    "a": "#1F4FA3",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 825 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.668 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790310985526"
   },
   {
@@ -542,8 +584,19 @@
    "c": "#6B1E2E",
    "a": "#F2C230",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 385 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.226 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790314063824"
+  },
+  {
+   "n": "Hamburguesas Swift clásicas",
+   "d": "4 u. · 320 g",
+   "p": 9599,
+   "k": "brick",
+   "c": "#1F4FA3",
+   "a": "#D23B2E",
+   "r": "frescos",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.659 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790360026576"
   },
   {
    "n": "Yerba Taragüí",
@@ -553,18 +606,18 @@
    "c": "#D23B2E",
    "a": "#3E8E41",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 854 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.695 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790387013610"
   },
   {
    "n": "Yerba Mañanita",
    "d": "1 kg",
-   "p": 5658,
+   "p": 5700,
    "k": "yerba",
    "c": "#F2C230",
    "a": "#3E8E41",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 844 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.683 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790387015317"
   },
   {
@@ -576,41 +629,40 @@
    "c": "#F5E6C8",
    "a": "#D23B2E",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 849 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.690 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790387800067"
   },
   {
    "n": "Desinfectante Lysoform en aerosol",
    "d": "360 ml",
-   "p": 5340,
+   "p": 5490,
    "k": "aerosol",
    "c": "#fff",
    "a": "#1F4FA3",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 954 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7790520995285",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.802 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790520995285"
   },
   {
    "n": "Aromatizante Glade lavanda",
    "d": "360 ml",
-   "p": 4409,
+   "p": 4339,
    "k": "aerosol",
    "c": "#8a5aa0",
    "a": "#fff",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 626 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.459 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790520998262"
   },
   {
    "n": "Mr. Músculo cocina repuesto",
    "d": "450 ml · doypack",
-   "p": 2990,
+   "p": 3089,
    "k": "pouch",
    "c": "#7DBE3A",
    "a": "#F2C230",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 659 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.507 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790520998880",
    "u": [
     0.45,
@@ -620,13 +672,14 @@
   {
    "n": "Atún al natural La Campagnola",
    "d": "170 g",
-   "p": 6000,
+   "p": 6029,
    "k": "tinf",
    "c": "#D9D9D9",
    "a": "#1F4FA3",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 848 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7790580131364"
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.689 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790580131364",
+   "diario": false
   },
   {
    "n": "Baño de repostería Águila",
@@ -636,18 +689,18 @@
    "c": "#6B3A1E",
    "a": "#F2C230",
    "r": "reposteria",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 392 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.216 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790580131470"
   },
   {
    "n": "Arvejas secas remojadas Arcor",
    "d": "300 g · lata",
-   "p": 1299,
+   "p": 1346,
    "k": "tin",
    "c": "#D9D9D9",
    "a": "#3E8E41",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 828 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.665 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790580132392",
    "u": [
     0.3,
@@ -663,7 +716,7 @@
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 818 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.659 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790580138738",
    "u": [
     0.49,
@@ -673,18 +726,17 @@
   {
    "n": "Puré de tomate La Campagnola",
    "d": "530 g",
-   "p": 1378,
+   "p": 1405,
    "k": "tetra",
    "c": "#D23B2E",
    "a": "#3E8E41",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 857 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.697 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790580138868",
    "u": [
     0.53,
     "kilo"
-   ],
-   "diario": false
+   ]
   },
   {
    "n": "Tomates perita Arcor",
@@ -694,7 +746,7 @@
    "c": "#D9D9D9",
    "a": "#D23B2E",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 697 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.524 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790580567903",
    "u": [
     0.4,
@@ -705,12 +757,12 @@
    "n": "Galletitas Saladix sabor jamón",
    "d": "100 g",
    "g": "galleta",
-   "p": 1900,
+   "p": 1950,
    "k": "chips",
    "c": "#D23B2E",
    "a": "#F2C46B",
    "r": "snacks",
-   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 874 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.712 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790580716707"
   },
   {
@@ -722,7 +774,7 @@
    "c": "#D23B2E",
    "a": "#F2C230",
    "r": "frescos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 853 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.691 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790670050650"
   },
   {
@@ -733,7 +785,7 @@
    "c": "#E8F0F7",
    "a": "#D23B2E",
    "r": "frescos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 814 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.661 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790670052401"
   },
   {
@@ -744,7 +796,7 @@
    "c": "#7DBE3A",
    "a": "#F2C230",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 566 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.382 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790740000264"
   },
   {
@@ -755,7 +807,7 @@
    "c": "#fff",
    "a": "#1F4FA3",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 352 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.187 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790742141309"
   },
   {
@@ -766,13 +818,12 @@
    "c": "#1F4FA3",
    "a": "#fff",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 827 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.657 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790742141705",
    "u": [
     0.33,
     "litro"
-   ],
-   "diario": false
+   ]
   },
   {
    "n": "Leche La Serenísima entera",
@@ -782,19 +833,19 @@
    "c": "#fff",
    "a": "#3A7BD5",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 815 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.631 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790742348302",
    "diario": false
   },
   {
    "n": "Leche entera La Serenísima larga vida",
    "d": "1 L",
-   "p": 3030,
+   "p": 3031,
    "k": "tetra",
    "c": "#fff",
    "a": "#3A7BD5",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 860 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.701 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790742363008"
   },
   {
@@ -805,7 +856,7 @@
    "c": "#1F4FA3",
    "a": "#fff",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 788 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.600 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790742373205",
    "u": [
     0.29,
@@ -815,12 +866,12 @@
   {
    "n": "Dulce de leche La Serenísima",
    "d": "400 g",
-   "p": 4175,
+   "p": 4179,
    "k": "jar",
    "c": "#F5E6C8",
    "a": "#3A7BD5",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 861 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.701 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790742625304",
    "u": [
     0.4,
@@ -828,16 +879,105 @@
    ]
   },
   {
+   "n": "Dulce de leche Ilolay",
+   "d": "400 g",
+   "p": 3935,
+   "k": "jar",
+   "c": "#F5E6C8",
+   "a": "#D23B2E",
+   "r": "lacteos",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.568 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790787153664",
+   "u": [
+    0.4,
+    "kilo"
+   ]
+  },
+  {
+   "n": "Coca-Cola en lata",
+   "d": "354 ml",
+   "p": 2700,
+   "k": "can",
+   "c": "#C8102E",
+   "a": "#fff",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.865 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790895000232",
+   "u": [
+    0.354,
+    "litro"
+   ]
+  },
+  {
+   "n": "Sprite en lata",
+   "d": "354 ml",
+   "p": 2699,
+   "k": "can",
+   "c": "#2E9E4A",
+   "a": "#F2E14A",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.622 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790895000270",
+   "u": [
+    0.354,
+    "litro"
+   ],
+   "diario": false
+  },
+  {
+   "n": "Cepita multifruta",
+   "d": "200 ml · cajita",
+   "p": 1300,
+   "k": "minitetra",
+   "c": "#F28C28",
+   "a": "#3E8E41",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · precio típico en 11 cadenas · 1.851 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790895000737",
+   "diario": false
+  },
+  {
+   "n": "Coca-Cola",
+   "d": "2,25 L",
+   "p": 6100,
+   "k": "petl",
+   "c": "#3A1D12",
+   "a": "#C8102E",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · precio típico en 11 cadenas · 1.723 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790895000997",
+   "u": [
+    2.25,
+    "litro"
+   ],
+   "diario": false
+  },
+  {
+   "n": "Agua tónica Schweppes",
+   "d": "1,5 L",
+   "p": 5000,
+   "k": "petl",
+   "c": "#E6EFC9",
+   "a": "#D9B80F",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.689 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790895006715",
+   "u": [
+    1.5,
+    "litro"
+   ],
+   "diario": false
+  },
+  {
    "n": "Ades de naranja",
    "d": "1 L",
-   "p": 3330,
+   "p": 3649,
    "k": "tetra",
    "c": "#F28C28",
    "a": "#fff",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 436 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7790895643842",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.263 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7790895643842"
   },
   {
    "n": "Jugo Cepita de manzana",
@@ -847,19 +987,19 @@
    "c": "#7DBE3A",
    "a": "#D23B2E",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 11 cadenas · 853 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 11 cadenas · 1.666 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790895647017",
    "diario": false
   },
   {
    "n": "Gancia Americano",
    "d": "950 ml",
-   "p": 10599,
+   "p": 10600,
    "k": "bottle",
    "c": "#B5462E",
    "a": "#F2C230",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 856 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.696 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790950000160",
    "u": [
     0.95,
@@ -874,7 +1014,7 @@
    "c": "#D7E86A",
    "a": "#3E8E41",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 863 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.705 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7790950133288",
    "u": [
     1.35,
@@ -883,13 +1023,13 @@
   },
   {
    "n": "Limpiador Procenex Marina",
-   "d": "0,9 L",
+   "d": "900 ml",
    "p": 2620,
    "k": "jug",
    "c": "#3FA9C9",
    "a": "#fff",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 851 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.691 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791130683661",
    "u": [
     0.9,
@@ -899,12 +1039,12 @@
   {
    "n": "Cynar",
    "d": "750 ml",
-   "p": 13799,
+   "p": 14199,
    "k": "bottle",
    "c": "#2F5A2F",
    "a": "#F2C230",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 874 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.717 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791200000626",
    "u": [
     0.75,
@@ -919,7 +1059,7 @@
    "c": "#CFE8D4",
    "a": "#D23B2E",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 865 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.708 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791250002267",
    "u": [
     0.7,
@@ -934,7 +1074,7 @@
    "c": "#1F4FA3",
    "a": "#D23B2E",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 848 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.686 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791290792012",
    "u": [
     0.8,
@@ -949,7 +1089,7 @@
    "c": "#3A7BD5",
    "a": "#7DBE3A",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 952 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.732 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791290792814",
    "u": [
     0.8,
@@ -957,14 +1097,29 @@
    ]
   },
   {
+   "n": "Cif crema",
+   "d": "500 ml",
+   "p": 4670,
+   "k": "squeeze",
+   "c": "#F2C230",
+   "a": "#3A7BD5",
+   "r": "limpieza",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.810 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7791290794221",
+   "u": [
+    0.5,
+    "litro"
+   ]
+  },
+  {
    "n": "Detergente Ala pomelo",
-   "d": "0,5 L",
+   "d": "500 ml",
    "p": 3720,
    "k": "minibottle",
    "c": "#F7A6A0",
    "a": "#1F4FA3",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 206 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.023 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791290794306",
    "u": [
     0.5,
@@ -974,12 +1129,12 @@
   {
    "n": "Shampoo Sedal Crema Balance",
    "d": "340 ml",
-   "p": 6490,
+   "p": 6569,
    "k": "squeeze",
    "c": "#F28CB0",
    "a": "#fff",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.060 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.899 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791293045740",
    "u": [
     0.34,
@@ -994,7 +1149,7 @@
    "c": "#2B2B2B",
    "a": "#3A7BD5",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.101 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.938 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791293049502"
   },
   {
@@ -1005,7 +1160,7 @@
    "c": "#fff",
    "a": "#7DBE3A",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 869 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.704 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791337007246"
   },
   {
@@ -1016,19 +1171,18 @@
    "c": "#fff",
    "a": "#E86F8A",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 877 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7791337007819",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.714 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7791337007819"
   },
   {
    "n": "Danette de dulce de leche",
    "d": "100 g",
-   "p": 2939,
+   "p": 3019,
    "k": "cup",
    "c": "#6B3A1E",
    "a": "#F5E6C8",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 873 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.710 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791337008106"
   },
   {
@@ -1039,7 +1193,7 @@
    "c": "#F2C230",
    "a": "#3A7BD5",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 873 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.706 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791337008472"
   },
   {
@@ -1050,7 +1204,7 @@
    "c": "#FBD0DC",
    "a": "#E86F8A",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 860 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.699 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791337008694"
   },
   {
@@ -1061,9 +1215,8 @@
    "c": "#1F4FA3",
    "a": "#fff",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 786 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7791337010826",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.630 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7791337010826"
   },
   {
    "n": "Queso crema Casancrem",
@@ -1073,7 +1226,7 @@
    "c": "#fff",
    "a": "#3A7BD5",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 825 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.631 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791337061361",
    "u": [
     0.29,
@@ -1082,34 +1235,19 @@
   },
   {
    "n": "Vino Santa Julia Malbec",
-   "d": "0,75 L",
-   "p": 6559,
+   "d": "750 ml",
+   "p": 6790,
    "k": "bottle",
    "c": "#4A1020",
    "a": "#3A7BD5",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 781 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.623 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7791728247114",
    "u": [
     0.75,
     "litro"
    ],
    "diario": false
-  },
-  {
-   "n": "Pepsi",
-   "d": "1,5 L",
-   "p": 3950,
-   "k": "petl",
-   "c": "#3A1D12",
-   "a": "#1F4FA3",
-   "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 833 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7791813888413",
-   "u": [
-    1.5,
-    "litro"
-   ]
   },
   {
    "n": "Cerveza Quilmes Cristal",
@@ -1119,19 +1257,18 @@
    "c": "#7A4E1D",
    "a": "#1F4FA3",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 817 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
-   "ean": "7792798007387",
-   "diario": false
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.635 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7792798007387"
   },
   {
    "n": "Limpiador Poett Primavera",
    "d": "900 ml",
-   "p": 2747,
+   "p": 2760,
    "k": "jug",
    "c": "#E7A6D6",
    "a": "#fff",
    "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 864 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.697 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7793253003548",
    "u": [
     0.9,
@@ -1147,7 +1284,7 @@
    "c": "#F7A928",
    "a": "#D23B2E",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 860 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.700 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7793360131516",
    "u": [
     0.39,
@@ -1162,7 +1299,7 @@
    "c": "#3A7BD5",
    "a": "#3E8E41",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 811 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.657 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7793704000928"
   },
   {
@@ -1173,7 +1310,7 @@
    "c": "#fff",
    "a": "#D23B2E",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 312 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.151 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7793913001822"
   },
   {
@@ -1184,7 +1321,7 @@
    "c": "#F5E08A",
    "a": "#3A7BD5",
    "r": "lacteos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 866 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.708 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7793940054006"
   },
   {
@@ -1195,7 +1332,7 @@
    "c": "#fff",
    "a": "#1F4FA3",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 846 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.689 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7794000006072",
    "u": [
     0.475,
@@ -1210,7 +1347,7 @@
    "c": "#D23B2E",
    "a": "#fff",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 767 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.618 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7794000006164",
    "u": [
     0.5,
@@ -1225,7 +1362,7 @@
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 877 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.719 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7794000006478",
    "u": [
     0.25,
@@ -1234,14 +1371,14 @@
   },
   {
    "n": "Maizena",
-   "d": "0,5 kg",
+   "d": "500 g",
    "g": "cuchara",
    "p": 4325,
    "k": "box",
    "c": "#F2C230",
    "a": "#D23B2E",
    "r": "reposteria",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 824 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.667 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7794000007468",
    "u": [
     0.5,
@@ -1251,13 +1388,29 @@
   {
    "n": "Caldo Knorr de gallina",
    "d": "12 cubos",
-   "p": 3069,
+   "p": 3192,
    "k": "box",
    "c": "#F2C230",
    "a": "#3E8E41",
    "r": "aderezos",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 844 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.685 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7794000008540"
+  },
+  {
+   "n": "Levité de naranja",
+   "d": "500 ml",
+   "p": 2200,
+   "k": "pet",
+   "c": "#FDE3C2",
+   "a": "#F28C28",
+   "r": "bebidas",
+   "s": "Precios Claros (SEPA) · precio típico en 10 cadenas · 1.318 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+   "ean": "7798062548655",
+   "u": [
+    0.5,
+    "litro"
+   ],
+   "diario": false
   },
   {
    "n": "Vino Portillo Malbec",
@@ -1267,7 +1420,7 @@
    "c": "#4A1020",
    "a": "#F5E6C8",
    "r": "alcohol",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 869 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.705 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7798074864675",
    "u": [
     0.75,
@@ -1282,7 +1435,7 @@
    "c": "#F7A928",
    "a": "#3E8E41",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 10 cadenas · 851 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 10 cadenas · 1.685 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7798085681834"
   },
   {
@@ -1293,7 +1446,7 @@
    "c": "#1d1b1a",
    "a": "#7DD13A",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 771 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.581 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7798422620014",
    "u": [
     0.473,
@@ -1304,12 +1457,12 @@
   {
    "n": "Agua mineral Villavicencio",
    "d": "2 L",
-   "p": 3190,
+   "p": 3200,
    "k": "pet",
    "c": "#BFE3F2",
    "a": "#D23B2E",
    "r": "bebidas",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 845 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.682 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7799155000197",
    "u": [
     2.0,
@@ -1318,14 +1471,14 @@
   },
   {
    "n": "Kit Kat",
-   "d": "41 g",
+   "d": "41,5 g",
    "g": "kk",
-   "p": 2800,
+   "p": 2790,
    "k": "bar",
    "c": "#D23B2E",
    "a": "#fff",
    "r": "golosinas",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.002 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.309 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7891000248799",
    "diario": false
   },
@@ -1338,7 +1491,7 @@
    "c": "#fff",
    "a": "#3A7BD5",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 865 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.702 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7891150075382"
   },
   {
@@ -1349,18 +1502,18 @@
    "c": "#fff",
    "a": "#C9A640",
    "r": "higiene",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.057 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.900 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7891150081239"
   },
   {
    "n": "Nutella",
    "d": "350 g",
-   "p": 10998,
+   "p": 11290,
    "k": "jar",
    "c": "#5A3420",
    "a": "#fff",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 755 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.596 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "7898024394181",
    "u": [
     0.35,
@@ -1371,12 +1524,12 @@
    "n": "Puré de papas instantáneo Maggi",
    "d": "125 g",
    "g": "papa",
-   "p": 3129,
+   "p": 3190,
    "k": "box",
    "c": "#D23B2E",
    "a": "#F2C230",
    "r": "despensa",
-   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 862 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.701 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "8445290993021"
   },
   {
@@ -1387,7 +1540,7 @@
    "c": "#4B2E1E",
    "a": "#D23B2E",
    "r": "desayuno",
-   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 780 sucursales de CABA y provincia de Buenos Aires · 08/11/2026",
+   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.620 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
    "ean": "8445291082137"
   }
  ]
