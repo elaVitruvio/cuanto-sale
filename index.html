@@ -57,7 +57,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 .pinfo h2{font:900 19px/1.12 var(--fd);margin-bottom:5px;overflow-wrap:anywhere}
 .pinfo p{font-size:13px;font-weight:700}
 .rows{border-top:2px dashed var(--line);border-bottom:2px dashed var(--line);padding:4px 0}
-.row{display:grid;grid-template-columns:22px 1fr 150px;align-items:center;font-size:15px;height:27px;border-bottom:1px dotted #ddd5c6}
+.row{display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:center;font-size:15px;height:27px;border-bottom:1px dotted #ddd5c6}
 .row:last-child{border-bottom:0}
 .row .n{color:var(--muted);font-size:12px}
 .row .v{font-weight:700}
@@ -67,7 +67,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 .row.new .f{animation:flip .45s ease-out}
 @keyframes flip{from{transform:rotateX(90deg)}}
 @keyframes print{from{opacity:0;transform:translateY(-8px)}}
-.row.empty .v{color:#a39b8c;font-weight:400}
+.row.empty .v{color:#8a8273;font-weight:400}
 .entry{margin:10px 0 8px}
 .disp:focus{outline:none}.disp:focus-visible{outline:3px dashed var(--ink);outline-offset:3px}
 .disp{height:52px;border:3px solid var(--ink);background:#fff;font:700 28px var(--fm);display:flex;align-items:center;padding:0 12px;border-radius:8px}
@@ -151,7 +151,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 #mHelp .card>.btn.y,#bShare2,#bBonusOk{position:sticky;bottom:10px;z-index:1;box-shadow:0 3px 0 var(--ink),0 14px 0 6px var(--paper)}
 .bar i.z{background:transparent;color:var(--muted);border:1px dashed var(--line)}
 @media (max-height:760px){
- body{padding:8px 10px 14px}header{margin-bottom:6px}.logo{font-size:21px}.ib{width:40px;height:40px}
+ body{padding:8px 10px 14px}header{margin-bottom:6px}.logo{font-size:21px}
  .ticket{padding:14px 14px 18px}.th{padding-bottom:6px;margin-bottom:8px;line-height:1.35}
  .prod{min-height:88px;margin-bottom:8px}.art{flex-basis:84px;height:88px}.art svg{width:70px;height:82px}.tag{width:54px;height:54px;font-size:17px}.tagw{right:-16px;top:-15px}
  .pinfo h2{font-size:17px}
@@ -159,14 +159,14 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
  .k{height:44px}.pad{gap:5px}
 }
 @media (max-height:660px){.th{line-height:1.25;padding-bottom:4px;margin-bottom:6px}.prod{min-height:72px;margin-bottom:6px}.art{flex-basis:72px;height:74px}.art svg{width:60px;height:70px}.tag{width:48px;height:48px;font-size:15px}.row{height:20px;font-size:13px}.disp{height:42px}.k{height:44px}}
-@media (max-height:600px){body{padding:6px 8px 8px}.logo{font-size:19px}.ib{width:38px;height:38px}header{margin-bottom:4px}.ticket{padding:12px 12px 14px}.row{height:18px;font-size:12px}.entry{margin:6px 0 5px}.disp{height:38px;font-size:21px}.k{height:40px}.pad{gap:4px}}
+@media (max-height:600px){body{padding:6px 8px 8px}.logo{font-size:19px}header{margin-bottom:4px}.ticket{padding:12px 12px 14px}.row{height:18px;font-size:12px}.entry{margin:6px 0 5px}.disp{height:38px;font-size:21px}.k{height:40px}.pad{gap:4px}}
 @media (max-height:540px){.th{font-size:10px;line-height:1.15;padding-bottom:3px;margin-bottom:4px}
  .prod{min-height:58px;gap:18px;margin-bottom:4px}.art{flex-basis:60px;height:60px}.art svg{width:50px;height:58px}
  .tag{width:42px;height:42px;font-size:13px}.tagw{right:-14px;top:-13px}.pinfo h2{font-size:15px}.logo{font-size:17px}
  .row{height:15px;font-size:11px}.entry{margin:4px 0}
  .disp{height:34px;font-size:19px}.k{height:34px;font-size:19px}.ib{width:34px;height:34px}
  .card{padding:16px 14px 20px}.card p,.card li{font-size:12px;line-height:1.4}.mini .row{height:20px}}
-@media (max-height:660px){.row{grid-template-columns:20px 1fr 138px}.row .f{font-size:10px;line-height:12px;padding:0;border-width:2px;letter-spacing:-.2px}.bo svg{width:44px;height:52px}.bgrid{gap:6px;margin:8px 0 2px}
+@media (max-height:660px){.row{grid-template-columns:20px minmax(0,1fr) auto}.row .f{font-size:10px;line-height:12px;padding:0;border-width:2px;letter-spacing:-.2px}.bo svg{width:44px;height:52px}.bgrid{gap:6px;margin:8px 0 2px}
  .tag.done{font-size:12px;padding:2px 5px 1px}.tagw.done{left:-8px;bottom:-12px}.tag.done:before{font-size:7px}.prod.done{margin-bottom:14px}}
 @media (max-height:540px){.row .f{border-width:0 0 0 4px;border-radius:0;transform:none;text-align:left;padding:0 0 0 6px;font-size:11px;line-height:13px}.k{height:38px}.th b{display:none}}
 @media (max-height:480px){body{padding:4px 8px 2px}.k{height:34px}.disp{height:32px}.prod{min-height:52px}.art{flex-basis:54px;height:54px}.art svg{width:46px;height:52px}.ticket{padding-bottom:12px}}
@@ -186,9 +186,12 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
  #game:not([hidden]){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:18px;align-items:start}
  #game>.prod{grid-column:1;grid-row:1}#game>.rows{grid-column:1;grid-row:2}
  #play,#res{grid-column:2;grid-row:1 / span 3}
- .row{grid-template-columns:20px 1fr 128px}.k{height:40px}.disp{height:40px}
+ .row{grid-template-columns:20px minmax(0,1fr) auto}.k{height:40px}.disp{height:40px}
  #mBonus .cw,#mHelp .cw{max-width:640px}.bgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:260px),(max-height:300px){.row{height:auto;min-height:27px}.row .f{white-space:normal;max-width:100%;line-height:1.15;border-width:0 0 0 4px;border-radius:0;transform:none;text-align:left;padding:0 0 0 4px}}
+.disp .ph{white-space:normal;max-height:2.4em;overflow:hidden}
+@media (max-width:260px){.disp{height:auto;min-height:46px;flex-wrap:wrap}.disp .ph{max-height:none;flex-basis:100%;border-left:0;margin:0;padding:0 0 4px;text-align:left}}
 </style>
 </head>
 <body>
@@ -262,7 +265,8 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
   <button class="btn y" id="bShare2" hidden>COMPARTIR RESULTADO</button>
 </div></div></div>
 
-<div class="modal" id="mBonus" data-lock><div class="cw"><div class="card" role="dialog" aria-modal="true" aria-labelledby="btitle">
+<div class="modal" id="mBonus"><div class="cw"><div class="card" role="dialog" aria-modal="true" aria-labelledby="btitle">
+  <button class="close" data-close aria-label="Saltar la ronda bonus">×</button>
   <div class="bhead">RONDA BONUS · <span id="bcount"></span></div>
   <h3 id="btitle">¿Cuál era el más caro?</h3>
   <p>De los últimos que jugaste, tocá el más caro.</p>
@@ -352,7 +356,7 @@ function load(m){
  mode=m; input=''; over=false;
  if(m==='daily'){
   dayK=todayKey(); dayN=dayNum(); item=dailyItem();
-  const sv=store.get('day',{});
+  const sv=store.get('day',{}); const kept=sv&&sv.key===dayK&&!AG[dayK]&&P.find(p=>p.ean===sv.id); if(kept)item=kept;
   const raw=(sv.key===dayK&&sv.id===item.ean&&Array.isArray(sv.g))?sv.g:[];
   guesses=raw.filter(g=>g&&Number.isInteger(+g.v)&&+g.v>0&&+g.v<1e7).filter((g,i,a)=>a.findIndex(x=>+x.v===+g.v)===i).slice(0,MAX).map(g=>({v:+g.v,...judge(+g.v)})); // se recalcula: nunca confiar en lo guardado
   const w=guesses.findIndex(g=>g.r==='win'); if(w>=0)guesses=guesses.slice(0,w+1);
@@ -408,6 +412,7 @@ function press(k){
  else if(input.length>=7){shake();return}
  else if(!(input===''&&k==='0')){input+=k}
  render(false);
+ $('#sr').textContent=input?fmt(+input):'Vacío';
 }
 function submit(){
  const v=Number(input);
@@ -489,7 +494,7 @@ function shareText(){
  const best=guesses.reduce((b,g)=>!b||g.pct<b.pct?g:b,null);
  const line=guesses.map(g=>g.r==='win'?'🟩':({hot:'🟧',warm:'🟨',cold:'🟦'}[g.r])+(g.up?'⬆️':'⬇️')).join(' ');
  const w=guesses.find(g=>g.r==='win'),e=w?(Math.abs(w.v-item.p)/item.p*100).toFixed(1).replace('.',','):'';
- return `🛒 ¿Cuánto sale? #${dayN} · ${w?guesses.length:'X'}/6 · ${w?(e==='0,0'?'¡clavado!':'le erré por '+e+'%'):'me quedé a '+best.pct+'%'}\n${line}\n${URL_JUEGO}`;
+ return `🛒 ¿Cuánto sale? #${dayN} · ${w?guesses.length:'X'}/6 · ${w?(e==='0,0'?'¡clavado!':'acerté a '+e+'% del precio'):'me quedé a '+best.pct+'%'}\n${line}\n${URL_JUEGO}`;
 }
 async function share(){
  const t=shareText();
@@ -497,12 +502,12 @@ async function share(){
  try{await navigator.clipboard.writeText(t);toast('¡Copiado! Pegalo en tu grupo');return}catch(e){}
  window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank','noopener');
 }
-function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('on'),2400)}
+function toast(m){const s=$('#sr');s.textContent='';setTimeout(()=>{s.textContent=m},60);const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('on'),2400)}
 // ---------- MODALES ----------
 let lastFocus=null, kbd=false;
 addEventListener('keydown',()=>kbd=true,true); addEventListener('pointerdown',()=>kbd=false,true);
 function openM(id){const m=$(id);m._kbd=kbd;lastFocus=document.activeElement;m.classList.add('on');$('.wrap').inert=true;document.body.classList.add('lock');setTimeout(()=>{const c=m.querySelector('.card');c.tabIndex=-1;if(!m.contains(document.activeElement)||document.activeElement===document.body)c.focus({preventScroll:true,focusVisible:kbd})},30)}
-function closeM(m){m.classList.remove('on');if(!$('.modal.on')){document.body.classList.remove('lock');$('.wrap').inert=false}if(lastFocus&&/^b(Help|Stats)$/.test(lastFocus.id)&&!m._kbd)lastFocus.blur();else{const t=[lastFocus,$('#bShare'),$('#bFree'),$('#disp')].find(e=>e&&e!==document.body&&e.offsetParent&&!e.hidden);t&&t.focus({preventScroll:true})}if(m.id==='mBonus'&&mode==='daily'&&over&&m._fromDaily)setTimeout(showStats,250)}
+function closeM(m){m.classList.remove('on');if(m.id==='mBonus')store.set('bpend',{});if(!$('.modal.on')){document.body.classList.remove('lock');$('.wrap').inert=false}if(lastFocus&&/^b(Help|Stats)$/.test(lastFocus.id)&&!m._kbd)lastFocus.blur();else{const t=[lastFocus,$('#bShare'),$('#bFree'),$('#disp')].find(e=>e&&e!==document.body&&e.offsetParent&&!e.hidden);t&&t.focus({preventScroll:true})}if(m.id==='mBonus'&&mode==='daily'&&over&&m._fromDaily)setTimeout(showStats,250)}
 document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{
  if(e.target.closest('[data-close]')||(e.target===m&&!m.hasAttribute('data-lock')))closeM(m)}));
 function getStats(){
@@ -569,11 +574,11 @@ $('#sextra').addEventListener('click',e=>{if(e.target.id==='bToday'){closeM($('#
 const KEYS=[['7','k7'],['8','k8'],['9','k9'],['del','del'],['4','k4'],['5','k5'],['6','k6'],['1','k1'],['2','k2'],['3','k3'],['0','k0'],['ok','ok']];
 $('#pad').innerHTML=KEYS.map(([k,a])=>`<button class="k ${k==='ok'?'ok':k==='del'?'del':''}" data-k="${k}" tabindex="-1" style="grid-area:${a}" ${k==='del'?'aria-label="Borrar"':''}>${k==='del'?'⌫':k==='ok'?'OK':k}</button>`).join('');
 $('#pad').addEventListener('pointerdown',e=>{if(e.target.closest('[data-k]'))e.preventDefault()}); // no roba el foco
-$('#pad').addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b)return;press(b.dataset.k);if(b.dataset.k!=='ok'&&!over)$('#sr').textContent=input?fmt(+input):'Vacío'});
+$('#pad').addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b)return;press(b.dataset.k)});
 addEventListener('keydown',e=>{
  const m=$('.modal.on');
  if(m&&e.key==='Tab'){const f=[...m.querySelectorAll('button:not([hidden])')];if(!f.length)return;const a=f[0],z=f[f.length-1],ae=document.activeElement;if(e.shiftKey&&(ae===a||ae.classList.contains('card'))){e.preventDefault();z.focus()}else if(!e.shiftKey&&ae===z){e.preventDefault();a.focus()}return}
- if(e.key==='Escape'&&m){if(!m.hasAttribute('data-lock')||!$('#bBonusOk').hidden)closeM(m);return}
+ if(e.key==='Escape'&&m){closeM(m);return}
  if(m||e.ctrlKey||e.metaKey||e.altKey)return;
  if(e.key==='Enter'&&performance.now()<(window._lockEnter||0)){e.preventDefault();return}
  const onBtn=e.target&&e.target.tagName==='BUTTON';
