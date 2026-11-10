@@ -159,7 +159,7 @@ CURADOS = [
     ("7791728248265", "Vino Santa Julia tinto dulce", "bottle", "#5A1F2B", "#F2E6C8", "alcohol", {"libre": True}),
     ("7790070760555", "Vino Benjamín Chardonnay", "bottle", "#D9C46A", "#fff", "alcohol", {"libre": True}),
     ("7790670052388", "Salchichas Paty clásicas x6", "pouch", "#D23B2E", "#fff", "frescos", {"libre": True}),
-    ("7898422746827", "Jabón Dove exfoliación", "bar", "#fff", "#6EA8D8", "higiene", {"libre": True}),
+    ("7898422746827", "Jabón Dove exfoliación", "box", "#fff", "#6EA8D8", "higiene", {"libre": True}),
     ("7791130001748", "Vanish líquido color", "squeeze", "#E8457A", "#fff", "limpieza", {"libre": True}),
     ("7891150000971", "Suavizante Frescor", "pouch", "#8FD0E8", "#fff", "limpieza", {"libre": True}),
     ("7791290794054", "Cif Bioactive limón", "squeeze", "#E8E22A", "#3E8E41", "limpieza", {"libre": True}),
@@ -172,3 +172,44 @@ CURADOS = [
     ("7790150610305", "Esencia de vainilla Alicante", "minibottle", "#6B3A1E", "#F2C230", "reposteria", {"libre": True}),
     ("7791337007802", "Actimel frutilla", "minibottle", "#F4A6C0", "#fff", "lacteos", {"libre": True}),
 ]
+
+
+# Pictograma del contenido que se dibuja en la etiqueta de cada envase (dibujos genéricos, sin logos ni diseños de marcas).
+# Se aplica por palabra clave del nombre; el primero que coincide gana. Un "g" ya cargado a mano no se pisa.
+_GLIFOS = [
+    ("sprite", "burbujas"), ("seven up", "burbujas"), ("tónica", "burbujas"), ("coca", "cola"), ("pepsi", "cola"),
+    ("agua mineral", "ola"), ("powerade", "ola"), ("gatorade", "rayo"), ("monster", "rayo"), ("amargo terma", "limon"),
+    ("pomelo", "pomelo"), ("naranja", "naranja"), ("manzana", "manzana"), ("multifruta", "frutilla"),
+    ("limón", "limon"), ("frutilla", "frutilla"),
+    ("fernet", "hoja"), ("cynar", "hoja"), ("vino", "uva"), ("cerveza", "cerveza"), ("gancia", "limon"), ("gin ", "hoja"),
+    ("dulce de leche", "dulce"), ("chocolatada", "leche"), ("crema de leche", "leche"), ("crema para", "leche"), ("leche", "leche"), ("yogur", "leche"),
+    ("manteca", "cubo"), ("margarina", "cubo"), ("danette", "chocolate"), ("serenito", "chocolate"), ("queso", "queso"),
+    ("aceite", "aceite"), ("vinagre", "burbuja"), ("sal ", "sal"), ("arroz", "arroz"), ("harina", "nube"), ("polvo para hornear", "nube"),
+    ("tallarines", "fideo"), ("spaghetti", "fideo"), ("fideos", "fideo"), ("café", "cafe"),
+    ("mermelada", "naranja"), ("nutella", "chocolate"), ("caldo", "pollo"), ("tomate", "tomate"), ("ketchup", "tomate"),
+    ("atún", "ola"), ("arvejas", "hoja"), ("mayonesa", "huevo"), ("mostaza", "hoja"), ("esencia", "flor"),
+    ("tostadas", "pan"), ("tapas", "pan"), ("ravioles", "queso"), ("nuggets", "pollo"), ("patitas", "pollo"), ("salchichas", "salchicha"),
+    ("gomitas", "caramelo"), ("sugus", "caramelo"),
+    ("oreo", "sandwich"), ("chocolinas", "chocolate"), ("cerealitas", "arroz"), ("duquesa", "galleta"),
+    ("lay's", "papa"), ("paliqueso", "queso"),
+    ("lavandina", "burbuja"), ("cif", "burbuja"), ("skip", "burbujas"), ("poett", "flor"), ("lysoform", "burbuja"),
+    ("procenex", "ola"), ("ala ", "burbujas"), ("glade", "flor"), ("mr. músculo", "burbuja"), ("vanish", "burbujas"),
+    ("suavizante", "flor"), ("magistral", "limon"),
+    ("axe", "ola"), ("rexona men", "rayo"), ("rexona", "flor"), ("dove original", "nube"), ("dove exfol", "flor"),
+    ("acondicionador", "nube"), ("sedal crema balance", "flor"), ("head", "ola"), ("plusbelle", "hoja"), ("colgate", "hoja"),
+    ("algodón", "nube"), ("toallitas", "flor"), ("blancaflor", "nube"),
+]
+
+
+def _con_glifo(t):
+    ex = dict(t[6]) if len(t) > 6 else {}
+    if "g" not in ex:
+        n = t[1].lower() + " "
+        for k, g in _GLIFOS:
+            if k in n:
+                ex["g"] = g
+                break
+    return t[:6] + (ex,) if ex else t
+
+
+CURADOS = [_con_glifo(t) for t in CURADOS]
