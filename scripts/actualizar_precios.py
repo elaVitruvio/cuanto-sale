@@ -30,6 +30,7 @@ DATA = os.path.join(AQUI, "..", "data")
 OUT = os.path.join(DATA, "productos.json")
 CAND = os.path.join(DATA, "candidatos.json")
 HIST = os.path.join(DATA, "historial.json")
+LIBRES = os.path.join(DATA, "libres.json")
 TZ = ZoneInfo("America/Argentina/Buenos_Aires")
 MIN_SUCURSALES = 100
 MIN_CADENAS = 3
@@ -459,7 +460,7 @@ def curar(cands, fecha):
             "p": int(c["precio"]),
             "k": k, "c": col, "a": acc,
             "r": r,
-            "s": (f"Precios Claros (SEPA) · precio central entre {len(med)} cadenas y "
+            "s": (f"Precios Claros (SEPA) · precio típico en {len(med)} cadenas · "
                   f"{c['sucursales']:,} sucursales de CABA y provincia de Buenos Aires · {fecha_txt}").replace(",", "."),
             "ean": c["ean"],
         }
@@ -505,19 +506,19 @@ def desde_curados(cands, fecha):
             continue
         tam, cant, uni = tamano(c["desc"], c["cant"], c["unidad"], k, r)
         item = {
-            "n": nombre, "d": extra.get("t", tam), **({"g": extra["g"]} if extra.get("g") else {}), "p": int(min(med, key=lambda m: (abs(m - statistics.median(med)), m))) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
-            "s": (f"Precios Claros (SEPA) · precio central entre {len(med)} cadenas y "
+            "n": nombre, "d": extra.get("t", tam), **({"g": extra["g"]} if extra.get("g") else {}), **({"f": extra["f"]} if extra.get("f") else {}), "p": int(min(med, key=lambda m: (abs(m - statistics.median(med)), m))) if med else int(c["precio"]), "k": k, "c": col, "a": acc, "r": r,
+            "s": (f"Precios Claros (SEPA) · precio típico en {len(med)} cadenas · "
                   f"{c['sucursales']:,} sucursales de CABA y provincia de Buenos Aires · {fecha_txt}").replace(",", "."),
             "ean": ean,
         }
         u = unitario(cant, uni)
-        if u and k != "aerosol" and "para preparar" not in extra.get("t", ""):
+        if u and k != "aerosol" and "para preparar" not in extra.get("t", "") and " u." not in extra.get("t", ""):
             item["u"] = u
         n = len(med)
         iqr = (med[(3 * n) // 4] - med[n // 4]) / max(item["p"], 1) if n >= 4 else 0
         # golosinas chiquitas, precios muy bajos o precios que dependen mucho de la cadena:
         # sirven para el modo libre, pero no como producto del día (que se juega a ±5%)
-        if not (c["p10"] <= item["p"] <= c["p90"]) or c["p90"] / max(c["p10"], 1) > 1.35:
+        if not (.97 * c["p10"] <= item["p"] <= 1.03 * c["p90"]) or c["p90"] / max(c["p10"], 1) > 1.35:
             print("  (precio poco representativo hoy, ni para modo libre)", nombre)
             continue
         cerca = sum(abs(m - item["p"]) <= .05 * item["p"] for m in med)  # cadenas a ±5% del precio
@@ -549,7 +550,7 @@ def leer_historial():
             return {}
 
 
-def agendar(productos):
+def agendar(productos, fresco=True):
     """Agenda el producto del día para hoy y los 7 días siguientes (hora argentina).
 
     El de hoy no cambia nunca (ya se está jugando). Los días futuros se actualizan con el precio
@@ -557,7 +558,20 @@ def agendar(productos):
     Devuelve la agenda desde ayer y la lista de EAN ya jugados (para el modo libre)."""
     hist = leer_historial()
     hoy = datetime.datetime.now(TZ).date()
-    por_ean = {p["ean"]: p for p in productos if p.get("diario", True)}
+    # registro de productos ofrecidos en modo libre (60 días): esos no pueden salir después como producto del día
+    try:
+        with open(LIBRES, encoding="utf-8") as f:
+            libres = json.load(f)
+        if not isinstance(libres, dict):
+            libres = {}
+    except (OSError, ValueError):
+        libres = {}
+    for p in productos:
+        if p.get("diario") is False:
+            libres[p["ean"]] = hoy.isoformat()
+    corte = (hoy - datetime.timedelta(days=SIN_REPETIR_DIAS)).isoformat()
+    libres = {e: f for e, f in libres.items() if f >= corte}
+    por_ean = {p["ean"]: p for p in productos if p.get("diario", True) and p["ean"] not in libres}
     presentes = {p["ean"]: p for p in productos}
     for k in list(hist):
         e = hist[k].get("ean")
@@ -567,6 +581,8 @@ def agendar(productos):
             if "u" not in presentes[e]:
                 hist[k].pop("u", None)
         elif k > hoy.isoformat():
+            if not fresco:  # SEPA vino incompleto: no marcar como frescos precios viejos
+                continue
             if e in por_ean:
                 hist[k] = {**por_ean[e], "visto": hoy.isoformat()}
             elif e in presentes:  # llegó hoy pero dejó de ser apto (precios dispares): se reprograma
@@ -580,8 +596,8 @@ def agendar(productos):
         clave = d.isoformat()
         if clave in hist:
             continue
-        aptos = [p for p in productos if p.get("diario", True)]
-        ventana = SIN_REPETIR_DIAS if len(aptos) >= SIN_REPETIR_DIAS + 15 else max(14, len(aptos) * 2 // 3)  # no pedir imposibles con pocos aptos
+        aptos = [p for p in productos if p.get("diario", True) and p["ean"] not in libres]  # lo jugado en modo libre no sale como del día
+        ventana = SIN_REPETIR_DIAS  # si no alcanza, abajo se elige el más lejano a cualquier día agendado
         usados = {v.get("ean") for k, v in hist.items() if abs((datetime.date.fromisoformat(k) - d).days) < ventana}
         pool = [p for p in aptos if p["ean"] not in usados]
         if len(pool) < 5:  # no alcanza: los más lejanos a cualquier día agendado (antes o después)
@@ -604,11 +620,13 @@ def agendar(productos):
     with open(HIST + ".tmp", "w", encoding="utf-8") as f:  # escritura atómica
         json.dump(hist, f, ensure_ascii=False, indent=1)
     os.replace(HIST + ".tmp", HIST)
+    with open(LIBRES, "w", encoding="utf-8") as f:
+        json.dump(libres, f, ensure_ascii=False, indent=0)
     ayer = (hoy - datetime.timedelta(days=1)).isoformat()
     manana = (hoy + datetime.timedelta(days=1)).isoformat()
     jugados = sorted({v["ean"] for k, v in hist.items() if k < hoy.isoformat()})
-    # se publica solo de ayer a mañana: la reserva de 7 días queda en el repo, no en el JSON del juego
-    publica = {k: {x: y for x, y in v.items() if x != "visto"} for k, v in hist.items() if ayer <= k}  # historial.json es público igual (Pages): se publica la reserva para que nunca falte el del día
+    # se publica desde ayer con toda la reserva (historial.json es público igual): así nunca falta el del día
+    publica = {k: {x: y for x, y in v.items() if x != "visto"} for k, v in hist.items() if ayer <= k}
     return publica, jugados
 
 
@@ -625,13 +643,15 @@ def main():
         descargar(url, tmp)
         precios, info = procesar(tmp)
         C = candidatos(precios, info, fecha or datetime.date.today().isoformat())
-        with open(CAND, "w", encoding="utf-8") as f:
-            json.dump(C, f, ensure_ascii=False, separators=(",", ":"))
-        print(f"{len(C['candidatos'])} candidatos → {CAND}")
     productos = desde_curados(C["candidatos"], C["fecha"])
     sys.path.insert(0, AQUI)
     from curados import CURADOS
-    if len(productos) < 0.6 * len(CURADOS):
+    incompleto = len(productos) < 0.6 * len(CURADOS)
+    if not offline and not incompleto:
+        with open(CAND, "w", encoding="utf-8") as f:
+            json.dump(C, f, ensure_ascii=False, separators=(",", ":"))
+        print(f"{len(C['candidatos'])} candidatos → {CAND}")
+    if incompleto:
         # SEPA vino incompleto: no se toca nada y se sigue jugando con la agenda ya publicada
         print(f"SEPA incompleto hoy ({len(productos)} de {len(CURADOS)} curados): sigo con los productos de ayer")
         try:
@@ -643,7 +663,7 @@ def main():
     faltan = [p.get("n") for p in productos if not all(x in p for x in ("n", "d", "p", "k", "c", "a", "r", "s", "ean"))]
     if faltan:  # nunca publicar productos incompletos
         sys.exit(f"Productos con datos incompletos: {faltan[:5]}")
-    agenda, jugados = agendar(productos)
+    agenda, jugados = agendar(productos, fresco=not incompleto)
     salida = {
         "fecha": C["fecha"],
         "fuente": "Precios Claros – Base SEPA, Secretaría de Comercio (datos.produccion.gob.ar), CC BY 4.0",

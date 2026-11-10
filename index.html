@@ -72,7 +72,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 .disp:focus{outline:none}.disp:focus-visible{outline:3px dashed var(--ink);outline-offset:3px}
 .disp{height:52px;border:3px solid var(--ink);background:#fff;font:700 28px var(--fm);display:flex;align-items:center;padding:0 12px;border-radius:8px}
 .disp .cur{width:2px;height:28px;background:var(--ink);margin-left:2px;animation:blink 1s steps(1) infinite}
-.disp .ph{font:400 12px/1.15 var(--fm);color:var(--muted);margin-left:10px;padding-left:10px;border-left:2px dashed var(--line);white-space:normal;min-width:0;flex:1;text-align:right}
+.disp .ph{font:400 11px/1.15 var(--fm);color:var(--muted);margin-left:10px;padding-left:10px;border-left:2px dashed var(--line);white-space:nowrap;min-width:0;flex:1;text-align:right}
 @keyframes blink{50%{opacity:0}}
 .shake{animation:shake .3s}
 @keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
@@ -175,6 +175,19 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
 @media (max-height:660px){.row .f{line-height:14px}.tagw.done{bottom:-12px}.prod.done{margin-bottom:14px}}
 @media (max-height:540px){.prod.done{gap:34px}.tagw.done{left:-6px}}
 .card h3,.stats b,.bstamp,.bo .pr{font-weight:900!important}
+.pinfo .tagw.done{position:static;display:inline-block;margin-top:10px}
+.prod.done{margin-bottom:10px!important}
+.bgrid.done{row-gap:22px;margin-top:18px}
+.bgrid.done .bo svg{width:64px;height:56px}
+@media (max-height:660px){.bgrid.done .bo svg{width:56px;height:50px}}
+@media (max-height:420px){body{padding:2px 8px 2px}header{margin-bottom:2px}}
+@media (orientation:landscape) and (max-height:500px){
+ .wrap{max-width:780px}
+ #game:not([hidden]){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:18px;align-items:start}
+ #game>.prod{grid-column:1;grid-row:1}#game>.rows{grid-column:1;grid-row:2}
+ #play,#res{grid-column:2;grid-row:1 / span 3}
+ .row{grid-template-columns:20px 1fr 128px}.k{height:40px}.disp{height:40px}
+ #mBonus .cw,#mHelp .cw{max-width:640px}.bgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -236,7 +249,7 @@ header{display:flex;align-items:center;justify-content:space-between;margin-bott
     <li><b>Ronda bonus</b>: cada 10 productos te preguntamos cuál era el más caro.</li>
   </ul>
   <button class="btn y" data-close>¡A JUGAR!</button>
-  <p class="fine">Precios: Precios Claros – Base SEPA (Secretaría de Comercio, CC BY 4.0). Precio de lista (sin promociones) de las cadenas de CABA y provincia de Buenos Aires, actualizada todos los días. Puede no coincidir con tu súper.</p>
+  <p class="fine">Precios: Precios Claros – Base SEPA (Secretaría de Comercio, CC BY 4.0). Precio de lista (sin promociones) de las cadenas de CABA y provincia de Buenos Aires, actualizado todos los días. Puede no coincidir con tu súper.</p>
 </div></div></div>
 
 <div class="modal" id="mStats"><div class="cw"><div class="card" role="dialog" aria-modal="true" aria-labelledby="hStats">
@@ -283,7 +296,7 @@ function art(k,c,a,g){
  const dot=G[g]||`<circle cx="44" cy="46" r="13" fill="${a}" ${o}/>`;
  const S={
   pet:`<rect x="40" y="4" width="16" height="9" rx="2" fill="${a}" ${o}/><path d="M42 13h12v7c0 5 14 8 14 20v9c-3 3-3 7 0 10v35c0 5-3 7-6 9l-3 4h-5l-2-3h-6l-2 3h-5l-3-4c-3-2-6-4-6-9V59c3-3 3-7 0-10v-9c0-12 14-15 14-20z" fill="${c}" ${o}/>${lab(27,62,42,22)}${hl('M34 44v8M34 90v6')}`,
-  can:`<path d="M30 16h36l4 8v70l-4 8H30l-4-8V24z" fill="${c}" ${o}/><path d="M26 24h44M26 94h44" stroke="#1d1b1a" stroke-width="3"/><path d="M26 50c14 10 30-6 44 4v14c-14-10-30 6-44-4z" fill="${a}" ${o}/><path d="M42 16v-4h12v4" fill="none" ${o}/>${hl('M33 30v14M33 74v14')}`,
+  can:`<path d="M30 16h36l4 8v70l-4 8H30l-4-8V24z" fill="${c}" ${o}/><path d="M26 24h44M26 94h44" stroke="#1d1b1a" stroke-width="3"/><path d="M26 50c14 10 30-6 44 4v14c-14-10-30 6-44-4z" fill="${a}" ${o}/><path d="M42 16v-4h12v4" fill="none" ${o}/>${g==='sol'?'<circle cx="48" cy="59" r="8" fill="#D23B2E" stroke="#1d1b1a" stroke-width="2.5"/>':''}${hl('M33 30v14M33 74v14')}`,
   aerosol:`<rect x="44" y="4" width="8" height="7" rx="2" fill="#1d1b1a"/><path d="M28 24c0-6 8-10 20-10s20 4 20 10z" fill="${a}" ${o}/><rect x="26" y="24" width="44" height="82" rx="5" fill="${c}" ${o}/>${lab(26,56,44,26)}${hl('M32 30v16M32 90v10')}`,
   squeeze:`<path d="M28 8h40c4 0 6 3 6 7l-6 69c0 3-2 4-4 4H32c-2 0-4-1-4-4l-6-69c0-4 2-7 6-7z" fill="${c}" ${o}/><rect x="34" y="88" width="28" height="18" rx="4" fill="${a}" ${o}/>${lab(28,34,40,26)}${hl('M32 16l2 14')}`,
   jug:`<path d="M30 10h14v8h10c10 0 18 6 18 18v64c0 4-2 6-6 6H30c-4 0-6-2-6-6V30c0-8 2-12 6-12z" fill="${c}" ${o}/><rect x="30" y="4" width="14" height="8" rx="2" fill="${a}" ${o}/><path d="M54 26h8c3 0 4 2 4 4v10c0 2-1 4-4 4h-8z" fill="#fff" ${o}/>${lab(28,58,40,26)}${hl('M29 34v14')}`,
@@ -303,7 +316,9 @@ function art(k,c,a,g){
   disc:`<path d="M8 58v16c0 8 18 14 40 14s40-6 40-14V58" fill="${c}" ${o}/><ellipse cx="48" cy="58" rx="40" ry="14" fill="${c}" ${o}/><ellipse cx="48" cy="58" rx="22" ry="7" fill="${a}" ${o}/>`,
   petl:`<rect x="40" y="4" width="16" height="9" rx="2" fill="${a}" ${o}/><path d="M42 13h12v7c0 5 14 8 14 20v9c-3 3-3 7 0 10v35c0 5-3 7-6 9l-3 4h-5l-2-3h-6l-2 3h-5l-3-4c-3-2-6-4-6-9V59c3-3 3-7 0-10v-9c0-12 14-15 14-20z" fill="${c}" ${o}/><rect x="27" y="60" width="42" height="26" fill="${a}" ${o}/><path d="M33 70h30M33 77h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>${hl('M34 44v8M34 90v6')}`,
   pasta:`<path d="M24 12h48l4 94H20z" fill="${c}" ${o}/><path d="M24 12h48" stroke="#1d1b1a" stroke-width="5"/><rect x="30" y="32" width="36" height="44" rx="6" fill="#F7E3A1" ${o}/><path d="M36 38v32M42 38v32M48 38v32M54 38v32M60 38v32" stroke="#C9A640" stroke-width="2"/>${lab(28,84,40,16)}`,
-  bar:`<path d="M8 40h80v36H8z" fill="${c}" ${o}/><path d="M60 40l-8 36h36V40z" fill="#6B3A1E" ${o}/><path d="M66 40v36M78 40v36M57 58h31" stroke="#3d2010" stroke-width="2"/>${lab(14,48,36,20)}`,
+  bar:g==='kk'?`<path d="M8 40h80v36H8z" fill="#D23B2E" ${o}/><ellipse cx="48" cy="58" rx="22" ry="11" transform="rotate(-10 48 58)" fill="#fff" ${o}/><path d="M36 60l24-4" stroke="#D23B2E" stroke-width="4" stroke-linecap="round"/>`
+   :g==='kb'?`<path d="M8 40h80v36H8z" fill="#fff" ${o}/><path d="M8 40h18v36H8z" fill="#D23B2E" ${o}/><g fill="#C79A5B" ${o} stroke-width="2"><rect x="32" y="48" width="24" height="20" rx="8"/><rect x="60" y="48" width="24" height="20" rx="8"/></g><path d="M34 58h20M62 58h20" stroke="#6B3A1E" stroke-width="3"/>`
+   :`<path d="M8 40h80v36H8z" fill="${c}" ${o}/><path d="M60 40l-8 36h36V40z" fill="#6B3A1E" ${o}/><path d="M66 40v36M78 40v36M57 58h31" stroke="#3d2010" stroke-width="2"/>${lab(14,48,36,20)}`,
   yerba:`<path d="M24 26l6-14h36l6 14v80H24z" fill="${c}" ${o}/><path d="M24 26h48M30 12l4 14M66 12l-4 14" stroke="#1d1b1a" stroke-width="2.5"/><path d="M48 38c-12 4-14 18-6 24 10-4 12-16 6-24z" fill="#5FA845" ${o}/>${lab(28,72,40,24)}`,
   box:`<path d="M20 22l8-8h48l-8 8z" fill="#fff" ${o}/><path d="M68 22l8-8v84l-8 8z" fill="${c}" ${o} style="filter:brightness(.8)"/><rect x="20" y="22" width="48" height="84" fill="${c}" ${o}/>${dot}${lab(24,68,40,26)}`,
   tictac:`<rect x="30" y="20" width="36" height="78" rx="6" fill="${c}" fill-opacity=".85" ${o}/><rect x="30" y="20" width="36" height="16" rx="6" fill="#fff" ${o}/><g fill="${a}" ${o} stroke-width="2"><ellipse cx="42" cy="52" rx="6" ry="4"/><ellipse cx="54" cy="62" rx="6" ry="4"/><ellipse cx="42" cy="74" rx="6" ry="4"/><ellipse cx="54" cy="86" rx="6" ry="4"/></g>`,
@@ -355,7 +370,7 @@ function load(m){
  $('#tnum').innerHTML=m==='daily'?'TICKET #'+dayN:'<span class="mode">MODO LIBRE</span>';
  $('#art').innerHTML=art(item.k,item.c,item.a,item.g);
  $('#pname').textContent=item.n; $('#pdesc').textContent=item.d;
- const tg=$('#tag'); tg.className='tag'; tg.textContent='$?'; $('#tagw').classList.remove('done');
+ const tg=$('#tag'); tg.className='tag'; tg.textContent='$?'; $('#tagw').classList.remove('done'); $('.art').appendChild($('#tagw'));
  $('#next').textContent='';
  $('#res').classList.remove('show'); $('#play').style.display=''; $('.prod').classList.remove('done');
  render(false);
@@ -381,7 +396,8 @@ function render(anim){
  // el rango usa solo la dirección (subí/bajá): frío, tibio y caliente los interpreta el jugador (si no, no se puede perder)
  let lo=0,hi=1/0;
  for(const g of guesses){if(g.r==='win')continue;if(g.up)lo=Math.max(lo,g.v+1);else hi=Math.min(hi,g.v-1)}
- const rng=lo&&hi<1/0?`entre ${fmt(lo)} y ${fmt(hi)}`:lo?`más de ${fmt(lo)}`:hi<1/0?`menos de ${fmt(hi)}`:'';
+ window.RNG={lo,hi}; // lo que dijeron las flechas, literal (no es un 'rango posible': la temperatura la interpreta el jugador)
+ const rng=lo&&hi<1/0?`entre ${fmt(lo-1)} y ${fmt(hi+1)}`:lo?`más de ${fmt(lo-1)}`:hi<1/0?`menos de ${fmt(hi+1)}`:'';
  $('#ph').textContent=over?'':guesses.length?rng:(input?'':'escribí tu precio');
 }
 function shake(msg){const d=$('#disp');d.classList.remove('shake');void d.offsetWidth;d.classList.add('shake');if(msg)toast(msg);try{navigator.vibrate&&navigator.vibrate(30)}catch(e){}}
@@ -397,9 +413,12 @@ function submit(){
  const v=Number(input);
  if(!v){shake('Escribí un precio primero');return}
  if(guesses.some(g=>g.v===v)){shake('Ya probaste ese precio');return}
+ if(window.RNG&&(v<RNG.lo||v>RNG.hi)&&submit._c!==v){submit._c=v;shake(v<RNG.lo?`Ojo: ya sabés que sale más de ${fmt(RNG.lo-1)}. OK de nuevo para probar igual`:`Ojo: ya sabés que sale menos de ${fmt(RNG.hi+1)}. OK de nuevo para probar igual`);return}
+ submit._c=null;
  const j=judge(v); guesses.push({v,...j}); input='';
  if(mode==='daily')store.set('day',{key:dayK,id:item.ean,g:guesses});
  const end=j.r==='win'||guesses.length>=MAX;
+ if(end)window._lockEnter=performance.now()+1200;
  let rec=null;
  if(end){over=true;rec=record(j.r==='win')}
  render(true);
@@ -421,27 +440,28 @@ function record(won){ // se guarda en el mismo instante del último intento (sob
 function countUp(el,to){const t0=performance.now();const f=t=>{const k=Math.min(1,(t-t0)/650);el.textContent=fmt(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
 function finish(won,restored,rec){
  over=true; render(false); $('#play').style.display='none'; $('.prod').classList.add('done');
- const st=$('#stamp'); st.textContent=won?WINS[guesses.length-1]:'¡UFA!'; st.className='stamp '+(won?'w':'l')+(restored?'':' slam');
+ const er0=Math.abs(guesses[guesses.length-1].v-item.p)/item.p*100;
+ const st=$('#stamp'); st.textContent=won?(er0<.05?'¡CLAVADO!':WINS[guesses.length-1]):'¡UFA!'; st.className='stamp '+(won?'w':'l')+(restored?'':' slam');
  const tg=$('#tag'), lw=guesses[guesses.length-1], er=Math.abs(lw.v-item.p)/item.p*100;
  const bt=guesses.reduce((b,g)=>!b||g.pct<b.pct?g:b,null);
- tg.dataset.l=won?(er<.05?'PRECIO':'TU ERROR'):'TU MEJOR TIRO';
- tg.textContent=won?(er<.05?'¡CLAVADO!':(lw.v>item.p?'+':'−')+er.toFixed(1).replace('.',',')+'%'):(bt.up?'−':'+')+bt.pct+'%'; tg.className='tag done'+(won?'':' l'); $('#tagw').classList.add('done');
+ tg.dataset.l=won?'TU ERROR':'TU MEJOR TIRO';
+ tg.textContent=won?(er<.05?'0,0%':(lw.v>item.p?'+':'−')+er.toFixed(1).replace('.',',')+'%'):(bt.up?'−':'+')+bt.pct+'%'; tg.className='tag done'+(won?'':' l'); $('#tagw').classList.add('done'); $('.pinfo').appendChild($('#tagw'));
  if(restored||matchMedia('(prefers-reduced-motion:reduce)').matches)$('#rprice').textContent=fmt(item.p);else countUp($('#rprice'),item.p);
  $('#runit').textContent=item.u&&item.u[0]!==1?`${fmt(item.p/item.u[0])} por ${item.u[1]}`:'';
  const best=guesses.reduce((b,g)=>!b||g.pct<b.pct?g:b,null);
  $('#rbest').textContent=won?`Le pegaste en ${guesses.length} ${guesses.length===1?'intento':'intentos'}.`:`Tu mejor tiro fue ${fmt(best.v)}: ${best.pct}% ${best.up?'por debajo':'por encima'}.`;
- $('#rsrc').textContent='Fuente: '+item.s;
+ $('#rsrc').textContent='Precio de lista · Precios Claros (SEPA) · relevado el '+String(item.s).split(' · ').pop(); $('#rsrc').title=item.s;
  $('#bShare').hidden=mode!=='daily'; $('#bDaily').hidden=mode==='daily';
  $('#bFree').textContent=mode==='daily'?'JUGAR OTRO (MODO LIBRE)':'OTRO MÁS';$('#bFree').className='btn '+(mode==='daily'?'w':'y');
  $('#res').classList.add('show');
- if(!restored){try{navigator.vibrate&&navigator.vibrate(won?[40,60,40]:120)}catch(e){}setTimeout(()=>$('#res').scrollIntoView({behavior:'smooth',block:'nearest'}),100)}
+ if(!restored){try{navigator.vibrate&&navigator.vibrate(won?[40,60,40]:120)}catch(e){}setTimeout(()=>(innerHeight<700?$('.prod'):$('#res')).scrollIntoView({behavior:'smooth',block:innerHeight<700?'start':'nearest'}),100)}
  tick();
  if(!restored&&[document.body,$('#disp')].includes(document.activeElement))setTimeout(()=>{const t=$(mode==='daily'?'#bShare':'#bFree');if(!$('.modal.on'))t.focus({preventScroll:true,focusVisible:kbd})},150);
  if(!restored)setTimeout(()=>{$('#sr').textContent=`${won?'Ganaste':'Perdiste'}. El precio era ${fmt(item.p)}.`},700);
  if(!restored&&rec){
   const tok=item; // si el jugador ya pasó a otra partida, no abrir nada encima
   if(Array.isArray(store.get('bpend',{}).items))setTimeout(()=>{if(item===tok&&!$('.modal.on'))showBonus(store.get('bpend',{}))},1600);
-  else if(mode==='daily')setTimeout(()=>{if(item===tok&&mode==='daily'&&!$('.modal.on'))showStats()},2800);
+  else if(mode==='daily')setTimeout(()=>{if(item===tok&&mode==='daily'&&!$('.modal.on')&&!(kbd&&$('#res').contains(document.activeElement)))showStats()},3500);
  }
 }
 async function refresh(){
@@ -462,7 +482,7 @@ function tick(){
  $('#next').innerHTML=`Nuevo producto en <b>${clock()}</b>`;
 }
 function clock(){const t=Math.max(0,msToNext()),p=n=>String(n).padStart(2,'0');return `${p(Math.floor(t/36e5))}:${p(Math.floor(t%36e5/6e4))}:${p(Math.floor(t/1e3)%60)}`}
-setInterval(()=>{if(over&&mode==='daily')tick();const ms=$('#mStats'),sc=$('#sclock');if(ms&&ms.classList.contains('on')){if(sc&&todayKey()===dayK)sc.textContent=clock();else statsExtra()}},1000);
+setInterval(()=>{if(over&&mode==='daily')tick();const ms=$('#mStats'),sc=$('#sclock');if(ms&&ms.classList.contains('on')){if(todayKey()===dayK){if(sc)sc.textContent=clock()}else if(!/Ya salió|Terminá/.test($('#sextra').textContent))statsExtra()}},1000);
 setInterval(rollover,30000);
 function shareText(){
  const won=guesses.some(g=>g.r==='win');
@@ -481,7 +501,7 @@ function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clea
 // ---------- MODALES ----------
 let lastFocus=null, kbd=false;
 addEventListener('keydown',()=>kbd=true,true); addEventListener('pointerdown',()=>kbd=false,true);
-function openM(id){const m=$(id);m._kbd=kbd;lastFocus=document.activeElement;m.classList.add('on');$('.wrap').inert=true;document.body.classList.add('lock');setTimeout(()=>{const c=m.querySelector('.card');c.tabIndex=-1;(c).focus({preventScroll:true,focusVisible:kbd})},30)}
+function openM(id){const m=$(id);m._kbd=kbd;lastFocus=document.activeElement;m.classList.add('on');$('.wrap').inert=true;document.body.classList.add('lock');setTimeout(()=>{const c=m.querySelector('.card');c.tabIndex=-1;if(!m.contains(document.activeElement)||document.activeElement===document.body)c.focus({preventScroll:true,focusVisible:kbd})},30)}
 function closeM(m){m.classList.remove('on');if(!$('.modal.on')){document.body.classList.remove('lock');$('.wrap').inert=false}if(lastFocus&&/^b(Help|Stats)$/.test(lastFocus.id)&&!m._kbd)lastFocus.blur();else{const t=[lastFocus,$('#bShare'),$('#bFree'),$('#disp')].find(e=>e&&e!==document.body&&e.offsetParent&&!e.hidden);t&&t.focus({preventScroll:true})}if(m.id==='mBonus'&&mode==='daily'&&over&&m._fromDaily)setTimeout(showStats,250)}
 document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{
  if(e.target.closest('[data-close]')||(e.target===m&&!m.hasAttribute('data-lock')))closeM(m)}));
@@ -506,7 +526,7 @@ function bonusStats(){const B=store.get('bonus',{p:0,w:0});B.p=Math.max(0,Math.f
 function statsExtra(){
  const B=bonusStats();
  const h=store.get('hist',{n:0,items:[]}), falta=10-((Math.max(0,Math.floor(+h.n)||0))%10);
- $('#sextra').innerHTML=(B.p?`Ronda bonus: <b>${B.w} de ${B.p}</b> acertadas<br>`:'')+`Próxima ronda bonus en <b>${falta} ${falta===1?'producto':'productos'}</b><br>`+(todayKey()!==dayK?'<b>¡Ya salió el producto de hoy!</b><button class="btn y" id="bToday">JUGAR EL DE HOY</button>':`Nuevo producto en <b id="sclock">${clock()}</b>`);
+ $('#sextra').innerHTML=(B.p?`Ronda bonus: <b>${B.w} de ${B.p}</b> acertadas<br>`:'')+`Próxima ronda bonus en <b>${falta} ${falta===1?'producto':'productos'}</b><br>`+(todayKey()!==dayK?(over||!guesses.length?'<b>¡Ya salió el producto de hoy!</b><button class="btn w" id="bToday">JUGAR EL DE HOY</button>':'<b>Terminá el de ayer y después sale el de hoy.</b>'):`Nuevo producto en <b id="sclock">${clock()}</b>`);
 }
 // ---------- BONUS: cada 10 productos, ¿cuál era el más caro? ----------
 function showBonus(H){
@@ -525,7 +545,8 @@ function showBonus(H){
  $('#bcount').textContent=(Math.floor(+H.n)>0?Math.floor(+H.n):10)+' PRODUCTOS';
  $('#bmsg').textContent=''; $('#bBonusOk').hidden=true; $('#bstamp').className='bstamp';
  const g=$('#bgrid'); g.classList.remove('done');
- g.innerHTML=opts.map((o,i)=>`<button class="bo" data-i="${i}">${art(o.k,o.c,o.a,o.g)}<div>${o.n}<br><span class="sz">${o.d.split(' · ')[0]}</span><div class="pr">${fmt(o.p)}</div></div><span class="rk" aria-hidden="true">${rank.indexOf(o)+1}</span></button>`).join('');
+ const esc=x=>String(x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ g.innerHTML=opts.map((o,i)=>`<button class="bo" data-i="${i}">${art(o.k,o.c,o.a,o.g)}<div>${esc(o.n)}<br><span class="sz">${esc(o.d.split(' · ')[0])}</span><div class="pr">${fmt(o.p)}</div></div><span class="rk" aria-hidden="true">${rank.indexOf(o)+1}</span></button>`).join('');
  g.onclick=e=>{
   const b=e.target.closest('.bo'); if(!b||g.classList.contains('done'))return;
   const pick=opts[+b.dataset.i], ok=pick===top;
@@ -554,6 +575,7 @@ addEventListener('keydown',e=>{
  if(m&&e.key==='Tab'){const f=[...m.querySelectorAll('button:not([hidden])')];if(!f.length)return;const a=f[0],z=f[f.length-1],ae=document.activeElement;if(e.shiftKey&&(ae===a||ae.classList.contains('card'))){e.preventDefault();z.focus()}else if(!e.shiftKey&&ae===z){e.preventDefault();a.focus()}return}
  if(e.key==='Escape'&&m){if(!m.hasAttribute('data-lock')||!$('#bBonusOk').hidden)closeM(m);return}
  if(m||e.ctrlKey||e.metaKey||e.altKey)return;
+ if(e.key==='Enter'&&performance.now()<(window._lockEnter||0)){e.preventDefault();return}
  const onBtn=e.target&&e.target.tagName==='BUTTON';
  let k=null;
  if(/^[0-9]$/.test(e.key)&&onBtn&&e.target.closest('.hbtns'))$('#disp').focus({preventScroll:true});
