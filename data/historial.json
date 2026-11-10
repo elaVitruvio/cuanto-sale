@@ -47,8 +47,7 @@
   "a": "#3E8E41",
   "r": "bebidas",
   "s": "Precios Claros (SEPA) · precio típico en 10 cadenas · 1.685 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
-  "ean": "7798085681834",
-  "visto": "2026-11-09"
+  "ean": "7798085681834"
  },
  "2026-11-11": {
   "n": "Fernet Branca",
@@ -64,7 +63,7 @@
    0.75,
    "litro"
   ],
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
  },
  "2026-11-12": {
   "n": "Antitranspirante Rexona Men",
@@ -76,7 +75,7 @@
   "r": "higiene",
   "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.938 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
   "ean": "7791293049502",
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
  },
  "2026-11-13": {
   "n": "Danette de dulce de leche",
@@ -88,7 +87,7 @@
   "r": "lacteos",
   "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.710 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
   "ean": "7791337008106",
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
  },
  "2026-11-14": {
   "n": "Paliqueso Pehuamar",
@@ -100,7 +99,7 @@
   "r": "snacks",
   "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.668 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
   "ean": "7790310985526",
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
  },
  "2026-11-15": {
   "n": "Polenta Prestopronta",
@@ -117,7 +116,7 @@
    0.49,
    "kilo"
   ],
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
  },
  "2026-11-16": {
   "n": "Ketchup Hellmann's",
@@ -133,6 +132,21 @@
    0.5,
    "kilo"
   ],
-  "visto": "2026-11-09"
+  "visto": "2026-11-10"
+ },
+ "2026-11-17": {
+  "n": "Queso crema Casancrem",
+  "d": "290 g",
+  "p": 5995,
+  "k": "tub",
+  "c": "#fff",
+  "a": "#3A7BD5",
+  "r": "lacteos",
+  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.631 sucursales de CABA y provincia de Buenos Aires · 09/11/2026",
+  "ean": "7791337061361",
+  "u": [
+   0.29,
+   "kilo"
+  ]
  }
 }
