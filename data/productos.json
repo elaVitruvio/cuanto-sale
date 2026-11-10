@@ -21,6 +21,7 @@
   "2026-11-10": {
    "n": "Jugo exprimido Citric de naranja",
    "d": "1 L",
+   "g": "naranja",
    "p": 6150,
    "k": "pet",
    "c": "#F7A928",
@@ -32,6 +33,7 @@
   "2026-11-11": {
    "n": "Fernet Branca",
    "d": "0,75 L",
+   "g": "hoja",
    "p": 21000,
    "k": "bottle",
    "c": "#2B2B2B",
@@ -47,6 +49,7 @@
   "2026-11-12": {
    "n": "Antitranspirante Rexona Men",
    "d": "150 ml",
+   "g": "rayo",
    "p": 5120,
    "k": "aerosol",
    "c": "#2B2B2B",
@@ -58,6 +61,7 @@
   "2026-11-13": {
    "n": "Mayonesa Hellmann's",
    "d": "475 g",
+   "g": "huevo",
    "p": 3089,
    "k": "pouch",
    "c": "#fff",
@@ -73,6 +77,7 @@
   "2026-11-14": {
    "n": "Paliqueso Pehuamar",
    "d": "165 g",
+   "g": "queso",
    "p": 3800,
    "k": "chips",
    "c": "#F28C28",
@@ -100,6 +105,7 @@
   "2026-11-16": {
    "n": "Ketchup Hellmann's",
    "d": "500 g",
+   "g": "tomate",
    "p": 4698,
    "k": "squeeze",
    "c": "#D23B2E",
@@ -173,6 +179,7 @@
   {
    "n": "Tic Tac naranja",
    "d": "16 g",
+   "g": "naranja",
    "p": 1072,
    "k": "tictac",
    "c": "#FDE3C2",
@@ -227,6 +234,7 @@
   {
    "n": "Shampoo Head & Shoulders",
    "d": "180 ml",
+   "g": "ola",
    "p": 8237,
    "k": "squeeze",
    "c": "#1F4FA3",
@@ -238,6 +246,7 @@
   {
    "n": "Pasta dental Colgate Triple Acción",
    "d": "90 g",
+   "g": "hoja",
    "p": 4156,
    "k": "tube",
    "c": "#D23B2E",
@@ -249,6 +258,7 @@
   {
    "n": "Polvo para hornear Royal",
    "d": "50 g",
+   "g": "nube",
    "p": 1840,
    "k": "tin",
    "c": "#D23B2E",
@@ -260,6 +270,7 @@
   {
    "n": "Galletitas Oreo",
    "d": "118 g",
+   "g": "sandwich",
    "p": 2639,
    "k": "roll",
    "c": "#1F4FA3",
@@ -283,6 +294,7 @@
   {
    "n": "Galletitas Duquesa",
    "d": "115 g",
+   "g": "galleta",
    "p": 1699,
    "k": "roll",
    "c": "#8E1B3A",
@@ -294,6 +306,7 @@
   {
    "n": "Toallitas Siempre Libre",
    "d": "",
+   "g": "flor",
    "p": 2539,
    "k": "pillow",
    "c": "#F4A6C0",
@@ -318,6 +331,7 @@
   {
    "n": "Galletitas Chocolinas",
    "d": "250 g",
+   "g": "chocolate",
    "p": 2824,
    "k": "roll",
    "c": "#6B3A1E",
@@ -349,6 +363,7 @@
   {
    "n": "Aceite de girasol Cocinero",
    "d": "1,5 L",
+   "g": "aceite",
    "p": 6925,
    "k": "pet",
    "c": "#F2C230",
@@ -364,6 +379,7 @@
   {
    "n": "Algodón Estrella clásico",
    "d": "75 g",
+   "g": "nube",
    "p": 1489,
    "k": "bag",
    "c": "#fff",
@@ -376,6 +392,7 @@
   {
    "n": "Nuggets de pollo Granja del Sol",
    "d": "400 g",
+   "g": "pollo",
    "p": 11445,
    "k": "brick",
    "c": "#F28C28",
@@ -391,6 +408,7 @@
   {
    "n": "Fideos Matarazzo tirabuzón",
    "d": "500 g",
+   "g": "fideo",
    "p": 2119,
    "k": "pasta",
    "c": "#D23B2E",
@@ -407,6 +425,7 @@
   {
    "n": "Tallarines n.º 5 Matarazzo",
    "d": "500 g",
+   "g": "fideo",
    "p": 2119,
    "k": "pasta",
    "c": "#2A5DB0",
@@ -423,6 +442,7 @@
   {
    "n": "Spaghetti n.º 7 Lucchetti",
    "d": "500 g",
+   "g": "fideo",
    "p": 1759,
    "k": "pasta",
    "c": "#F2C230",
@@ -450,6 +470,7 @@
   {
    "n": "Arroz parboil Gallo Oro",
    "d": "500 g",
+   "g": "arroz",
    "p": 1570,
    "k": "bag",
    "c": "#F4F1E8",
@@ -481,6 +502,7 @@
   {
    "n": "Harina leudante Blancaflor",
    "d": "1 kg",
+   "g": "nube",
    "p": 2294,
    "k": "bag",
    "c": "#F5E6C8",
@@ -492,6 +514,7 @@
   {
    "n": "Harina Favorita 000",
    "d": "1 kg",
+   "g": "nube",
    "p": 1300,
    "k": "bag",
    "c": "#fff",
@@ -504,6 +527,7 @@
   {
    "n": "Ravioles de jamón y muzzarella La Salteña",
    "d": "450 g",
+   "g": "queso",
    "p": 4430,
    "k": "pillow",
    "c": "#3E8E41",
@@ -519,6 +543,7 @@
   {
    "n": "Tapas para empanadas de hojaldre La Salteña",
    "d": "12 u. · 330 g",
+   "g": "pan",
    "p": 2535,
    "k": "disc",
    "c": "#F2C230",
@@ -530,6 +555,7 @@
   {
    "n": "Vino Benjamín Chardonnay",
    "d": "750 ml",
+   "g": "uva",
    "p": 6700,
    "k": "bottle",
    "c": "#D9C46A",
@@ -546,6 +572,7 @@
   {
    "n": "Tostadas Riera clásicas",
    "d": "200 g",
+   "g": "pan",
    "p": 1989,
    "k": "pillow",
    "c": "#F5E6C8",
@@ -557,6 +584,7 @@
   {
    "n": "Sal fina Celusal",
    "d": "500 g",
+   "g": "sal",
    "p": 1949,
    "k": "box",
    "c": "#3A7BD5",
@@ -572,6 +600,7 @@
   {
    "n": "Vinagre de alcohol Menoyo",
    "d": "1 L",
+   "g": "burbuja",
    "p": 1875,
    "k": "pet",
    "c": "#F1EFE6",
@@ -596,6 +625,7 @@
   {
    "n": "Esencia de vainilla Alicante",
    "d": "100 ml",
+   "g": "flor",
    "p": 2329,
    "k": "minibottle",
    "c": "#6B3A1E",
@@ -608,6 +638,7 @@
   {
    "n": "Fernet Branca",
    "d": "0,75 L",
+   "g": "hoja",
    "p": 21000,
    "k": "bottle",
    "c": "#2B2B2B",
@@ -623,6 +654,7 @@
   {
    "n": "Papas fritas Lay's clásicas",
    "d": "85 g",
+   "g": "papa",
    "p": 4200,
    "k": "chips",
    "c": "#F2C230",
@@ -634,6 +666,7 @@
   {
    "n": "Paliqueso Pehuamar",
    "d": "165 g",
+   "g": "queso",
    "p": 3800,
    "k": "chips",
    "c": "#F28C28",
@@ -645,6 +678,7 @@
   {
    "n": "Vino Toro tinto",
    "d": "1 L · tetra",
+   "g": "uva",
    "p": 2700,
    "k": "tetra",
    "c": "#6B1E2E",
@@ -691,6 +725,7 @@
   {
    "n": "Desinfectante Lysoform en aerosol",
    "d": "380 ml",
+   "g": "burbuja",
    "p": 5340,
    "k": "aerosol",
    "c": "#fff",
@@ -703,6 +738,7 @@
   {
    "n": "Aromatizante Glade lavanda",
    "d": "360 ml",
+   "g": "flor",
    "p": 4339,
    "k": "aerosol",
    "c": "#8a5aa0",
@@ -714,6 +750,7 @@
   {
    "n": "Mr. Músculo cocina repuesto",
    "d": "450 ml · doypack",
+   "g": "burbuja",
    "p": 2979,
    "k": "pouch",
    "c": "#7DBE3A",
@@ -729,6 +766,7 @@
   {
    "n": "Café Cabrales tostado molido",
    "d": "250 g",
+   "g": "cafe",
    "p": 15890,
    "k": "bag",
    "c": "#6B3A1E",
@@ -745,6 +783,7 @@
   {
    "n": "Atún al natural La Campagnola",
    "d": "170 g",
+   "g": "ola",
    "p": 6000,
    "k": "tinf",
    "c": "#D9D9D9",
@@ -756,6 +795,7 @@
   {
    "n": "Mermelada Arcor de damasco",
    "d": "454 g",
+   "g": "naranja",
    "p": 3340,
    "k": "jar",
    "c": "#F28C28",
@@ -788,6 +828,7 @@
   {
    "n": "Puré de tomate La Campagnola",
    "d": "530 g",
+   "g": "tomate",
    "p": 1405,
    "k": "tetra",
    "c": "#D23B2E",
@@ -803,6 +844,7 @@
   {
    "n": "Tomates perita Arcor",
    "d": "400 g · lata",
+   "g": "tomate",
    "p": 1582,
    "k": "tin",
    "c": "#D9D9D9",
@@ -842,6 +884,7 @@
   {
    "n": "Salchichas Paty clásicas x6",
    "d": "230 g",
+   "g": "salchicha",
    "p": 2890,
    "k": "pouch",
    "c": "#D23B2E",
@@ -854,6 +897,7 @@
   {
    "n": "Salchichas Vienissima",
    "d": "6 u. · 230 g",
+   "g": "salchicha",
    "p": 3299,
    "k": "vac",
    "c": "#E8F0F7",
@@ -865,6 +909,7 @@
   {
    "n": "Shampoo Plusbelle Nutrición",
    "d": "1 L",
+   "g": "hoja",
    "p": 6030,
    "k": "squeeze",
    "c": "#7DBE3A",
@@ -876,6 +921,7 @@
   {
    "n": "Crema de leche ultra La Serenísima",
    "d": "200 ml",
+   "g": "leche",
    "p": 3785,
    "k": "minitetra",
    "c": "#fff",
@@ -888,6 +934,7 @@
   {
    "n": "Crema para cocinar La Serenísima",
    "d": "330 ml",
+   "g": "leche",
    "p": 5340,
    "k": "tetra",
    "c": "#1F4FA3",
@@ -904,6 +951,7 @@
   {
    "n": "Leche La Serenísima entera",
    "d": "1 L · sachet",
+   "g": "leche",
    "p": 2050,
    "k": "pillow",
    "c": "#fff",
@@ -916,6 +964,7 @@
   {
    "n": "Leche entera La Serenísima larga vida",
    "d": "1 L",
+   "g": "leche",
    "p": 3030,
    "k": "tetra",
    "c": "#fff",
@@ -927,6 +976,7 @@
   {
    "n": "Dulce de leche La Serenísima",
    "d": "400 g",
+   "g": "dulce",
    "p": 4179,
    "k": "jar",
    "c": "#F5E6C8",
@@ -942,6 +992,7 @@
   {
    "n": "Dulce de leche Ilolay",
    "d": "400 g",
+   "g": "dulce",
    "p": 3819,
    "k": "jar",
    "c": "#F5E6C8",
@@ -958,6 +1009,7 @@
   {
    "n": "Coca-Cola en lata",
    "d": "354 ml",
+   "g": "cola",
    "p": 2700,
    "k": "can",
    "c": "#C8102E",
@@ -974,6 +1026,7 @@
   {
    "n": "Cepita multifruta",
    "d": "200 ml · cajita",
+   "g": "frutilla",
    "p": 1300,
    "k": "minitetra",
    "c": "#F28C28",
@@ -986,6 +1039,7 @@
   {
    "n": "Agua tónica Schweppes",
    "d": "1,5 L",
+   "g": "burbujas",
    "p": 5000,
    "k": "petl",
    "c": "#E6EFC9",
@@ -1002,6 +1056,7 @@
   {
    "n": "Powerade Mountain Blast",
    "d": "500 ml",
+   "g": "ola",
    "p": 2200,
    "k": "pet",
    "c": "#3A7BD5",
@@ -1018,6 +1073,7 @@
   {
    "n": "Aquarius de manzana",
    "d": "1,5 L",
+   "g": "manzana",
    "p": 3100,
    "k": "petl",
    "c": "#BFE3F2",
@@ -1034,6 +1090,7 @@
   {
    "n": "Ades de naranja",
    "d": "1 L",
+   "g": "naranja",
    "p": 3649,
    "k": "tetra",
    "c": "#F28C28",
@@ -1045,6 +1102,7 @@
   {
    "n": "Jugo Cepita de manzana",
    "d": "1 L",
+   "g": "manzana",
    "p": 3450,
    "k": "tetra",
    "c": "#7DBE3A",
@@ -1057,6 +1115,7 @@
   {
    "n": "Gancia Americano",
    "d": "950 ml",
+   "g": "limon",
    "p": 10599,
    "k": "bottle",
    "c": "#B5462E",
@@ -1072,6 +1131,7 @@
   {
    "n": "Amargo Terma limón Cero",
    "d": "1,35 L",
+   "g": "limon",
    "p": 2990,
    "k": "pet",
    "c": "#D7E86A",
@@ -1087,6 +1147,7 @@
   {
    "n": "Sal gruesa Celusal",
    "d": "1 kg",
+   "g": "sal",
    "p": 2879,
    "k": "pouch",
    "c": "#E6EFF9",
@@ -1099,6 +1160,7 @@
   {
    "n": "Vanish líquido color",
    "d": "400 ml",
+   "g": "burbujas",
    "p": 2669,
    "k": "squeeze",
    "c": "#E8457A",
@@ -1115,6 +1177,7 @@
   {
    "n": "Limpiador Procenex Marina",
    "d": "900 ml",
+   "g": "ola",
    "p": 2620,
    "k": "jug",
    "c": "#3FA9C9",
@@ -1130,6 +1193,7 @@
   {
    "n": "Cynar",
    "d": "750 ml",
+   "g": "hoja",
    "p": 13799,
    "k": "bottle",
    "c": "#2F5A2F",
@@ -1145,6 +1209,7 @@
   {
    "n": "Gin Gordon's",
    "d": "700 ml",
+   "g": "hoja",
    "p": 19500,
    "k": "bottle",
    "c": "#CFE8D4",
@@ -1160,6 +1225,7 @@
   {
    "n": "Jabón líquido Ala Ecolavado",
    "d": "800 ml",
+   "g": "burbujas",
    "p": 4033,
    "k": "jug",
    "c": "#1F4FA3",
@@ -1175,6 +1241,7 @@
   {
    "n": "Jabón líquido Skip BioEnzimas",
    "d": "800 ml",
+   "g": "burbujas",
    "p": 4750,
    "k": "jug",
    "c": "#3A7BD5",
@@ -1190,6 +1257,7 @@
   {
    "n": "Cif Bioactive limón",
    "d": "300 ml",
+   "g": "limon",
    "p": 2711,
    "k": "squeeze",
    "c": "#E8E22A",
@@ -1206,6 +1274,7 @@
   {
    "n": "Detergente Ala pomelo",
    "d": "500 ml",
+   "g": "pomelo",
    "p": 3720,
    "k": "minibottle",
    "c": "#F7A6A0",
@@ -1221,6 +1290,7 @@
   {
    "n": "Cif desinfectante en aerosol",
    "d": "260 g",
+   "g": "burbuja",
    "p": 4700,
    "k": "aerosol",
    "c": "#7DBE3A",
@@ -1233,6 +1303,7 @@
   {
    "n": "Desodorante Axe Marine",
    "d": "150 ml",
+   "g": "ola",
    "p": 4930,
    "k": "aerosol",
    "c": "#1F4FA3",
@@ -1245,6 +1316,7 @@
   {
    "n": "Shampoo Sedal Crema Balance",
    "d": "340 ml",
+   "g": "flor",
    "p": 6384,
    "k": "squeeze",
    "c": "#F28CB0",
@@ -1260,6 +1332,7 @@
   {
    "n": "Acondicionador Sedal crema balance",
    "d": "340 ml",
+   "g": "nube",
    "p": 6384,
    "k": "squeeze",
    "c": "#E8B4D0",
@@ -1276,6 +1349,7 @@
   {
    "n": "Antitranspirante Rexona Men",
    "d": "150 ml",
+   "g": "rayo",
    "p": 5120,
    "k": "aerosol",
    "c": "#2B2B2B",
@@ -1287,6 +1361,7 @@
   {
    "n": "Antitranspirante Rexona Nutritive",
    "d": "150 ml",
+   "g": "flor",
    "p": 5122,
    "k": "aerosol",
    "c": "#C8D2E0",
@@ -1299,6 +1374,7 @@
   {
    "n": "Yogur firme Ser de vainilla",
    "d": "190 g",
+   "g": "leche",
    "p": 3075,
    "k": "cup",
    "c": "#fff",
@@ -1310,6 +1386,7 @@
   {
    "n": "Chocolatada Cindor",
    "d": "1 L",
+   "g": "leche",
    "p": 8219,
    "k": "brick",
    "c": "#6B3A1E",
@@ -1322,6 +1399,7 @@
   {
    "n": "Actimel frutilla",
    "d": "100 g",
+   "g": "frutilla",
    "p": 2260,
    "k": "minibottle",
    "c": "#F4A6C0",
@@ -1334,6 +1412,7 @@
   {
    "n": "Actimel multifruta",
    "d": "100 g",
+   "g": "frutilla",
    "p": 2260,
    "k": "minibottle",
    "c": "#fff",
@@ -1345,6 +1424,7 @@
   {
    "n": "Danette de dulce de leche",
    "d": "100 g",
+   "g": "dulce",
    "p": 3019,
    "k": "cup",
    "c": "#6B3A1E",
@@ -1357,6 +1437,7 @@
   {
    "n": "Serenito con Rocklets",
    "d": "120 g",
+   "g": "chocolate",
    "p": 3949,
    "k": "cup",
    "c": "#F2C230",
@@ -1368,6 +1449,7 @@
   {
    "n": "Danonino frutilla",
    "d": "80 g",
+   "g": "frutilla",
    "p": 1365,
    "k": "cup",
    "c": "#F4A6C0",
@@ -1380,6 +1462,7 @@
   {
    "n": "Danonino botellita de frutilla",
    "d": "185 g",
+   "g": "frutilla",
    "p": 3390,
    "k": "minibottle",
    "c": "#FBD0DC",
@@ -1391,6 +1474,7 @@
   {
    "n": "Yogurísimo griego frutilla",
    "d": "190 g",
+   "g": "frutilla",
    "p": 3990,
    "k": "cup",
    "c": "#1F4FA3",
@@ -1402,6 +1486,7 @@
   {
    "n": "Margarina Danica Soft",
    "d": "200 g",
+   "g": "cubo",
    "p": 2822,
    "k": "tub",
    "c": "#F7E27A",
@@ -1414,6 +1499,7 @@
   {
    "n": "Seven Up",
    "d": "1,5 L",
+   "g": "burbujas",
    "p": 3950,
    "k": "petl",
    "c": "#2E9E4A",
@@ -1430,6 +1516,7 @@
   {
    "n": "Pepsi",
    "d": "1,5 L",
+   "g": "cola",
    "p": 3890,
    "k": "petl",
    "c": "#3A1D12",
@@ -1445,6 +1532,7 @@
   {
    "n": "Mayonesa Natura",
    "d": "500 ml",
+   "g": "huevo",
    "p": 3042,
    "k": "pouch",
    "c": "#fff",
@@ -1461,6 +1549,7 @@
   {
    "n": "Aceite de girasol Cañuelas",
    "d": "1,5 L",
+   "g": "aceite",
    "p": 6985,
    "k": "jug",
    "c": "#F7C62A",
@@ -1477,6 +1566,7 @@
   {
    "n": "Harina Pureza leudante",
    "d": "1 kg",
+   "g": "nube",
    "p": 1999,
    "k": "bag",
    "c": "#fff",
@@ -1489,6 +1579,7 @@
   {
    "n": "Cerveza Quilmes Cristal",
    "d": "1 L · retornable",
+   "g": "cerveza",
    "p": 4649,
    "k": "bottle",
    "c": "#7A4E1D",
@@ -1500,6 +1591,7 @@
   {
    "n": "Limpiador Poett Primavera",
    "d": "900 ml",
+   "g": "flor",
    "p": 2760,
    "k": "jug",
    "c": "#E7A6D6",
@@ -1515,6 +1607,7 @@
   {
    "n": "Mermelada BC de durazno",
    "d": "390 g",
+   "g": "naranja",
    "p": 4163,
    "k": "jar",
    "c": "#F7A928",
@@ -1541,6 +1634,7 @@
   {
    "n": "Leche entera Tregar larga vida",
    "d": "1 L",
+   "g": "leche",
    "p": 2550,
    "k": "tetra",
    "c": "#fff",
@@ -1552,6 +1646,7 @@
   {
    "n": "Manteca La Serenísima",
    "d": "200 g",
+   "g": "cubo",
    "p": 5211,
    "k": "brick",
    "c": "#F5E08A",
@@ -1564,6 +1659,7 @@
   {
    "n": "Mayonesa Hellmann's",
    "d": "475 g",
+   "g": "huevo",
    "p": 3089,
    "k": "pouch",
    "c": "#fff",
@@ -1579,6 +1675,7 @@
   {
    "n": "Ketchup Hellmann's",
    "d": "500 g",
+   "g": "tomate",
    "p": 4698,
    "k": "squeeze",
    "c": "#D23B2E",
@@ -1594,6 +1691,7 @@
   {
    "n": "Ketchup Hellmann's",
    "d": "250 g",
+   "g": "tomate",
    "p": 2800,
    "k": "squeeze",
    "c": "#C81E27",
@@ -1610,6 +1708,7 @@
   {
    "n": "Mostaza Savora",
    "d": "250 g",
+   "g": "hoja",
    "p": 1890,
    "k": "squeeze",
    "c": "#F2C230",
@@ -1641,6 +1740,7 @@
   {
    "n": "Caldo Knorr de gallina",
    "d": "12 cubos",
+   "g": "pollo",
    "p": 3192,
    "k": "box",
    "c": "#F2C230",
@@ -1652,6 +1752,7 @@
   {
    "n": "Manteca Tonadita",
    "d": "200 g",
+   "g": "cubo",
    "p": 4319,
    "k": "box",
    "c": "#F7E27A",
@@ -1664,6 +1765,7 @@
   {
    "n": "Levité de naranja",
    "d": "500 ml",
+   "g": "naranja",
    "p": 2200,
    "k": "pet",
    "c": "#FDE3C2",
@@ -1680,6 +1782,7 @@
   {
    "n": "Levité pomelo",
    "d": "1,5 L",
+   "g": "pomelo",
    "p": 3189,
    "k": "petl",
    "c": "#F4A6B0",
@@ -1696,6 +1799,7 @@
   {
    "n": "Vino Portillo Malbec",
    "d": "750 ml",
+   "g": "uva",
    "p": 6990,
    "k": "bottle",
    "c": "#4A1020",
@@ -1711,6 +1815,7 @@
   {
    "n": "Jugo exprimido Citric de naranja",
    "d": "1 L",
+   "g": "naranja",
    "p": 6150,
    "k": "pet",
    "c": "#F7A928",
@@ -1722,6 +1827,7 @@
   {
    "n": "Leche descremada 1% Tres Niñas",
    "d": "1 L",
+   "g": "leche",
    "p": 2979,
    "k": "tetra",
    "c": "#EAF3FB",
@@ -1734,6 +1840,7 @@
   {
    "n": "Monster Energy",
    "d": "473 ml",
+   "g": "rayo",
    "p": 3600,
    "k": "can",
    "c": "#1d1b1a",
@@ -1750,6 +1857,7 @@
   {
    "n": "Agua mineral Villavicencio",
    "d": "2 L",
+   "g": "ola",
    "p": 3199,
    "k": "pet",
    "c": "#BFE3F2",
@@ -1778,6 +1886,7 @@
   {
    "n": "Suavizante Frescor",
    "d": "500 ml",
+   "g": "flor",
    "p": 9063,
    "k": "pouch",
    "c": "#8FD0E8",
@@ -1806,6 +1915,7 @@
   {
    "n": "Antitranspirante Dove Original",
    "d": "250 ml",
+   "g": "nube",
    "p": 8459,
    "k": "aerosol",
    "c": "#fff",
@@ -1817,6 +1927,7 @@
   {
    "n": "Nutella",
    "d": "350 g",
+   "g": "chocolate",
    "p": 10998,
    "k": "jar",
    "c": "#5A3420",
@@ -1832,8 +1943,9 @@
   {
    "n": "Jabón Dove exfoliación",
    "d": "90 g",
+   "g": "flor",
    "p": 2739,
-   "k": "bar",
+   "k": "box",
    "c": "#fff",
    "a": "#6EA8D8",
    "r": "higiene",

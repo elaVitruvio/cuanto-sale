@@ -41,6 +41,7 @@
  "2026-11-10": {
   "n": "Jugo exprimido Citric de naranja",
   "d": "1 L",
+  "g": "naranja",
   "p": 6150,
   "k": "pet",
   "c": "#F7A928",
@@ -52,6 +53,7 @@
  "2026-11-11": {
   "n": "Fernet Branca",
   "d": "0,75 L",
+  "g": "hoja",
   "p": 21000,
   "k": "bottle",
   "c": "#2B2B2B",
@@ -68,6 +70,7 @@
  "2026-11-12": {
   "n": "Antitranspirante Rexona Men",
   "d": "150 ml",
+  "g": "rayo",
   "p": 5120,
   "k": "aerosol",
   "c": "#2B2B2B",
@@ -80,6 +83,7 @@
  "2026-11-13": {
   "n": "Mayonesa Hellmann's",
   "d": "475 g",
+  "g": "huevo",
   "p": 3089,
   "k": "pouch",
   "c": "#fff",
@@ -90,11 +94,13 @@
   "u": [
    0.475,
    "kilo"
-  ]
+  ],
+  "visto": "2026-11-10"
  },
  "2026-11-14": {
   "n": "Paliqueso Pehuamar",
   "d": "165 g",
+  "g": "queso",
   "p": 3800,
   "k": "chips",
   "c": "#F28C28",
@@ -124,6 +130,7 @@
  "2026-11-16": {
   "n": "Ketchup Hellmann's",
   "d": "500 g",
+  "g": "tomate",
   "p": 4698,
   "k": "squeeze",
   "c": "#D23B2E",
