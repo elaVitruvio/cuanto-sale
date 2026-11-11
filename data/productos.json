@@ -2,22 +2,6 @@
  "fecha": "2026-11-10",
  "fuente": "Precios Claros – Base SEPA, Secretaría de Comercio (datos.produccion.gob.ar), CC BY 4.0",
  "agenda": {
-  "2026-11-09": {
-   "n": "Limpiador Poett Primavera",
-   "d": "900 ml",
-   "p": 2760,
-   "k": "jug",
-   "c": "#E7A6D6",
-   "a": "#fff",
-   "r": "limpieza",
-   "s": "Precios Claros (SEPA) · precio central entre 9 cadenas y 1.732 sucursales de CABA y provincia de Buenos Aires · 07/11/2026",
-   "ean": "7793253003548",
-   "u": [
-    0.9,
-    "litro"
-   ],
-   "diario": false
-  },
   "2026-11-10": {
    "n": "Jugo exprimido Citric de naranja",
    "d": "1 L",
@@ -132,12 +116,25 @@
     0.29,
     "kilo"
    ]
+  },
+  "2026-11-18": {
+   "n": "Galletitas Saladix sabor jamón",
+   "d": "100 g",
+   "g": "galleta",
+   "p": 1900,
+   "k": "chips",
+   "c": "#D23B2E",
+   "a": "#F2C46B",
+   "r": "snacks",
+   "s": "Precios Claros (SEPA) · precio típico en 10 cadenas · 1.726 sucursales de CABA y provincia de Buenos Aires · 10/11/2026",
+   "ean": "7790580716707"
   }
  },
  "jugados": [
   "7790070432971",
   "7790387015317",
-  "7793253003548"
+  "7793253003548",
+  "7798085681834"
  ],
  "productos": [
   {
