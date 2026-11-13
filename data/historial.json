@@ -92,8 +92,7 @@
   "u": [
    0.475,
    "kilo"
-  ],
-  "visto": "2026-11-12"
+  ]
  },
  "2026-11-14": {
   "n": "Paliqueso Pehuamar",
@@ -104,9 +103,9 @@
   "c": "#F28C28",
   "a": "#1F4FA3",
   "r": "snacks",
-  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.597 sucursales de CABA y provincia de Buenos Aires · 11/11/2026",
+  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.635 sucursales de CABA y provincia de Buenos Aires · 12/11/2026",
   "ean": "7790310985526",
-  "visto": "2026-11-12"
+  "visto": "2026-11-13"
  },
  "2026-11-15": {
   "n": "Polenta Prestopronta",
@@ -117,13 +116,13 @@
   "c": "#F2C230",
   "a": "#D23B2E",
   "r": "despensa",
-  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.580 sucursales de CABA y provincia de Buenos Aires · 11/11/2026",
+  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.614 sucursales de CABA y provincia de Buenos Aires · 12/11/2026",
   "ean": "7790580138738",
   "u": [
    0.49,
    "kilo"
   ],
-  "visto": "2026-11-12"
+  "visto": "2026-11-13"
  },
  "2026-11-16": {
   "n": "Ketchup Hellmann's",
@@ -134,30 +133,30 @@
   "c": "#D23B2E",
   "a": "#fff",
   "r": "aderezos",
-  "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.544 sucursales de CABA y provincia de Buenos Aires · 11/11/2026",
+  "s": "Precios Claros (SEPA) · precio típico en 8 cadenas · 1.579 sucursales de CABA y provincia de Buenos Aires · 12/11/2026",
   "ean": "7794000006164",
   "u": [
    0.5,
    "kilo"
   ],
-  "visto": "2026-11-12"
+  "visto": "2026-11-13"
  },
  "2026-11-17": {
   "n": "Queso crema Casancrem",
   "d": "290 g",
   "g": "queso",
-  "p": 5999,
+  "p": 6235,
   "k": "tub",
   "c": "#fff",
   "a": "#3A7BD5",
   "r": "lacteos",
-  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.534 sucursales de CABA y provincia de Buenos Aires · 11/11/2026",
+  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.566 sucursales de CABA y provincia de Buenos Aires · 12/11/2026",
   "ean": "7791337061361",
   "u": [
    0.29,
    "kilo"
   ],
-  "visto": "2026-11-12"
+  "visto": "2026-11-13"
  },
  "2026-11-18": {
   "n": "Galletitas Saladix sabor jamón",
@@ -168,9 +167,9 @@
   "c": "#D23B2E",
   "a": "#F2C46B",
   "r": "snacks",
-  "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.627 sucursales de CABA y provincia de Buenos Aires · 11/11/2026",
+  "s": "Precios Claros (SEPA) · precio típico en 9 cadenas · 1.656 sucursales de CABA y provincia de Buenos Aires · 12/11/2026",
   "ean": "7790580716707",
-  "visto": "2026-11-12"
+  "visto": "2026-11-13"
  },
  "2026-11-19": {
   "n": "Baño de repostería Águila",
@@ -180,7 +179,24 @@
   "c": "#6B3A1E",
   "a": "#F2C230",
   "r": "reposteria",
-  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.112 sucursales de CABA y provincia de Buenos Aires · 11/11/2026",
-  "ean": "7790580131470"
+  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.147 sucursales de CABA y provincia de Buenos Aires · 12/11/2026",
+  "ean": "7790580131470",
+  "visto": "2026-11-13"
+ },
+ "2026-11-20": {
+  "n": "Aceite de oliva Natura",
+  "d": "500 ml",
+  "g": "aceite",
+  "p": 14890,
+  "k": "bottle",
+  "c": "#7A8F2A",
+  "a": "#F2C230",
+  "r": "aderezos",
+  "s": "Precios Claros (SEPA) · precio típico en 7 cadenas · 1.529 sucursales de CABA y provincia de Buenos Aires · 12/11/2026",
+  "ean": "7790272008394",
+  "u": [
+   0.5,
+   "litro"
+  ]
  }
 }
